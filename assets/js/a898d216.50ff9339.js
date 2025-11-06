@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkiowarp_site=globalThis.webpackChunkiowarp_site||[]).push([[8288],{8459:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"platform"}')}}]);
