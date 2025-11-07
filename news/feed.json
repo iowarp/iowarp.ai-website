@@ -13,7 +13,7 @@
             "date_modified": "2025-01-20T00:00:00.000Z",
             "author": {
                 "name": "Kyle Chard",
-                "url": "/about#kyle-chard"
+                "url": "/about"
             },
             "tags": [
                 "media",
@@ -48,7 +48,7 @@
             "date_modified": "2025-01-10T00:00:00.000Z",
             "author": {
                 "name": "Alex Kougkas",
-                "url": "/about#alex-kougkas"
+                "url": "/about"
             },
             "tags": [
                 "team",
@@ -98,7 +98,7 @@
             "date_modified": "2024-12-01T00:00:00.000Z",
             "author": {
                 "name": "Alex Kougkas",
-                "url": "/about#alex-kougkas"
+                "url": "/about"
             },
             "tags": [
                 "publication",
