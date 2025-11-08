@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.iowarp.ai/sitemap.xml
+
+# Optimize crawling
+Disallow: /build/
+Disallow: /node_modules/
+Disallow: /.docusaurus/
+Disallow: /*.json$
+
+# Allow important paths
+Allow: /docs/
+Allow: /platform/
+Allow: /research/
+Allow: /community
+Allow: /news/
+Allow: /news/rss.xml
+Allow: /news/atom.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
