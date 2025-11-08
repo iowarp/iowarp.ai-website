@@ -34,10 +34,10 @@
             <name>Kyle Chard</name>
             <uri>/about</uri>
         </author>
-        <category label="media" term="media"/>
-        <category label="presentation" term="presentation"/>
-        <category label="supercomputing" term="supercomputing"/>
-        <category label="claudio" term="claudio"/>
+        <category label="Media" term="Media"/>
+        <category label="Presentations" term="Presentations"/>
+        <category label="Supercomputing" term="Supercomputing"/>
+        <category label="ClaudIO" term="ClaudIO"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[15 MCP Servers Now Available via uvx]]></title>
@@ -85,9 +85,9 @@
             <name>IOWarp Team</name>
             <uri>/about</uri>
         </author>
-        <category label="Release" term="Release"/>
-        <category label="mcp" term="mcp"/>
-        <category label="tools" term="tools"/>
+        <category label="Releases" term="Releases"/>
+        <category label="MCP" term="MCP"/>
+        <category label="Tools" term="Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dr. Maria Garcia Joins IOWarp as Postdoctoral Researcher]]></title>
@@ -113,8 +113,8 @@
             <name>Alex Kougkas</name>
             <uri>/about</uri>
         </author>
-        <category label="team" term="team"/>
-        <category label="hiring" term="hiring"/>
+        <category label="Team" term="Team"/>
+        <category label="Hiring" term="Hiring"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[IOWarp Deployed at NERSC for Climate Modeling]]></title>
@@ -151,9 +151,9 @@
             <name>IOWarp Team</name>
             <uri>/about</uri>
         </author>
-        <category label="deployment" term="deployment"/>
-        <category label="nersc" term="nersc"/>
-        <category label="climate" term="climate"/>
+        <category label="Deployments" term="Deployments"/>
+        <category label="NERSC" term="NERSC"/>
+        <category label="Climate" term="Climate"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[$5M NSF Grant Awarded to IOWarp Project]]></title>
@@ -179,7 +179,7 @@
         </author>
         <category label="Funding" term="Funding"/>
         <category label="NSF" term="NSF"/>
-        <category label="Announcement" term="Announcement"/>
+        <category label="Announcements" term="Announcements"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[IOWarp Paper Accepted to HPDC 2025]]></title>
@@ -209,8 +209,8 @@
             <name>Alex Kougkas</name>
             <uri>/about</uri>
         </author>
-        <category label="publication" term="publication"/>
-        <category label="research" term="research"/>
+        <category label="Publications" term="Publications"/>
+        <category label="Research" term="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[November Community Call - Recap and Recording]]></title>
@@ -247,8 +247,8 @@
             <name>IOWarp Team</name>
             <uri>/about</uri>
         </author>
-        <category label="community" term="community"/>
-        <category label="meeting" term="meeting"/>
+        <category label="Community" term="Community"/>
+        <category label="Meetings" term="Meetings"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[University of Utah Partnership for National Data Platform]]></title>
@@ -269,7 +269,7 @@
             <name>IOWarp Team</name>
             <uri>/about</uri>
         </author>
-        <category label="Partnership" term="Partnership"/>
+        <category label="Partnerships" term="Partnerships"/>
         <category label="NDP" term="NDP"/>
         <category label="Collaboration" term="Collaboration"/>
     </entry>
@@ -296,8 +296,8 @@
             <name>IOWarp Team</name>
             <uri>/about</uri>
         </author>
-        <category label="Release" term="Release"/>
+        <category label="Releases" term="Releases"/>
         <category label="Beta" term="Beta"/>
-        <category label="Announcement" term="Announcement"/>
+        <category label="Announcements" term="Announcements"/>
     </entry>
 </feed>

@@ -31,10 +31,10 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="impact">Impact<a href="https://www.iowarp.ai/news/claudio-sc25-presentation#impact" class="hash-link" aria-label="Direct link to Impact" title="Direct link to Impact" translate="no">​</a></h2>
 <p>ClaudIO represents a paradigm shift in how scientists interact with HPC data infrastructure, eliminating the need for manual scripting and enabling natural language driven analysis.</p>]]></content:encoded>
-            <category>media</category>
-            <category>presentation</category>
-            <category>supercomputing</category>
-            <category>claudio</category>
+            <category>Media</category>
+            <category>Presentations</category>
+            <category>Supercomputing</category>
+            <category>ClaudIO</category>
         </item>
         <item>
             <title><![CDATA[15 MCP Servers Now Available via uvx]]></title>
@@ -78,9 +78,9 @@
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Install any MCP server instantly:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">uvx iowarp-mcps hdf5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">uvx iowarp-mcps slurm</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">uvx iowarp-mcps pandas</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Install multiple at once:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">uvx iowarp-mcps hdf5 slurm pandas arxiv</span><br></span></code></pre></div></div>
 <p>Works with Claude Code, Cursor, VS Code, and any MCP-compatible client.</p>
 <p><a class="" href="https://www.iowarp.ai/docs/getting-started/installation">Get started now →</a></p>]]></content:encoded>
-            <category>Release</category>
-            <category>mcp</category>
-            <category>tools</category>
+            <category>Releases</category>
+            <category>MCP</category>
+            <category>Tools</category>
         </item>
         <item>
             <title><![CDATA[Dr. Maria Garcia Joins IOWarp as Postdoctoral Researcher]]></title>
@@ -102,8 +102,8 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="welcome">Welcome!<a href="https://www.iowarp.ai/news/new-postdoc-maria-garcia#welcome" class="hash-link" aria-label="Direct link to Welcome!" title="Direct link to Welcome!" translate="no">​</a></h2>
 <p>Please join us in welcoming Dr. Garcia to the IOWarp family. She'll be presenting her research plans at our next community call.</p>
 <p><a class="" href="https://www.iowarp.ai/about#team">Learn more about our team →</a></p>]]></content:encoded>
-            <category>team</category>
-            <category>hiring</category>
+            <category>Team</category>
+            <category>Hiring</category>
         </item>
         <item>
             <title><![CDATA[IOWarp Deployed at NERSC for Climate Modeling]]></title>
@@ -136,9 +136,9 @@
 <li class=""><strong>Agent:</strong> ClaudIO with climate domain knowledge</li>
 </ul>
 <p><a href="https://www.nersc.gov/" target="_blank" rel="noopener noreferrer" class="">Read more about NERSC →</a></p>]]></content:encoded>
-            <category>deployment</category>
-            <category>nersc</category>
-            <category>climate</category>
+            <category>Deployments</category>
+            <category>NERSC</category>
+            <category>Climate</category>
         </item>
         <item>
             <title><![CDATA[$5M NSF Grant Awarded to IOWarp Project]]></title>
@@ -160,7 +160,7 @@
 <strong>Focus Areas:</strong> Context orchestration, multi-agent coordination, HPC-AI convergence</p>]]></content:encoded>
             <category>Funding</category>
             <category>NSF</category>
-            <category>Announcement</category>
+            <category>Announcements</category>
         </item>
         <item>
             <title><![CDATA[IOWarp Paper Accepted to HPDC 2025]]></title>
@@ -186,8 +186,8 @@
 </ul>
 <p>The paper will be presented by Alex Kougkas. Pre-print coming soon on arXiv.</p>
 <p><a href="https://www.hpdc.org/2025/" target="_blank" rel="noopener noreferrer" class="">Conference website →</a></p>]]></content:encoded>
-            <category>publication</category>
-            <category>research</category>
+            <category>Publications</category>
+            <category>Research</category>
         </item>
         <item>
             <title><![CDATA[November Community Call - Recap and Recording]]></title>
@@ -220,8 +220,8 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-call">Next Call<a href="https://www.iowarp.ai/news/monthly-community-call-november#next-call" class="hash-link" aria-label="Direct link to Next Call" title="Direct link to Next Call" translate="no">​</a></h2>
 <p>Our next community call is scheduled for <strong>December 15, 2024 at 2pm CT</strong>.</p>
 <p><a href="https://iowarp.zulipchat.com/join/ir3jqer5dkeptde5twjvnzk2/" target="_blank" rel="noopener noreferrer" class="">Join our Zulip →</a></p>]]></content:encoded>
-            <category>community</category>
-            <category>meeting</category>
+            <category>Community</category>
+            <category>Meetings</category>
         </item>
         <item>
             <title><![CDATA[University of Utah Partnership for National Data Platform]]></title>
@@ -238,7 +238,7 @@
 <li class="">Agent-driven data discovery</li>
 </ul>
 <p>Learn more about NDP: <a href="https://ndp.utah.edu/" target="_blank" rel="noopener noreferrer" class="">https://ndp.utah.edu</a></p>]]></content:encoded>
-            <category>Partnership</category>
+            <category>Partnerships</category>
             <category>NDP</category>
             <category>Collaboration</category>
         </item>
@@ -261,9 +261,9 @@
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip install iowarp</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iowarp demo seismology</span><br></span></code></pre></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="feedback-welcome">Feedback Welcome<a href="https://www.iowarp.ai/news/beta-release#feedback-welcome" class="hash-link" aria-label="Direct link to Feedback Welcome" title="Direct link to Feedback Welcome" translate="no">​</a></h2>
 <p>Try it out and let us know what you think on <a href="https://iowarp.zulipchat.com/" target="_blank" rel="noopener noreferrer" class="">Zulip</a> or <a href="https://github.com/orgs/iowarp/discussions" target="_blank" rel="noopener noreferrer" class="">GitHub Discussions</a>.</p>]]></content:encoded>
-            <category>Release</category>
+            <category>Releases</category>
             <category>Beta</category>
-            <category>Announcement</category>
+            <category>Announcements</category>
         </item>
     </channel>
 </rss>

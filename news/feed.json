@@ -16,10 +16,10 @@
                 "url": "/about"
             },
             "tags": [
-                "media",
-                "presentation",
-                "supercomputing",
-                "claudio"
+                "Media",
+                "Presentations",
+                "Supercomputing",
+                "ClaudIO"
             ]
         },
         {
@@ -34,9 +34,9 @@
                 "url": "/about"
             },
             "tags": [
-                "Release",
-                "mcp",
-                "tools"
+                "Releases",
+                "MCP",
+                "Tools"
             ]
         },
         {
@@ -51,8 +51,8 @@
                 "url": "/about"
             },
             "tags": [
-                "team",
-                "hiring"
+                "Team",
+                "Hiring"
             ]
         },
         {
@@ -67,9 +67,9 @@
                 "url": "/about"
             },
             "tags": [
-                "deployment",
-                "nersc",
-                "climate"
+                "Deployments",
+                "NERSC",
+                "Climate"
             ]
         },
         {
@@ -86,7 +86,7 @@
             "tags": [
                 "Funding",
                 "NSF",
-                "Announcement"
+                "Announcements"
             ]
         },
         {
@@ -101,8 +101,8 @@
                 "url": "/about"
             },
             "tags": [
-                "publication",
-                "research"
+                "Publications",
+                "Research"
             ]
         },
         {
@@ -117,8 +117,8 @@
                 "url": "/about"
             },
             "tags": [
-                "community",
-                "meeting"
+                "Community",
+                "Meetings"
             ]
         },
         {
@@ -133,7 +133,7 @@
                 "url": "/about"
             },
             "tags": [
-                "Partnership",
+                "Partnerships",
                 "NDP",
                 "Collaboration"
             ]
@@ -150,9 +150,9 @@
                 "url": "/about"
             },
             "tags": [
-                "Release",
+                "Releases",
                 "Beta",
-                "Announcement"
+                "Announcements"
             ]
         }
     ]
