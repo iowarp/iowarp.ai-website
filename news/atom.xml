@@ -32,7 +32,7 @@
 <p>ClaudIO represents a paradigm shift in how scientists interact with HPC data infrastructure, eliminating the need for manual scripting and enabling natural language driven analysis.</p>]]></content>
         <author>
             <name>Kyle Chard</name>
-            <uri>/about</uri>
+            <uri>https://cs.uchicago.edu/people/kyle-chard/</uri>
         </author>
         <category label="Media" term="Media"/>
         <category label="Presentations" term="Presentations"/>
@@ -110,8 +110,8 @@
 <p>Please join us in welcoming Dr. Garcia to the IOWarp family. She'll be presenting her research plans at our next community call.</p>
 <p><a class="" href="https://www.iowarp.ai/about">Learn more about our team →</a></p>]]></content>
         <author>
-            <name>Alex Kougkas</name>
-            <uri>/about</uri>
+            <name>Anthony Kougkas</name>
+            <uri>https://akougkas.io</uri>
         </author>
         <category label="Team" term="Team"/>
         <category label="Hiring" term="Hiring"/>
@@ -206,8 +206,8 @@
 <p>The paper will be presented by Alex Kougkas. Pre-print coming soon on arXiv.</p>
 <p><a href="https://www.hpdc.org/2025/" target="_blank" rel="noopener noreferrer" class="">Conference website →</a></p>]]></content>
         <author>
-            <name>Alex Kougkas</name>
-            <uri>/about</uri>
+            <name>Anthony Kougkas</name>
+            <uri>https://akougkas.io</uri>
         </author>
         <category label="Publications" term="Publications"/>
         <category label="Research" term="Research"/>

@@ -13,7 +13,7 @@
             "date_modified": "2025-01-20T00:00:00.000Z",
             "author": {
                 "name": "Kyle Chard",
-                "url": "/about"
+                "url": "https://cs.uchicago.edu/people/kyle-chard/"
             },
             "tags": [
                 "Media",
@@ -47,8 +47,8 @@
             "summary": "Dr. Garcia brings expertise in ML-driven storage optimization to IOWarp",
             "date_modified": "2025-01-10T00:00:00.000Z",
             "author": {
-                "name": "Alex Kougkas",
-                "url": "/about"
+                "name": "Anthony Kougkas",
+                "url": "https://akougkas.io"
             },
             "tags": [
                 "Team",
@@ -97,8 +97,8 @@
             "summary": "Context Engineering for Autonomous Scientific Workflows paper accepted to HPDC 2025",
             "date_modified": "2024-12-01T00:00:00.000Z",
             "author": {
-                "name": "Alex Kougkas",
-                "url": "/about"
+                "name": "Anthony Kougkas",
+                "url": "https://akougkas.io"
             },
             "tags": [
                 "Publications",
