@@ -1,158 +1,22 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "IOWarp News & Updates",
+    "title": "IOWarp - News & Updates",
     "home_page_url": "https://www.iowarp.ai/news",
-    "description": "Context engineering breakthroughs, releases, and community updates",
+    "description": "Latest releases, announcements, partnerships, and research updates from the IOWarp project",
+    "icon": "https://www.iowarp.ai/img/iowarp_logo.png",
+    "author": {
+        "name": "IOWarp Project",
+        "url": "https://www.iowarp.ai"
+    },
     "items": [
         {
-            "id": "https://www.iowarp.ai/news/claudio-sc25-presentation",
-            "content_html": "<p>Dr. Kyle Chard presented IOWarp's ClaudIO autonomous agent at SC25 (Supercomputing 2025) in Denver, Colorado.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"presentation-highlights\">Presentation Highlights<a href=\"https://www.iowarp.ai/news/claudio-sc25-presentation#presentation-highlights\" class=\"hash-link\" aria-label=\"Direct link to Presentation Highlights\" title=\"Direct link to Presentation Highlights\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">ClaudIO's autonomous data management capabilities</li>\n<li class=\"\">7.5x performance improvements in seismology workflows</li>\n<li class=\"\">Integration with national lab HPC systems</li>\n<li class=\"\">Live demonstration of natural language data queries</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"resources\">Resources<a href=\"https://www.iowarp.ai/news/claudio-sc25-presentation#resources\" class=\"hash-link\" aria-label=\"Direct link to Resources\" title=\"Direct link to Resources\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">Conference website: <a href=\"https://sc25.supercomputing.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">SC25</a></li>\n<li class=\"\">Presentation slides: Coming soon</li>\n<li class=\"\">Related paper: <a class=\"\" href=\"https://www.iowarp.ai/research/publications/overview\">Context Engineering for Autonomous Workflows</a></li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"impact\">Impact<a href=\"https://www.iowarp.ai/news/claudio-sc25-presentation#impact\" class=\"hash-link\" aria-label=\"Direct link to Impact\" title=\"Direct link to Impact\" translate=\"no\">​</a></h2>\n<p>ClaudIO represents a paradigm shift in how scientists interact with HPC data infrastructure, eliminating the need for manual scripting and enabling natural language driven analysis.</p>",
-            "url": "https://www.iowarp.ai/news/claudio-sc25-presentation",
-            "title": "ClaudIO Agentic Data Management Presented at SC25",
-            "summary": "Dr. Kyle Chard presents ClaudIO's autonomous data management at Supercomputing 2025",
-            "date_modified": "2025-01-20T00:00:00.000Z",
-            "author": {
-                "name": "Kyle Chard",
-                "url": "https://cs.uchicago.edu/people/kyle-chard/"
-            },
+            "id": "https://www.iowarp.ai/news/nsf-grant-context-engineering",
+            "content_html": "IOWarp receives $5M NSF grant (Award #2411318) to advance context engineering for autonomous scientific workflows",
+            "url": "https://www.iowarp.ai/news/nsf-grant-context-engineering",
+            "title": "National Science Foundation Awards $5M Grant for Context Engineering Research",
+            "date_modified": "2024-08-05T00:00:00.000Z",
             "tags": [
-                "Media",
-                "Presentations",
-                "Supercomputing",
-                "ClaudIO"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/15-mcps-released",
-            "content_html": "<p>All 15 IOWarp MCP servers are now available for instant installation via <code>uvx</code> - no configuration required.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"available-servers\">Available Servers<a href=\"https://www.iowarp.ai/news/15-mcps-released#available-servers\" class=\"hash-link\" aria-label=\"Direct link to Available Servers\" title=\"Direct link to Available Servers\" translate=\"no\">​</a></h2>\n<p><strong>Scientific Data Formats:</strong></p>\n<ul>\n<li class=\"\">HDF5 - Hierarchical data analysis</li>\n<li class=\"\">ADIOS - Parallel I/O workflows</li>\n<li class=\"\">NetCDF - Climate and weather data</li>\n<li class=\"\">Darshan - I/O profiling and analysis</li>\n</ul>\n<p><strong>HPC Infrastructure:</strong></p>\n<ul>\n<li class=\"\">Slurm - Job scheduling and management</li>\n<li class=\"\">PBS - Workload management</li>\n<li class=\"\">Jarvis - Resource orchestration</li>\n</ul>\n<p><strong>Data Processing:</strong></p>\n<ul>\n<li class=\"\">Pandas - Dataframe operations</li>\n<li class=\"\">NumPy - Array computations</li>\n<li class=\"\">SciPy - Scientific computing</li>\n</ul>\n<p><strong>Research Tools:</strong></p>\n<ul>\n<li class=\"\">ArXiv - Paper search and retrieval</li>\n<li class=\"\">PubMed - Scientific literature</li>\n<li class=\"\">Zenodo - Research data repository</li>\n</ul>\n<p><strong>Visualization:</strong></p>\n<ul>\n<li class=\"\">ParaView - 3D scientific visualization</li>\n<li class=\"\">Matplotlib - Plotting and charts</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"installation\">Installation<a href=\"https://www.iowarp.ai/news/15-mcps-released#installation\" class=\"hash-link\" aria-label=\"Direct link to Installation\" title=\"Direct link to Installation\" translate=\"no\">​</a></h2>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#393A34;--prism-background-color:#f6f8fa\"><div class=\"codeBlockContent_QJqH\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#393A34;background-color:#f6f8fa\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token comment\" style=\"color:#999988;font-style:italic\"># Install any MCP server instantly:</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">uvx iowarp-mcps hdf5</span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">uvx iowarp-mcps slurm</span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">uvx iowarp-mcps pandas</span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\" style=\"display:inline-block\"></span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\"></span><span class=\"token comment\" style=\"color:#999988;font-style:italic\"># Install multiple at once:</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">uvx iowarp-mcps hdf5 slurm pandas arxiv</span><br></span></code></pre></div></div>\n<p>Works with Claude Code, Cursor, VS Code, and any MCP-compatible client.</p>\n<p><a class=\"\" href=\"https://www.iowarp.ai/docs/getting-started/installation\">Get started now →</a></p>",
-            "url": "https://www.iowarp.ai/news/15-mcps-released",
-            "title": "15 MCP Servers Now Available via uvx",
-            "summary": "Install IOWarp MCP servers instantly with uvx - zero configuration required",
-            "date_modified": "2025-01-15T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Releases",
-                "MCP",
-                "Tools"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/new-postdoc-maria-garcia",
-            "content_html": "<p>We're excited to welcome Dr. Maria Garcia to the IOWarp team as a Postdoctoral Researcher at Gnosis Research Center, Illinois Institute of Technology.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"background\">Background<a href=\"https://www.iowarp.ai/news/new-postdoc-maria-garcia#background\" class=\"hash-link\" aria-label=\"Direct link to Background\" title=\"Direct link to Background\" translate=\"no\">​</a></h2>\n<p>Dr. Garcia completed her PhD in Computer Science at Stanford University, where her dissertation focused on machine learning techniques for intelligent data placement in heterogeneous storage systems.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"research-focus-at-iowarp\">Research Focus at IOWarp<a href=\"https://www.iowarp.ai/news/new-postdoc-maria-garcia#research-focus-at-iowarp\" class=\"hash-link\" aria-label=\"Direct link to Research Focus at IOWarp\" title=\"Direct link to Research Focus at IOWarp\" translate=\"no\">​</a></h2>\n<p>At IOWarp, Dr. Garcia will work on:</p>\n<ul>\n<li class=\"\">ML-driven context prefetching in the Context Transfer Engine (CTE)</li>\n<li class=\"\">Intelligent data tiering strategies for massive scientific datasets</li>\n<li class=\"\">Predictive models for agent data access patterns</li>\n<li class=\"\">Performance optimization for multi-agent workflows</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"welcome\">Welcome!<a href=\"https://www.iowarp.ai/news/new-postdoc-maria-garcia#welcome\" class=\"hash-link\" aria-label=\"Direct link to Welcome!\" title=\"Direct link to Welcome!\" translate=\"no\">​</a></h2>\n<p>Please join us in welcoming Dr. Garcia to the IOWarp family. She'll be presenting her research plans at our next community call.</p>\n<p><a class=\"\" href=\"https://www.iowarp.ai/about\">Learn more about our team →</a></p>",
-            "url": "https://www.iowarp.ai/news/new-postdoc-maria-garcia",
-            "title": "Dr. Maria Garcia Joins IOWarp as Postdoctoral Researcher",
-            "summary": "Dr. Garcia brings expertise in ML-driven storage optimization to IOWarp",
-            "date_modified": "2025-01-10T00:00:00.000Z",
-            "author": {
-                "name": "Anthony Kougkas",
-                "url": "https://akougkas.io"
-            },
-            "tags": [
-                "Team",
-                "Hiring"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/nersc-climate-deployment",
-            "content_html": "<p>The National Energy Research Scientific Computing Center (NERSC) has deployed IOWarp to accelerate climate modeling data workflows.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"deployment-details\">Deployment Details<a href=\"https://www.iowarp.ai/news/nersc-climate-deployment#deployment-details\" class=\"hash-link\" aria-label=\"Direct link to Deployment Details\" title=\"Direct link to Deployment Details\" translate=\"no\">​</a></h2>\n<p>NERSC's climate modeling team is using IOWarp to:</p>\n<ul>\n<li class=\"\">Orchestrate context for massive NetCDF climate datasets</li>\n<li class=\"\">Enable AI-driven analysis of simulation outputs</li>\n<li class=\"\">Reduce data preparation time from hours to minutes</li>\n<li class=\"\">Support autonomous agent exploration of climate archives</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"impact\">Impact<a href=\"https://www.iowarp.ai/news/nersc-climate-deployment#impact\" class=\"hash-link\" aria-label=\"Direct link to Impact\" title=\"Direct link to Impact\" translate=\"no\">​</a></h2>\n<p>Initial benchmarks show:</p>\n<ul>\n<li class=\"\"><strong>5x faster</strong> data preparation for ML training</li>\n<li class=\"\"><strong>80% reduction</strong> in manual scripting time</li>\n<li class=\"\"><strong>Seamless integration</strong> with existing Slurm workflows</li>\n<li class=\"\"><strong>Natural language queries</strong> replacing complex CDO/NCO commands</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"technology-stack\">Technology Stack<a href=\"https://www.iowarp.ai/news/nersc-climate-deployment#technology-stack\" class=\"hash-link\" aria-label=\"Direct link to Technology Stack\" title=\"Direct link to Technology Stack\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\"><strong>Storage Layer:</strong> NERSC's Perlmutter parallel file system</li>\n<li class=\"\"><strong>Compute:</strong> CPU and GPU nodes via Slurm integration</li>\n<li class=\"\"><strong>MCPs:</strong> NetCDF, HDF5, Slurm, Pandas</li>\n<li class=\"\"><strong>Agent:</strong> ClaudIO with climate domain knowledge</li>\n</ul>\n<p><a href=\"https://www.nersc.gov/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Read more about NERSC →</a></p>",
-            "url": "https://www.iowarp.ai/news/nersc-climate-deployment",
-            "title": "IOWarp Deployed at NERSC for Climate Modeling",
-            "summary": "NERSC adopts IOWarp for climate simulation data workflows",
-            "date_modified": "2025-01-05T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Deployments",
-                "NERSC",
-                "Climate"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/nsf-grant-awarded",
-            "content_html": "<p>We're thrilled to announce that IOWarp has been awarded a $5 million grant from the National Science Foundation (Award #2411318) for the period 2024-2029.</p>\n<p>This significant investment will enable us to:</p>\n<ul>\n<li class=\"\">Advance context engineering research for agentic AI</li>\n<li class=\"\">Deploy IOWarp at additional national laboratories</li>\n<li class=\"\">Expand our scientific MCP ecosystem</li>\n<li class=\"\">Build the community and documentation</li>\n</ul>\n<p>We're grateful to NSF for this support and excited about the next phase of the project!</p>\n<p><strong>Partners:</strong> University of Utah, The HDF Group\n<strong>Timeline:</strong> 2024-2029\n<strong>Focus Areas:</strong> Context orchestration, multi-agent coordination, HPC-AI convergence</p>",
-            "url": "https://www.iowarp.ai/news/nsf-grant-awarded",
-            "title": "$5M NSF Grant Awarded to IOWarp Project",
-            "summary": "IOWarp receives $5M NSF grant for context engineering research (2024-2029)",
-            "date_modified": "2024-12-19T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Funding",
-                "NSF",
-                "Announcements"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/hpdc-paper-accepted",
-            "content_html": "<p>Our paper \"Context Engineering for Autonomous Scientific Workflows\" has been accepted to the 34th International Symposium on High-Performance Parallel and Distributed Computing (HPDC 2025).</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"paper-abstract\">Paper Abstract<a href=\"https://www.iowarp.ai/news/hpdc-paper-accepted#paper-abstract\" class=\"hash-link\" aria-label=\"Direct link to Paper Abstract\" title=\"Direct link to Paper Abstract\" translate=\"no\">​</a></h2>\n<p>This paper introduces context engineering as a new paradigm for enabling autonomous AI agents in scientific computing environments. We present the IOWarp platform's three-layer architecture and demonstrate 7.5x performance improvements in seismology analysis workflows.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"authors\">Authors<a href=\"https://www.iowarp.ai/news/hpdc-paper-accepted#authors\" class=\"hash-link\" aria-label=\"Direct link to Authors\" title=\"Direct link to Authors\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">Alex Kougkas (Illinois Institute of Technology)</li>\n<li class=\"\">Kyle Chard (University of Chicago / Argonne National Laboratory)</li>\n<li class=\"\">[Additional authors TBD]</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"conference-details\">Conference Details<a href=\"https://www.iowarp.ai/news/hpdc-paper-accepted#conference-details\" class=\"hash-link\" aria-label=\"Direct link to Conference Details\" title=\"Direct link to Conference Details\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\"><strong>Event:</strong> HPDC 2025</li>\n<li class=\"\"><strong>Location:</strong> Pisa, Italy</li>\n<li class=\"\"><strong>Date:</strong> June 2025</li>\n<li class=\"\"><strong>Track:</strong> Data-Intensive Systems</li>\n</ul>\n<p>The paper will be presented by Alex Kougkas. Pre-print coming soon on arXiv.</p>\n<p><a href=\"https://www.hpdc.org/2025/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Conference website →</a></p>",
-            "url": "https://www.iowarp.ai/news/hpdc-paper-accepted",
-            "title": "IOWarp Paper Accepted to HPDC 2025",
-            "summary": "Context Engineering for Autonomous Scientific Workflows paper accepted to HPDC 2025",
-            "date_modified": "2024-12-01T00:00:00.000Z",
-            "author": {
-                "name": "Anthony Kougkas",
-                "url": "https://akougkas.io"
-            },
-            "tags": [
-                "Publications",
-                "Research"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/monthly-community-call-november",
-            "content_html": "<p>Thank you to everyone who joined our November community call! We had great discussions about IOWarp's roadmap and community contributions.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"discussion-topics\">Discussion Topics<a href=\"https://www.iowarp.ai/news/monthly-community-call-november#discussion-topics\" class=\"hash-link\" aria-label=\"Direct link to Discussion Topics\" title=\"Direct link to Discussion Topics\" translate=\"no\">​</a></h2>\n<p><strong>Roadmap Updates:</strong></p>\n<ul>\n<li class=\"\">v1.0 stable release timeline (Q1 2025)</li>\n<li class=\"\">New MCP servers in development (NetCDF, Parquet, DuckDB)</li>\n<li class=\"\">ClaudIO multi-agent coordination features</li>\n</ul>\n<p><strong>Community Contributions:</strong></p>\n<ul>\n<li class=\"\">Call for beta testers at university HPC centers</li>\n<li class=\"\">Documentation improvement opportunities</li>\n<li class=\"\">Use case studies wanted</li>\n</ul>\n<p><strong>Q&amp;A Highlights:</strong></p>\n<ul>\n<li class=\"\">Windows support: Coming in v1.1</li>\n<li class=\"\">Custom MCP development guide: In progress</li>\n<li class=\"\">Integration with Jupyter notebooks: Planned for v1.2</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"recording\">Recording<a href=\"https://www.iowarp.ai/news/monthly-community-call-november#recording\" class=\"hash-link\" aria-label=\"Direct link to Recording\" title=\"Direct link to Recording\" translate=\"no\">​</a></h2>\n<p>Recording available on <a href=\"https://iowarp.zulipchat.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Zulip</a> for community members.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"next-call\">Next Call<a href=\"https://www.iowarp.ai/news/monthly-community-call-november#next-call\" class=\"hash-link\" aria-label=\"Direct link to Next Call\" title=\"Direct link to Next Call\" translate=\"no\">​</a></h2>\n<p>Our next community call is scheduled for <strong>December 15, 2024 at 2pm CT</strong>.</p>\n<p><a href=\"https://iowarp.zulipchat.com/join/ir3jqer5dkeptde5twjvnzk2/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Join our Zulip →</a></p>",
-            "url": "https://www.iowarp.ai/news/monthly-community-call-november",
-            "title": "November Community Call - Recap and Recording",
-            "summary": "Recap of November 2024 community call with Q&A and roadmap updates",
-            "date_modified": "2024-11-15T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Community",
-                "Meetings"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/utah-partnership",
-            "content_html": "<p>IOWarp announces partnership with University of Utah's National Data Platform (NDP) project led by Dr. Manish Parashar.</p>\n<p>This collaboration will integrate IOWarp's context orchestration capabilities with NDP's federated data infrastructure, enabling seamless data access across national research facilities.</p>\n<p><strong>Focus Areas:</strong></p>\n<ul>\n<li class=\"\">EarthScope seismology data integration</li>\n<li class=\"\">Cross-facility data orchestration</li>\n<li class=\"\">Agent-driven data discovery</li>\n</ul>\n<p>Learn more about NDP: <a href=\"https://ndp.utah.edu/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">https://ndp.utah.edu</a></p>",
-            "url": "https://www.iowarp.ai/news/utah-partnership",
-            "title": "University of Utah Partnership for National Data Platform",
-            "summary": "IOWarp partners with Utah's NDP project for federated data infrastructure",
-            "date_modified": "2024-11-01T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Partnerships",
-                "NDP",
-                "Collaboration"
-            ]
-        },
-        {
-            "id": "https://www.iowarp.ai/news/beta-release",
-            "content_html": "<p>IOWarp Beta is now available on GitHub! This release includes core platform components and initial MCP implementations.</p>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"whats-included\">What's Included<a href=\"https://www.iowarp.ai/news/beta-release#whats-included\" class=\"hash-link\" aria-label=\"Direct link to What's Included\" title=\"Direct link to What's Included\" translate=\"no\">​</a></h2>\n<ul>\n<li class=\"\">Content Assimilation Engine (CAE)</li>\n<li class=\"\">Content Transfer Engine (CTE)</li>\n<li class=\"\">Content Exploration Interface (CEI) - Natural language agent interface</li>\n<li class=\"\">Platform Plugins Interface (PPI)</li>\n<li class=\"\">MCPs: Adios, HDF5, Slurm, Jarvis, ParaView</li>\n</ul>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"get-started\">Get Started<a href=\"https://www.iowarp.ai/news/beta-release#get-started\" class=\"hash-link\" aria-label=\"Direct link to Get Started\" title=\"Direct link to Get Started\" translate=\"no\">​</a></h2>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#393A34;--prism-background-color:#f6f8fa\"><div class=\"codeBlockContent_QJqH\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#393A34;background-color:#f6f8fa\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">pip </span><span class=\"token function\" style=\"color:#d73a49\">install</span><span class=\"token plain\"> iowarp</span><br></span><span class=\"token-line\" style=\"color:#393A34\"><span class=\"token plain\">iowarp demo seismology</span><br></span></code></pre></div></div>\n<h2 class=\"anchor anchorTargetStickyNavbar_Vzrq\" id=\"feedback-welcome\">Feedback Welcome<a href=\"https://www.iowarp.ai/news/beta-release#feedback-welcome\" class=\"hash-link\" aria-label=\"Direct link to Feedback Welcome\" title=\"Direct link to Feedback Welcome\" translate=\"no\">​</a></h2>\n<p>Try it out and let us know what you think on <a href=\"https://iowarp.zulipchat.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">Zulip</a> or <a href=\"https://github.com/orgs/iowarp/discussions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"\">GitHub Discussions</a>.</p>",
-            "url": "https://www.iowarp.ai/news/beta-release",
-            "title": "IOWarp Beta Release Now Available",
-            "summary": "First public beta of IOWarp with 15 MCP servers and ClaudIO agent",
-            "date_modified": "2024-10-10T00:00:00.000Z",
-            "author": {
-                "name": "IOWarp Team",
-                "url": "/about"
-            },
-            "tags": [
-                "Releases",
-                "Beta",
-                "Announcements"
+                "funding"
             ]
         }
     ]
