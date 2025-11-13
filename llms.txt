@@ -12,8 +12,8 @@ Funded by NSF Award #2411318 ($5M, 2024-2029).
 - Open source: Apache 2.0 license
 
 ## Main Sections
-- Platform: https://www.iowarp.ai/platform/intro
-- Research: https://www.iowarp.ai/research/intro
+- Platform: https://www.iowarp.ai/platform
+- Research: https://www.iowarp.ai/research
 - Documentation: https://www.iowarp.ai/docs/intro
 - News & Updates: https://www.iowarp.ai/news
 
@@ -30,9 +30,9 @@ Funded by NSF Award #2411318 ($5M, 2024-2029).
 - Discussions: https://github.com/orgs/iowarp/discussions
 
 ## Contact
-- Email: iowarp@iit.edu
+- Email: grc@illinoistech.edu
 - Zulip Chat: https://iowarp.zulipchat.com
-- PI: Dr. Alex Kougkas (akougkas@iit.edu)
+- PI: Dr. Anthony Kougkas (akougkas@illinoistech.edu)
 
 ## License
 Apache 2.0 - https://github.com/iowarp/iowarp/blob/main/LICENSE

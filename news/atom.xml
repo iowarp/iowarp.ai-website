@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.iowarp.ai/news</id>
     <title>IOWarp - News &amp; Updates</title>
-    <updated>2025-11-11T21:51:12.926Z</updated>
+    <updated>2025-11-13T04:38:10.925Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>IOWarp Project</name>
-        <email>team@iowarp.ai</email>
+        <email>grc@illinoistech.edu</email>
         <uri>https://www.iowarp.ai</uri>
     </author>
     <link rel="alternate" href="https://www.iowarp.ai/news"/>
@@ -18,8 +18,40 @@
         <title type="html"><![CDATA[National Science Foundation Awards $5M Grant for Context Engineering Research]]></title>
         <id>https://www.iowarp.ai/news/nsf-grant-context-engineering</id>
         <link href="https://www.iowarp.ai/news/nsf-grant-context-engineering"/>
-        <updated>2024-08-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[IOWarp receives $5M NSF grant (Award #2411318) to advance context engineering for autonomous scientific workflows]]></summary>
+        <updated>2024-12-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IOWarp receives $5M NSF grant (Award #2411318) to advance context engineering for autonomous scientific workflows through 2029. PIs offer insights into the IOWarp vision and team objectives.]]></summary>
         <category label="funding"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dr. Luke Logan Appointed as IOWarp Head Engineer]]></title>
+        <id>https://www.iowarp.ai/news/luke-logan-head-engineer</id>
+        <link href="https://www.iowarp.ai/news/luke-logan-head-engineer"/>
+        <updated>2024-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[PhD graduate from Illinois Institute of Technology specializing in high-performance storage and memory systems. Luke leads IOWarp platform architecture and technical development.]]></summary>
+        <category label="team"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Illinois Institute of Technology Features IOWarp Project]]></title>
+        <id>https://www.iowarp.ai/news/iit-features-iowarp</id>
+        <link href="https://www.iowarp.ai/news/iit-features-iowarp"/>
+        <updated>2024-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IIT highlights how IOWarp is transforming scientific data management through context engineering. Third consecutive multi-million-dollar NSF grant for the Gnosis Research Center.]]></summary>
+        <category label="media"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IOWarp Platform Beta Release]]></title>
+        <id>https://www.iowarp.ai/news/platform-beta-release</id>
+        <link href="https://www.iowarp.ai/news/platform-beta-release"/>
+        <updated>2025-11-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Official release of IOWarp runtime with Content Assimilation Engine, Content Transfer Engine, 15+ MCP servers. Zero-config Docker deployment demonstrates 7.5x speedup in scientific workflows.]]></summary>
+        <category label="releases"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IOWarp Agent-Toolkit Release]]></title>
+        <id>https://www.iowarp.ai/news/agent-toolkit-release</id>
+        <link href="https://www.iowarp.ai/news/agent-toolkit-release"/>
+        <updated>2025-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[15+ MCP servers with 150+ specialized tools for scientific computing. Enables AI agents to interact with HPC resources, research datasets, and scientific workflows. MIT licensed.]]></summary>
+        <category label="releases"/>
     </entry>
 </feed>

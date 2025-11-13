@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.iowarp.ai/sitemap.xml
+Sitemap: https://www.iowarp.ai/news-sitemap.xml
 
 # Optimize crawling
 Disallow: /build/

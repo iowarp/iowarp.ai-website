@@ -11,12 +11,72 @@
     "items": [
         {
             "id": "https://www.iowarp.ai/news/nsf-grant-context-engineering",
-            "content_html": "IOWarp receives $5M NSF grant (Award #2411318) to advance context engineering for autonomous scientific workflows",
+            "content_html": "IOWarp receives $5M NSF grant (Award #2411318) to advance context engineering for autonomous scientific workflows through 2029. PIs offer insights into the IOWarp vision and team objectives.",
             "url": "https://www.iowarp.ai/news/nsf-grant-context-engineering",
             "title": "National Science Foundation Awards $5M Grant for Context Engineering Research",
-            "date_modified": "2024-08-05T00:00:00.000Z",
+            "date_modified": "2024-12-10T00:00:00.000Z",
+            "author": {
+                "name": "IOWarp Project",
+                "url": "https://www.iowarp.ai"
+            },
             "tags": [
                 "funding"
+            ]
+        },
+        {
+            "id": "https://www.iowarp.ai/news/luke-logan-head-engineer",
+            "content_html": "PhD graduate from Illinois Institute of Technology specializing in high-performance storage and memory systems. Luke leads IOWarp platform architecture and technical development.",
+            "url": "https://www.iowarp.ai/news/luke-logan-head-engineer",
+            "title": "Dr. Luke Logan Appointed as IOWarp Head Engineer",
+            "date_modified": "2024-08-05T00:00:00.000Z",
+            "author": {
+                "name": "IOWarp Project",
+                "url": "https://www.iowarp.ai"
+            },
+            "tags": [
+                "team"
+            ]
+        },
+        {
+            "id": "https://www.iowarp.ai/news/iit-features-iowarp",
+            "content_html": "IIT highlights how IOWarp is transforming scientific data management through context engineering. Third consecutive multi-million-dollar NSF grant for the Gnosis Research Center.",
+            "url": "https://www.iowarp.ai/news/iit-features-iowarp",
+            "title": "Illinois Institute of Technology Features IOWarp Project",
+            "date_modified": "2024-12-01T00:00:00.000Z",
+            "author": {
+                "name": "IOWarp Project",
+                "url": "https://www.iowarp.ai"
+            },
+            "tags": [
+                "media"
+            ]
+        },
+        {
+            "id": "https://www.iowarp.ai/news/platform-beta-release",
+            "content_html": "Official release of IOWarp runtime with Content Assimilation Engine, Content Transfer Engine, 15+ MCP servers. Zero-config Docker deployment demonstrates 7.5x speedup in scientific workflows.",
+            "url": "https://www.iowarp.ai/news/platform-beta-release",
+            "title": "IOWarp Platform Beta Release",
+            "date_modified": "2025-11-14T00:00:00.000Z",
+            "author": {
+                "name": "IOWarp Project",
+                "url": "https://www.iowarp.ai"
+            },
+            "tags": [
+                "releases"
+            ]
+        },
+        {
+            "id": "https://www.iowarp.ai/news/agent-toolkit-release",
+            "content_html": "15+ MCP servers with 150+ specialized tools for scientific computing. Enables AI agents to interact with HPC resources, research datasets, and scientific workflows. MIT licensed.",
+            "url": "https://www.iowarp.ai/news/agent-toolkit-release",
+            "title": "IOWarp Agent-Toolkit Release",
+            "date_modified": "2025-11-15T00:00:00.000Z",
+            "author": {
+                "name": "IOWarp Project",
+                "url": "https://www.iowarp.ai"
+            },
+            "tags": [
+                "releases"
             ]
         }
     ]

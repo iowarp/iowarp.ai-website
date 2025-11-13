@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.iowarp.ai/news/nsf-grant-context-engineering</loc>
+    <news:news>
+      <news:publication>
+        <news:name>IOWarp</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-10</news:publication_date>
+      <news:title>National Science Foundation Awards $5M Grant for Context Engineering Research</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.iowarp.ai/news/luke-logan-head-engineer</loc>
+    <news:news>
+      <news:publication>
+        <news:name>IOWarp</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-08-05</news:publication_date>
+      <news:title>Dr. Luke Logan Appointed as IOWarp Head Engineer</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.iowarp.ai/news/iit-features-iowarp</loc>
+    <news:news>
+      <news:publication>
+        <news:name>IOWarp</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-01</news:publication_date>
+      <news:title>Illinois Institute of Technology Features IOWarp Project</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.iowarp.ai/news/platform-beta-release</loc>
+    <news:news>
+      <news:publication>
+        <news:name>IOWarp</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-14</news:publication_date>
+      <news:title>IOWarp Platform Beta Release</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.iowarp.ai/news/agent-toolkit-release</loc>
+    <news:news>
+      <news:publication>
+        <news:name>IOWarp</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-15</news:publication_date>
+      <news:title>IOWarp Agent-Toolkit Release</news:title>
+    </news:news>
+  </url>
+</urlset>
