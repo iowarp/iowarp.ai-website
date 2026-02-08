@@ -1,0 +1,59 @@
+# IOWarp — Full Reference for AI Agents
+
+## Project Overview
+
+IOWarp is an NSF-funded ($5M, Award #2411318, 2024-2029) context engineering platform for autonomous AI agents in scientific computing and HPC. Built by Gnosis Research Center at Illinois Institute of Technology, in partnership with University of Utah and The HDF Group.
+
+**Core message**: "Context Engineering for Autonomous AI Agents"
+
+## Three-Layer Architecture
+
+1. **Intelligence Layer**: ClaudIO agent framework — autonomous agents for scientific data management
+2. **Tooling Layer**: Agent Toolkit — 15+ MCP servers with 150+ tools for scientific computing
+3. **Storage Layer**: Context engines (CAE, CTE, CEI) — multi-tier storage orchestration from GPU HBM to tape
+
+## Four Engines
+
+- **CAE (Content Assimilation Engine)** — "The Way In" — ingests 50+ scientific formats (HDF5, NetCDF, ROOT)
+- **CTE (Content Transfer Engine)** — "The Mover" — ML-based predictive data movement across storage tiers
+- **CEI (Content Exploration Interface)** — "The Finder" — WarpGPT natural language queries at petabyte scale
+- **PPI (Platform Plugins Interface)** — "The Connector" — HPC scheduler/storage/instrument integration
+
+## Key Metrics
+
+7.5x faster workflows, 2.6x DRAM reduction, 150+ tools, 25+ papers, 2 Best Paper Awards, 1 US Patent, $15M cumulative research funding, deployed at 3 national labs (LLNL, ANL, NERSC)
+
+## Evolution
+
+Hermes (2018) → LABIOS (2019) → IOWarp (2025)
+
+## Team
+
+- Dr. Xian-He Sun (PI, IEEE Fellow)
+- Dr. Anthony Kougkas (Co-PI, Deputy Director, GRC)
+- Dr. Kyle Chard (Co-PI, UChicago)
+- Dr. Luke Logan (Head Engineer)
+- + researchers and engineers
+
+## Repositories
+
+- https://github.com/iowarp/iowarp — Core platform
+- https://github.com/iowarp/agent-toolkit — MCP servers and tools
+- https://github.com/iowarp/claudio — ClaudIO agent framework
+
+## Use Cases
+
+- Climate Science: El Niño prediction 6 months earlier, 95%+ anomaly detection
+- Materials Science: 7.5x faster convergence, 3 breakthrough materials identified
+- Seismology: EarthScope, continental-scale sensor fusion
+- Genomics: GenomIO/IFSH, variant effect prediction
+
+## Publications
+
+25+ peer-reviewed papers. Key venues: SC, HPDC, IPDPS, FAST, CLUSTER. See https://iowarp.ai/research/
+
+## Contact
+
+- Email: grc@illinoistech.edu
+- Zulip: https://iowarp.zulipchat.com
+- GitHub: https://github.com/iowarp/iowarp

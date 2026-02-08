@@ -1,38 +1,39 @@
-# IOWarp.ai - Context Engineering Platform for AI Agents
+# IOWarp
 
-## About
-IOWarp is a context engineering platform for autonomous AI agents in scientific computing.
-Built at Gnosis Research Center, Illinois Institute of Technology.
-Funded by NSF Award #2411318 ($5M, 2024-2029).
+> Context engineering for autonomous AI agents in scientific computing and HPC
 
-## Key Facts
-- 7.5x performance improvement in scientific workflows
-- 15 Model Context Protocol (MCP) servers with 150+ tools
-- Deployed at 3 national laboratories (LLNL, ANL, NERSC)
-- Open source: Apache 2.0 license
+IOWarp is an NSF-funded ($5M Award #2411318) context engineering platform enabling autonomous AI agents to orchestrate petabyte-scale scientific discovery. Built by Gnosis Research Center at Illinois Institute of Technology, with University of Utah and The HDF Group.
 
-## Main Sections
-- Platform: https://www.iowarp.ai/platform
-- Research: https://www.iowarp.ai/research
-- Documentation: https://www.iowarp.ai/docs/intro
-- News & Updates: https://www.iowarp.ai/news
+## Quick Links
 
-## RSS Feeds
-- RSS: https://www.iowarp.ai/news/rss.xml
-- Atom: https://www.iowarp.ai/news/atom.xml
-- JSON: https://www.iowarp.ai/news/feed.json
+- [Homepage](https://iowarp.ai)
+- [Platform](https://iowarp.ai/platform/)
+- [Agent Toolkit](https://iowarp.ai/toolkit/)
+- [Use Cases](https://iowarp.ai/use-cases/)
+- [Research](https://iowarp.ai/research/)
+- [Documentation](https://iowarp.ai/docs/)
+- [Community](https://iowarp.ai/community/)
+- [About](https://iowarp.ai/about/)
+- [GitHub](https://github.com/iowarp/iowarp)
+- [Full AI-readable context](https://iowarp.ai/llms-full.txt)
 
-## GitHub
-- Organization: https://github.com/iowarp
-- Core Platform: https://github.com/iowarp/iowarp
-- MCP Servers: https://github.com/iowarp/iowarp-mcps
-- ClaudIO Agent: https://github.com/iowarp/claudio
-- Discussions: https://github.com/orgs/iowarp/discussions
+## Core Architecture
 
-## Contact
-- Email: grc@illinoistech.edu
-- Zulip Chat: https://iowarp.zulipchat.com
-- PI: Dr. Anthony Kougkas (akougkas@illinoistech.edu)
+- **Intelligence Layer**: ClaudIO agent framework — autonomous agents for scientific data management
+- **Tooling Layer**: Agent Toolkit — 15+ MCP servers with 150+ tools for scientific computing
+- **Storage Layer**: Context engines (CAE, CTE, CEI, PPI) — multi-tier orchestration from GPU HBM to tape
+
+## Four Engines
+
+- **CAE (Content Assimilation Engine)**: "The Way In" — ingests 50+ scientific formats (HDF5, NetCDF, ROOT)
+- **CTE (Content Transfer Engine)**: "The Mover" — ML-based predictive data movement across storage tiers
+- **CEI (Content Exploration Interface)**: "The Finder" — WarpGPT natural language queries at petabyte scale
+- **PPI (Platform Plugins Interface)**: "The Connector" — HPC scheduler/storage/instrument integration
+
+## Key Metrics
+
+7.5x faster workflows, 2.6x DRAM reduction, 150+ tools, 25+ papers, 2 Best Paper Awards, 1 US Patent, $15M cumulative research funding, deployed at 3 national labs (LLNL, ANL, NERSC)
 
 ## License
-Apache 2.0 - https://github.com/iowarp/iowarp/blob/main/LICENSE
+
+Apache 2.0

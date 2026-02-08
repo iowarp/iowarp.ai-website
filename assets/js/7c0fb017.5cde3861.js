@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkiowarp_site=globalThis.webpackChunkiowarp_site||[]).push([[7169],{6822:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/news","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Latest updates from the IOWarp project","blogTitle":"IOWarp News"}}')}}]);
