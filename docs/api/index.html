@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CEE Python API: wrp_cee module, ContextInterface, AssimilationCtx, data placement policies, batch operations, streaming API."><meta name="keywords" content="IOWarp Python API, wrp_cee, ContextInterface, AssimilationCtx, Python bindings"><meta name="author" content="Gnosis Research Center, Illinois Institute of Technology"><meta name="generator" content="Astro v5.17.1"><!-- Canonical URL --><link rel="canonical" href="https://iowarp.ai/docs/api/"><!-- Favicons --><link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png"><link rel="apple-touch-icon" href="/images/favicons/favicon-64x64.png"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:url" content="https://iowarp.ai/docs/api/"><meta property="og:title" content="Python API Reference | IOWarp"><meta property="og:description" content="CEE Python API: wrp_cee module, ContextInterface, AssimilationCtx, data placement policies, batch operations, streaming API."><meta property="og:image" content="https://iowarp.ai/images/iowarp-assets/IOWarp_platform_overview.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="IOWarp"><meta property="og:locale" content="en_US"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Python API Reference | IOWarp"><meta name="twitter:description" content="CEE Python API: wrp_cee module, ContextInterface, AssimilationCtx, data placement policies, batch operations, streaming API."><meta name="twitter:image" content="https://iowarp.ai/images/iowarp-assets/IOWarp_platform_overview.png"><meta name="twitter:site" content="@grc_iit"><!-- Font preload (self-hosted) --><link rel="preload" href="/fonts/Oxanium/Oxanium-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin><!-- AI / Agent discoverability --><link rel="help" href="/llms.txt" type="text/plain" title="LLM-readable project summary"><!-- JSON-LD Structured Data --><title>Python API Reference | IOWarp</title><link rel="stylesheet" href="/_astro/about.B_ce8Xi1.css"></head> <body class="min-h-screen flex flex-col bg-[#000000] text-[#4a90b5]" style="font-family: 'Oxanium', system-ui, sans-serif;"> <nav class="sticky top-0 z-50 bg-[#000000]/80 backdrop-blur-lg border-b border-[#2d638b]"> <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"> <!-- Logo --> <a href="/" class="flex items-center gap-3 group"> <img src="/images/iowarp_logo.png" alt="IOWarp" class="h-8"> <span class="text-xl font-bold text-[#00d4db]" style="font-family: 'Bungee Spice', sans-serif;">IOWarp</span> </a> <!-- Desktop Navigation --> <div class="hidden lg:flex items-center gap-1"> <!-- Dropdown Menu Item -->
+          <div class="group relative"> <a href="/platform/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Platform <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path> </svg> </a> <!-- Dropdown Panel --> <div class="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-[-4px] group-hover:translate-y-0"> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg shadow-lg overflow-hidden"> <a href="/platform/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Overview </a><a href="/platform/intelligence/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Intelligence </a><a href="/platform/storage/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Storage </a><a href="/platform/performance/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Performance </a> </div> </div> </div><!-- Single Link Item -->
+          <a href="/toolkit/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Toolkit </a><!-- Single Link Item -->
+          <a href="/use-cases/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Use Cases </a><!-- Dropdown Menu Item -->
+          <div class="group relative"> <a href="/research/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Research <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path> </svg> </a> <!-- Dropdown Panel --> <div class="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-[-4px] group-hover:translate-y-0"> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg shadow-lg overflow-hidden"> <a href="/research/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Vision </a><a href="/research/demos/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Demos </a><a href="/research/wip/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Work in Progress </a> </div> </div> </div><!-- Dropdown Menu Item -->
+          <div class="group relative"> <a href="/docs/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 text-[#00d4db]"> Docs <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path> </svg> </a> <!-- Dropdown Panel --> <div class="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-[-4px] group-hover:translate-y-0"> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg shadow-lg overflow-hidden"> <a href="/docs/" class="block px-4 py-2 text-sm transition-colors text-[#00d4db] bg-[#00d4db]/10"> Overview </a><a href="/docs/getting-started/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Getting Started </a><a href="/docs/sdk/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> SDK Reference </a><a href="/docs/api/" class="block px-4 py-2 text-sm transition-colors text-[#00d4db] bg-[#00d4db]/10"> Python API </a><a href="/docs/deployment/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Deployment </a><a href="/docs/mcp/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> MCP Servers </a><a href="/docs/faq/" class="block px-4 py-2 text-sm transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> FAQ </a> </div> </div> </div><!-- Single Link Item -->
+          <a href="/community/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Community </a><!-- Single Link Item -->
+          <a href="/about/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> About </a><!-- Single Link Item -->
+          <a href="/news/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> News </a> <!-- GitHub Link --> <a href="https://github.com/iowarp/iowarp" target="_blank" rel="noopener noreferrer" class="ml-3 px-3 py-2 rounded-lg text-sm font-medium text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5 transition-colors flex items-center gap-1.5"> <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+GitHub
+</a> </div> <!-- Mobile Menu Button --> <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#5a778c] hover:text-[#00d4db]" aria-label="Menu"> <svg id="mobile-menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg> <svg id="mobile-menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg> </button> </div> <!-- Mobile Menu --> <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2d638b] bg-[#0a0f1a]"> <div class="px-6 py-4 flex flex-col gap-1"> <div class="mb-2"> <div class="px-3 py-2 text-sm font-semibold text-[#e0e8f0] mb-1"> Platform </div> <div class="pl-4 flex flex-col gap-1"> <a href="/platform/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Overview </a><a href="/platform/intelligence/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Intelligence </a><a href="/platform/storage/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Storage </a><a href="/platform/performance/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Performance </a> </div> </div><a href="/toolkit/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Toolkit </a><a href="/use-cases/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Use Cases </a><div class="mb-2"> <div class="px-3 py-2 text-sm font-semibold text-[#e0e8f0] mb-1"> Research </div> <div class="pl-4 flex flex-col gap-1"> <a href="/research/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Vision </a><a href="/research/demos/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Demos </a><a href="/research/wip/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Work in Progress </a> </div> </div><div class="mb-2"> <div class="px-3 py-2 text-sm font-semibold text-[#e0e8f0] mb-1"> Docs </div> <div class="pl-4 flex flex-col gap-1"> <a href="/docs/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#00d4db] bg-[#00d4db]/10"> Overview </a><a href="/docs/getting-started/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Getting Started </a><a href="/docs/sdk/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> SDK Reference </a><a href="/docs/api/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#00d4db] bg-[#00d4db]/10"> Python API </a><a href="/docs/deployment/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Deployment </a><a href="/docs/mcp/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> MCP Servers </a><a href="/docs/faq/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> FAQ </a> </div> </div><a href="/community/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> Community </a><a href="/about/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> About </a><a href="/news/" class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5"> News </a> <a href="https://github.com/iowarp/iowarp" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-lg text-sm font-medium text-[#5a778c] hover:text-[#00d4db] hover:bg-white/5 flex items-center gap-1.5 mt-2"> <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+GitHub
+</a> </div> </div> </nav> <script type="module">const d=document.getElementById("mobile-menu-btn"),s=document.getElementById("mobile-menu"),e=document.getElementById("mobile-menu-icon-open"),n=document.getElementById("mobile-menu-icon-close");d?.addEventListener("click",()=>{const t=s?.classList.contains("hidden");s?.classList.toggle("hidden"),e&&n&&(t?(e.classList.add("hidden"),n.classList.remove("hidden")):(e.classList.remove("hidden"),n.classList.add("hidden")))});</script> <main class="flex-1">   <section class="relative overflow-hidden py-24 px-6"> <div class="absolute inset-0 bg-[linear-gradient(rgba(0,212,219,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,212,219,0.03)_1px,transparent_1px)] bg-[size:32px_32px]"></div> <div class="relative max-w-6xl mx-auto text-center"> <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e0e8f0] leading-tight mb-6">
+Python API Reference
+</h1> <p class="text-xl md:text-2xl text-[#4a90b5] mb-4 max-w-4xl mx-auto leading-relaxed">
+CEE Python API: wrp_cee Module
+</p> </div> </section>  <section class="py-16 px-6"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">Module Overview</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+The <code class="text-[#00d4db] bg-[#0a0f1a] px-2 py-1 rounded">wrp_cee</code> Python module provides high-level access to IOWarp's Context Engineering Engine. It offers a Pythonic interface for context management, data placement, and format assimilation.
+</p> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto mb-8"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]"># Installation
+pip install wrp-cee
+
+# Or via conda
+conda install -c conda-forge wrp-cee</code></pre> </div> </div> </section>  <section class="py-16 px-6 bg-[#0a0f1a]"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">ContextInterface Class</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+The <code class="text-[#00d4db] bg-[#0a0f1a] px-2 py-1 rounded">ContextInterface</code> class is the primary interface for interacting with IOWarp's context storage and retrieval system.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Basic Usage</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]">from wrp_cee import ContextInterface
+
+# Create a context interface instance
+ctx = ContextInterface()
+
+# Connect to IOWarp runtime
+ctx.connect("localhost:5555")
+
+# Put context (store data with metadata)
+import numpy as np
+temperature_data = np.random.rand(100, 100).astype(np.float32)
+ctx.put("simulation/temperature", temperature_data, metadata={
+    "units": "Kelvin",
+    "dimensions": ["time", "lat", "lon"],
+    "description": "Surface temperature field"
+})
+
+# Get context (retrieve data)
+result = ctx.get("simulation/temperature",
+    time_range="2024-01-01:2024-12-31")
+
+# Access data and metadata
+data = result.data
+metadata = result.metadata
+provenance = result.provenance</code></pre> </div> </div> <div class="grid md:grid-cols-2 gap-6 mb-8"> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Methods</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><code class="text-[#00d4db]">connect(host)</code> — Connect to runtime</li> <li><code class="text-[#00d4db]">put(key, data, metadata)</code> — Store context</li> <li><code class="text-[#00d4db]">get(key, **filters)</code> — Retrieve context</li> <li><code class="text-[#00d4db]">delete(key)</code> — Remove context</li> <li><code class="text-[#00d4db]">list(prefix)</code> — List available contexts</li> <li><code class="text-[#00d4db]">exists(key)</code> — Check if context exists</li> </ul> </div> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Query Filters</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><code class="text-[#00d4db]">time_range</code> — Temporal filter</li> <li><code class="text-[#00d4db]">spatial_range</code> — Spatial bounding box</li> <li><code class="text-[#00d4db]">metadata_filter</code> — Custom metadata query</li> <li><code class="text-[#00d4db]">version</code> — Specific version number</li> <li><code class="text-[#00d4db]">tier</code> — Storage tier preference</li> </ul> </div> </div> </div> </section>  <section class="py-16 px-6"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">AssimilationCtx Class</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+For format normalization: The <code class="text-[#00d4db] bg-[#0a0f1a] px-2 py-1 rounded">AssimilationCtx</code> class handles ingestion and conversion of scientific data formats into IOWarp's unified context representation.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Format Ingestion</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]">from wrp_cee import AssimilationCtx
+
+# Create assimilation context
+assimilation = AssimilationCtx()
+
+# Ingest NetCDF file
+context = assimilation.ingest("/data/climate.nc",
+    format="netcdf",
+    variables=["temperature", "pressure"],
+    metadata={
+        "experiment": "RCP8.5",
+        "model": "CESM2"
+    })
+
+# Ingest HDF5 file
+context = assimilation.ingest("/data/simulation.h5",
+    format="hdf5",
+    group="/simulation/output",
+    variables=["density", "velocity"])
+
+# Ingest CSV file
+context = assimilation.ingest("/data/observations.csv",
+    format="csv",
+    index_column="timestamp",
+    columns=["sensor_1", "sensor_2"])
+
+# Access normalized data
+data = context.get_variable("temperature")
+dims = context.get_dimensions("temperature")
+attrs = context.get_attributes("temperature")</code></pre> </div> </div> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Supported Formats</h4> <div class="grid md:grid-cols-3 gap-4 text-sm text-[#5a778c]"> <div> <strong class="text-[#e0e8f0]">Scientific:</strong> <ul class="mt-2 space-y-1"> <li>• HDF5</li> <li>• NetCDF</li> <li>• Zarr</li> <li>• FITS</li> </ul> </div> <div> <strong class="text-[#e0e8f0]">Tabular:</strong> <ul class="mt-2 space-y-1"> <li>• CSV</li> <li>• Parquet</li> <li>• JSON</li> <li>• Excel</li> </ul> </div> <div> <strong class="text-[#e0e8f0]">Domain-Specific:</strong> <ul class="mt-2 space-y-1"> <li>• ROOT (HEP)</li> <li>• PDB (Bio)</li> <li>• DICOM (Medical)</li> </ul> </div> </div> </div> </div> </section>  <section class="py-16 px-6 bg-[#0a0f1a]"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">Data Placement API</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+Control storage tier placement: Explicitly manage where data is stored across IOWarp's hierarchical storage tiers.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Placement Policies</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]"># Set global placement policy
+ctx.set_placement_policy({
+    "hot_tier": "nvme",
+    "cold_tier": "lustre",
+    "prediction": "ml_based"
+})
+
+# Set policy for specific context
+ctx.set_placement_policy({
+    "key": "simulation/temperature",
+    "tier": "ram",
+    "priority": "high"
+})
+
+# Query current placement
+placement = ctx.get_placement("simulation/temperature")
+print(f"Current tier: {placement.tier}")
+print(f"Score: {placement.score}")
+
+# Manually promote/demote data
+ctx.promote("simulation/temperature", target_tier="ram")
+ctx.demote("simulation/temperature", target_tier="lustre")</code></pre> </div> </div> <div class="grid md:grid-cols-2 gap-6"> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Placement Strategies</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><code class="text-[#00d4db]">ml_based</code> — ML prediction (default)</li> <li><code class="text-[#00d4db]">manual</code> — Explicit user control</li> <li><code class="text-[#00d4db]">lru</code> — Least recently used</li> <li><code class="text-[#00d4db]">cost_aware</code> — Cost optimization</li> </ul> </div> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Storage Tiers</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><code class="text-[#00d4db]">ram</code> — Fastest, smallest</li> <li><code class="text-[#00d4db]">nvme</code> — High-speed SSD</li> <li><code class="text-[#00d4db]">lustre</code> — Parallel file system</li> <li><code class="text-[#00d4db]">tape</code> — Archive storage</li> </ul> </div> </div> </div> </section>  <section class="py-16 px-6"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">Batch Operations</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+Perform multiple operations efficiently with batch APIs that minimize network round-trips and optimize I/O patterns.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Batch Put/Get</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]"># Batch put multiple contexts
+contexts = {
+    "simulation/temperature": temp_data,
+    "simulation/pressure": press_data,
+    "simulation/humidity": hum_data
+}
+results = ctx.batch_put(contexts, metadata={
+    "experiment": "2024_run_01"
+})
+
+# Batch get multiple contexts
+keys = ["simulation/temperature", "simulation/pressure"]
+results = ctx.batch_get(keys, time_range="2024-01-01:2024-12-31")
+
+# Process results
+for key, result in results.items():
+    print(f"{key}: {result.data.shape}")</code></pre> </div> </div> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Performance Benefits</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Reduced network overhead through batching</span> </li> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Parallel I/O operations</span> </li> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Optimized data placement decisions</span> </li> </ul> </div> </div> </section>  <section class="py-16 px-6 bg-[#0a0f1a]"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">Streaming API</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+Process data as it arrives: Stream large datasets or real-time data feeds without loading everything into memory.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Streaming Operations</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]"># Stream data into context
+def data_generator():
+    for i in range(1000):
+        yield np.random.rand(100, 100)
+
+ctx.stream_put("simulation/stream", data_generator(),
+    chunk_size=100,
+    metadata={"source": "realtime_sensor"})
+
+# Stream data from context
+for chunk in ctx.stream_get("simulation/stream",
+                            chunk_size=100):
+    # Process chunk
+    process(chunk)
+
+# Stream with callbacks
+def on_chunk(chunk, metadata):
+    print(f"Received chunk: {chunk.shape}")
+
+ctx.stream_get("simulation/stream",
+               callback=on_chunk,
+               chunk_size=100)</code></pre> </div> </div> </div> </section>  <section class="py-16 px-6"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-6">Error Handling</h2> <p class="text-lg text-[#4a90b5] mb-8 leading-relaxed">
+The Python API provides comprehensive error handling with custom exceptions for different failure modes.
+</p> <div class="mb-8"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-4">Exception Types</h3> <div class="bg-[#0a0f1a] border border-[#2d638b] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm" style="font-family: 'JetBrains Mono', monospace;"><code class="text-[#00d4db]">from wrp_cee import (
+    ContextInterface,
+    ContextNotFoundError,
+    ConnectionError,
+    PlacementError,
+    FormatError
+)
+
+try:
+    ctx = ContextInterface()
+    ctx.connect("localhost:5555")
+    result = ctx.get("nonexistent/key")
+except ConnectionError as e:
+    print(f"Failed to connect: {'{'}e{'}'}")
+except ContextNotFoundError as e:
+    print(f"Context not found: {'{'}e{'}'}")
+except PlacementError as e:
+    print(f"Placement failed: {'{'}e{'}'}")
+except FormatError as e:
+    print(f"Format error: {'{'}e{'}'}")</code></pre> </div> </div> <div class="grid md:grid-cols-2 gap-6"> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Exception Hierarchy</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><code class="text-[#00d4db]">IOWarpError</code> — Base exception</li> <li><code class="text-[#00d4db]">ConnectionError</code> — Network/runtime errors</li> <li><code class="text-[#00d4db]">ContextNotFoundError</code> — Missing context</li> <li><code class="text-[#00d4db]">PlacementError</code> — Storage tier errors</li> <li><code class="text-[#00d4db]">FormatError</code> — Data format errors</li> </ul> </div> <div class="p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35]"> <h4 class="text-lg font-bold text-[#ea7b2a] mb-3">Error Recovery</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Automatic retry with exponential backoff</span> </li> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Connection pooling and failover</span> </li> <li class="flex items-start"> <span class="text-[#00d4db] mr-2">•</span> <span>Graceful degradation</span> </li> </ul> </div> </div> </div> </section>  <section class="py-16 px-6 bg-[#0a0f1a]"> <div class="max-w-6xl mx-auto"> <h2 class="text-3xl font-bold text-[#e0e8f0] mb-8 text-center">Additional Resources</h2> <div class="grid md:grid-cols-2 gap-6"> <a href="/docs/sdk/" class="group p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35] hover:border-[#00d4db] hover:shadow-[0_0_24px_rgba(0,212,219,0.15)] transition-all hover:-translate-y-1"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-2 group-hover:text-[#00d4db] transition-colors">SDK Reference</h3> <p class="text-sm text-[#5a778c] leading-relaxed">C++ SDK documentation for advanced use cases</p> </a> <a href="/docs/faq/" class="group p-6 rounded-lg border border-[#2d638b] bg-[#0f1f35] hover:border-[#00d4db] hover:shadow-[0_0_24px_rgba(0,212,219,0.15)] transition-all hover:-translate-y-1"> <h3 class="text-xl font-bold text-[#e0e8f0] mb-2 group-hover:text-[#00d4db] transition-colors">FAQ</h3> <p class="text-sm text-[#5a778c] leading-relaxed">Common questions and troubleshooting</p> </a> </div> </div> </section>  </main> <footer class="border-t border-[#2d638b] bg-[#0a0f1a]"> <div class="max-w-6xl mx-auto px-6 py-12"> <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <div> <a href="/" class="flex items-center gap-3 mb-4"> <img src="/images/iowarp_logo.png" alt="IOWarp" class="h-10"> <span class="text-lg font-bold text-[#00d4db]" style="font-family: 'Bungee Spice', sans-serif;">IOWarp</span> </a> <p class="text-sm text-[#5a778c] leading-relaxed">
+Context engineering for autonomous AI agents in scientific computing. NSF-funded (Award #2411318).
+</p> </div> <div> <h4 class="text-sm font-semibold text-[#e0e8f0] mb-3">Quick Links</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><a href="/platform/" class="hover:text-[#00d4db] transition-colors">Platform</a></li> <li><a href="/toolkit/" class="hover:text-[#00d4db] transition-colors">Agent Toolkit</a></li> <li><a href="/use-cases/" class="hover:text-[#00d4db] transition-colors">Use Cases</a></li> <li><a href="/docs/" class="hover:text-[#00d4db] transition-colors">Documentation</a></li> <li><a href="https://github.com/iowarp/iowarp" target="_blank" rel="noopener noreferrer" class="hover:text-[#00d4db] transition-colors">GitHub</a></li> </ul> </div> <div> <h4 class="text-sm font-semibold text-[#e0e8f0] mb-3">Connect</h4> <ul class="space-y-2 text-sm text-[#5a778c]"> <li><a href="https://iowarp.zulipchat.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#00d4db] transition-colors">Zulip Chat</a></li> <li><a href="https://github.com/iowarp/iowarp" target="_blank" rel="noopener noreferrer" class="hover:text-[#00d4db] transition-colors">GitHub</a></li> <li><a href="mailto:grc@illinoistech.edu" class="hover:text-[#00d4db] transition-colors">Contact</a></li> </ul> </div> </div> <div class="mt-10 pt-6 border-t border-[#2d638b] flex flex-col sm:flex-row items-center justify-between gap-4"> <div class="flex items-center gap-6"> <img src="/images/logos/institutional/nsf-logo.png" alt="NSF" class="h-8 opacity-80"> <img src="/images/logos/institutional/iit-logo.png" alt="Illinois Tech" class="h-8 opacity-80"> <img src="/images/logos/institutional/university-utah-logo.png" alt="University of Utah" class="h-8 opacity-80"> <img src="/images/logos/institutional/hdf-logo.png" alt="HDF Group" class="h-8 opacity-80"> </div> <p class="text-xs text-[#5a778c]">&copy; 2026 Gnosis Research Center, Illinois Institute of Technology</p> </div> </div> </footer> </body></html>
