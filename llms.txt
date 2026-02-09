@@ -1,39 +1,98 @@
-# IOWarp
+# IOWarp — Context Engineering for Autonomous AI Agents
 
-> Context engineering for autonomous AI agents in scientific computing and HPC
+> IOWarp is an NSF-funded open-source context engineering platform that enables autonomous AI agents to orchestrate petabyte-scale scientific discovery across climate, materials, genomics, and seismology domains.
 
-IOWarp is an NSF-funded ($5M Award #2411318) context engineering platform enabling autonomous AI agents to orchestrate petabyte-scale scientific discovery. Built by Gnosis Research Center at Illinois Institute of Technology, with University of Utah and The HDF Group.
+## Identity
+
+- **Project**: IOWarp
+- **Software Platform**: CLIO (Context Layer for IO)
+- **Tagline**: Context engineering for autonomous AI agents in scientific computing and HPC
+- **Website**: https://iowarp.ai
+- **License**: BSD 3-Clause
+- **Funding**: NSF Award #2411318 ($5M, 2024–2029)
 
 ## Quick Links
 
 - [Homepage](https://iowarp.ai)
-- [Platform](https://iowarp.ai/platform/)
-- [Agent Toolkit](https://iowarp.ai/toolkit/)
+- [Platform Overview](https://iowarp.ai/platform/)
+- [CLIO Agent — Agent Intelligence](https://iowarp.ai/platform/clio-agent/)
+- [Storage Architecture](https://iowarp.ai/platform/storage/)
+- [Performance Benchmarks](https://iowarp.ai/platform/performance/)
+- [CLIO Kit — Agent Toolkit](https://iowarp.ai/clio-kit/)
+- [MCP Servers Reference](https://iowarp.ai/docs/mcp/)
+- [Getting Started](https://iowarp.ai/docs/getting-started/)
+- [SDK Reference](https://iowarp.ai/docs/sdk/)
+- [Python API](https://iowarp.ai/docs/api/)
+- [Deployment Guide](https://iowarp.ai/docs/deployment/)
+- [FAQ](https://iowarp.ai/docs/faq/)
 - [Use Cases](https://iowarp.ai/use-cases/)
-- [Research](https://iowarp.ai/research/)
-- [Documentation](https://iowarp.ai/docs/)
-- [Community](https://iowarp.ai/community/)
+- [Research Vision](https://iowarp.ai/research/)
+- [Scientific Demos](https://iowarp.ai/research/demos/)
+- [Work in Progress](https://iowarp.ai/research/wip/)
+- [Community Hub](https://iowarp.ai/community/)
+- [News & Updates](https://iowarp.ai/news/)
 - [About](https://iowarp.ai/about/)
-- [GitHub](https://github.com/iowarp/iowarp)
+- [Documentation Hub](https://iowarp.ai/docs/)
+- [GitHub Organization](https://github.com/iowarp)
 - [Full AI-readable context](https://iowarp.ai/llms-full.txt)
 
-## Core Architecture
+## Three-Layer Architecture
 
-- **Intelligence Layer**: ClaudIO agent framework — autonomous agents for scientific data management
-- **Tooling Layer**: Agent Toolkit — 15+ MCP servers with 150+ tools for scientific computing
-- **Storage Layer**: Context engines (CAE, CTE, CEI, PPI) — multi-tier orchestration from GPU HBM to tape
+1. **Intelligence Layer — CLIO Agent**: Autonomous agents for scientific data management, multi-agent coordination, context reasoning
+2. **Tooling Layer — CLIO Kit**: 15+ MCP servers with 150+ tools (HDF5, Slurm, Darshan, ParaView, etc.)
+3. **Storage Layer — CLIO Core**: Four integrated context engines for multi-tier data orchestration from GPU HBM to tape
 
-## Four Engines
+## Four Core Engines
 
-- **CAE (Content Assimilation Engine)**: "The Way In" — ingests 50+ scientific formats (HDF5, NetCDF, ROOT)
-- **CTE (Content Transfer Engine)**: "The Mover" — ML-based predictive data movement across storage tiers
-- **CEI (Content Exploration Interface)**: "The Finder" — WarpGPT natural language queries at petabyte scale
-- **PPI (Platform Plugins Interface)**: "The Connector" — HPC scheduler/storage/instrument integration
+- **CLIO Ingest** (Content Assimilation Engine): "The Way In" — ingests 14+ scientific formats (HDF5, NetCDF, Zarr, ROOT, FITS, PDB)
+- **CLIO Transfer** (Content Transfer Engine): "The Mover" — ML-based predictive data movement across storage tiers
+- **CLIO Explore** (Content Exploration Interface): "The Finder" — Natural language queries at petabyte scale
+- **CLIO Plugin** (Platform Plugins Interface): "The Connector" — HPC scheduler, storage, and instrument integration
 
 ## Key Metrics
 
-7.5x faster workflows, 2.6x DRAM reduction, 150+ tools, 25+ papers, 2 Best Paper Awards, 1 US Patent, $15M cumulative research funding, deployed at 3 national labs (LLNL, ANL, NERSC)
+- 7.5x faster scientific workflows
+- 2.6x DRAM reduction
+- 20% faster than MPI-based tiered I/O
+- 150+ agent tools via MCP
+- 15+ specialized MCP servers
+- 25+ peer-reviewed publications
+- 2 Best Paper Awards (SC, HPDC)
+- 1 US Patent
+- $15M cumulative research funding
+- Deployed at 3+ national labs (LLNL, ANL, NERSC)
 
-## License
+## Key Technologies
 
-Apache 2.0
+- Model Context Protocol (MCP) for agent-tool communication
+- Hermes: high-performance shared memory and IPC
+- Chimaera: distributed task runtime
+- MegaMmap: memory-mapped storage extension
+- OMNI: universal scientific file format
+
+## Scientific Domains
+
+- **Climate Science**: CESM data analysis, El Niño prediction, anomaly detection
+- **Materials Science**: LAMMPS molecular dynamics, 7.5x faster convergence
+- **Genomics**: GenomIO, variant effect prediction
+- **Seismology**: EarthScope, continental-scale sensor fusion
+
+## Team
+
+- Gnosis Research Center, Illinois Institute of Technology (Lead)
+- University of Utah (Partner)
+- The HDF Group (Partner)
+- PI: Dr. Xian-He Sun (IEEE Fellow)
+- Co-PI: Dr. Anthony Kougkas (Deputy Director, GRC)
+
+## Repositories
+
+- https://github.com/iowarp/iowarp — Core platform
+- https://github.com/iowarp/clio-kit — MCP servers and agent tools
+- https://github.com/iowarp/clio-agent — CLIO Agent framework
+
+## Contact
+
+- Email: grc@illinoistech.edu
+- Zulip: https://iowarp.zulipchat.com
+- GitHub: https://github.com/iowarp

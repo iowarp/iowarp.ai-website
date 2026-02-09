@@ -1,59 +1,246 @@
 # IOWarp — Full Reference for AI Agents
+# Last updated: 2025-02-08
+# Website: https://iowarp.ai
+# License: BSD 3-Clause
 
-## Project Overview
+## 1. Project Identity
 
-IOWarp is an NSF-funded ($5M, Award #2411318, 2024-2029) context engineering platform for autonomous AI agents in scientific computing and HPC. Built by Gnosis Research Center at Illinois Institute of Technology, in partnership with University of Utah and The HDF Group.
+IOWarp is an NSF-funded ($5M, Award #2411318, 2024-2029) open-source context engineering platform for autonomous AI agents in scientific computing and high-performance computing (HPC).
 
-**Core message**: "Context Engineering for Autonomous AI Agents"
+- **Project Name**: IOWarp
+- **Software Platform Name**: CLIO (Context Layer for IO)
+- **Tagline**: "Context Engineering for Autonomous AI Agents"
+- **Core Message**: IOWarp bridges the gap between petabyte-scale scientific data and AI-ready intelligence through context engineering — transforming scattered data, metadata, telemetry, and computational state into unified, actionable context for autonomous agents.
+- **Website**: https://iowarp.ai
+- **License**: BSD 3-Clause
+- **Funding**: NSF Award #2411318 ($5M, 2024–2029)
+- **Evolution**: Hermes (2018) → LABIOS (2019) → IOWarp (2025)
 
-## Three-Layer Architecture
+### Why "CLIO"?
+CLIO stands for "Context Layer for IO." The name is a deliberate nod to Clio (Κλειώ), the Greek muse of history — daughter of Zeus and Mnemosyne (Memory). In ancient mythology, Clio was "the proclaimer" who preserved, celebrated, and made knowledge accessible across time. CLIO transforms raw I/O into rich, actionable context for AI agents, just as the muse transformed events into enduring knowledge.
 
-1. **Intelligence Layer**: ClaudIO agent framework — autonomous agents for scientific data management
-2. **Tooling Layer**: Agent Toolkit — 15+ MCP servers with 150+ tools for scientific computing
-3. **Storage Layer**: Context engines (CAE, CTE, CEI) — multi-tier storage orchestration from GPU HBM to tape
+## 2. Three-Layer Architecture
 
-## Four Engines
+### Layer 1: Intelligence — CLIO Agent
+- Autonomous agents for scientific data management
+- Multi-agent coordination and orchestration
+- Context reasoning: transforms raw context into actionable scientific insights
+- Evolution: Chatbots (2020) → Copilots (2022) → Agents (2024) → Autonomous Scientists (2025+)
+- Repository: https://github.com/iowarp/clio-agent
+- Page: https://iowarp.ai/platform/clio-agent/
 
-- **CAE (Content Assimilation Engine)** — "The Way In" — ingests 50+ scientific formats (HDF5, NetCDF, ROOT)
-- **CTE (Content Transfer Engine)** — "The Mover" — ML-based predictive data movement across storage tiers
-- **CEI (Content Exploration Interface)** — "The Finder" — WarpGPT natural language queries at petabyte scale
-- **PPI (Platform Plugins Interface)** — "The Connector" — HPC scheduler/storage/instrument integration
+### Layer 2: Tooling — CLIO Kit
+- 15+ specialized MCP (Model Context Protocol) servers
+- 150+ tools for scientific computing
+- MCP servers for: HDF5, Slurm, Darshan, ParaView, NetCDF, LAMMPS, ROOT, FITS, PDB, and more
+- Installation guides for Claude Code, Cursor, VS Code
+- Repository: https://github.com/iowarp/clio-kit
+- Page: https://iowarp.ai/clio-kit/
+- Reference: https://iowarp.ai/docs/mcp/
 
-## Key Metrics
+### Layer 3: Storage — CLIO Core
+- Four integrated context engines (see Section 3)
+- Multi-tier storage orchestration from GPU HBM to tape
+- Hierarchical memory management: GPU HBM → CPU DRAM → NVMe → SSD → HDD → Tape
+- Repository: https://github.com/iowarp/iowarp
+- Page: https://iowarp.ai/platform/
 
-7.5x faster workflows, 2.6x DRAM reduction, 150+ tools, 25+ papers, 2 Best Paper Awards, 1 US Patent, $15M cumulative research funding, deployed at 3 national labs (LLNL, ANL, NERSC)
+## 3. Four Core Engines
 
-## Evolution
+### CLIO Ingest (Content Assimilation Engine / CAE)
+- Nickname: "The Way In"
+- Purpose: Ingests 14+ scientific formats and normalizes them into unified context
+- Supported formats: HDF5, NetCDF, Zarr, CSV, JSON, Parquet, FITS, ROOT, PDB, GRIB, and more
+- Solves the "Format Hell" problem in scientific computing
+- Key capability: Multi-format assimilation without data duplication
 
-Hermes (2018) → LABIOS (2019) → IOWarp (2025)
+### CLIO Transfer (Content Transfer Engine / CTE)
+- Nickname: "The Mover"
+- Purpose: ML-based predictive data movement across storage tiers
+- Key capability: Intelligent data placement using machine learning predictions
+- Supports: GPU Direct Storage, NVMe-to-GPU transfers, CUDA memory backends
+- Technology: Hermes high-performance tiered I/O
 
-## Team
+### CLIO Explore (Content Exploration Interface / CEI)
+- Nickname: "The Finder"
+- Purpose: Natural language queries at petabyte scale
+- Key capability: Agents can explore massive datasets using natural language
+- Technology: Context-aware search and retrieval
 
-- Dr. Xian-He Sun (PI, IEEE Fellow)
-- Dr. Anthony Kougkas (Co-PI, Deputy Director, GRC)
-- Dr. Kyle Chard (Co-PI, UChicago)
-- Dr. Luke Logan (Head Engineer)
-- + researchers and engineers
+### CLIO Plugin (Platform Plugins Interface / PPI)
+- Nickname: "The Connector"
+- Purpose: Integration with HPC schedulers, storage systems, and instruments
+- Connects: Slurm, PBS, TORQUE, Lustre, GPFS, and scientific instruments
+- Key capability: Extensible plugin architecture
 
-## Repositories
+## 4. Performance Metrics (SC'24 Benchmarks)
 
-- https://github.com/iowarp/iowarp — Core platform
-- https://github.com/iowarp/agent-toolkit — MCP servers and tools
-- https://github.com/iowarp/claudio — ClaudIO agent framework
+- 7.5x faster scientific workflows
+- 2.6x DRAM reduction (GPU memory extension via NVMe)
+- 20% faster than MPI-based tiered I/O (vs OrangeFS, Assise, Hermes v1)
+- 2x resolution increase using NVMe as memory extension
+- Sub-second latency at petabyte scale
+- Benchmarked with: Gray-Scott simulation, LAMMPS molecular dynamics
+- Conference: SC'24 (Supercomputing 2024)
 
-## Use Cases
+## 5. Scientific Use Cases
 
-- Climate Science: El Niño prediction 6 months earlier, 95%+ anomaly detection
-- Materials Science: 7.5x faster convergence, 3 breakthrough materials identified
-- Seismology: EarthScope, continental-scale sensor fusion
-- Genomics: GenomIO/IFSH, variant effect prediction
+### Climate Science
+- Challenge: PB-scale datasets across months of experiments
+- Solution: Research discovery agents autonomously explore massive datasets
+- Impact: El Niño prediction 6 months earlier, 95%+ anomaly detection accuracy
+- Demo: https://iowarp.ai/use-cases/#climate
 
-## Publications
+### Materials Science
+- Challenge: Molecular dynamics simulations with massive configuration spaces
+- Solution: LAMMPS MCP server for autonomous simulation management
+- Impact: 7.5x faster convergence, 3 breakthrough materials identified
+- Demo: https://iowarp.ai/research/demos/#lammps
 
-25+ peer-reviewed papers. Key venues: SC, HPDC, IPDPS, FAST, CLUSTER. See https://iowarp.ai/research/
+### Genomics
+- Challenge: Multi-omics data integration and variant effect prediction
+- Solution: GenomIO/IFSH format assimilation and automated analysis pipelines
+- Impact: Automated variant effect prediction workflows
+- Demo: https://iowarp.ai/use-cases/#genomics
 
-## Contact
+### Seismology
+- Challenge: Continental-scale sensor data fusion
+- Solution: EarthScope integration with real-time seismic event processing
+- Impact: Continental-scale seismological analysis via agent orchestration
+- Demo: https://iowarp.ai/research/demos/#earthscope
 
-- Email: grc@illinoistech.edu
-- Zulip: https://iowarp.zulipchat.com
-- GitHub: https://github.com/iowarp/iowarp
+## 6. Key Technologies
+
+### Hermes
+- High-performance shared memory for multi-process IPC
+- Lock-free data structures and zero-copy communication
+- Memory backends: POSIX, CUDA (GPU HBM), sysv
+- Part of CLIO Core storage layer
+
+### Chimaera
+- Distributed task runtime for IOWarp
+- Microservice-based architecture
+- Runtime module loading and lifecycle management
+- Supports multi-node HPC deployments
+
+### MegaMmap
+- Memory-mapped storage extension
+- Uses NVMe/SSD as extended memory for GPU workloads
+- Enables 2x resolution increase in simulations
+
+### OMNI Format
+- Universal scientific file format for unified data access
+- Abstracts format-specific details behind a common interface
+- Eliminates 80%+ time scientists spend on format conversion
+
+### Model Context Protocol (MCP)
+- Open standard for agent-tool communication
+- All CLIO Kit servers implement MCP
+- Enables any MCP-compatible AI agent to use IOWarp tools
+- Works with: Claude, GPT, Cursor, VS Code Copilot, and any MCP client
+
+## 7. SDK & API
+
+### Python API (iowarp.clio module)
+- ContextInterface: Core API for context management
+- AssimilationCtx: Format assimilation contexts
+- Data placement policies: Manual, Automatic, ML-based
+- Batch operations and streaming API
+- Status: Coming soon (currently C++ API via IOWarp Core)
+- Reference: https://iowarp.ai/docs/api/
+
+### C++ SDK
+- Hermes IPC: hermes::ipc::MemoryBackend, Allocator, SharedMemoryManager
+- Chimaera Runtime: chimaera::Module, Task, ModuleFactory
+- CLIO Transfer: clio::TransferEngine, TierPolicy
+- Reference: https://iowarp.ai/docs/sdk/
+
+### Deployment
+- Docker Compose (recommended for local development)
+- Spack (recommended for HPC clusters)
+- Configuration: wrp_conf.yaml
+- Reference: https://iowarp.ai/docs/deployment/
+
+## 8. Team & Organization
+
+### Gnosis Research Center (Lead)
+- Institution: Illinois Institute of Technology
+- PI: Dr. Xian-He Sun (IEEE Fellow)
+- Co-PI & Deputy Director: Dr. Anthony Kougkas
+- Head Engineer: Dr. Luke Logan
+- Location: Chicago, IL
+
+### Partners
+- University of Utah — Co-PI: Dr. Ganesh Gopalakrishnan
+- The HDF Group — High-performance I/O expertise
+- UChicago / Argonne — Co-PI: Dr. Kyle Chard
+
+## 9. Publications & Awards
+
+- 25+ peer-reviewed publications
+- 2 Best Paper Awards
+- 1 US Patent
+- $15M cumulative research investment
+- Key venues: SC (Supercomputing), HPDC, IPDPS, FAST, CLUSTER
+- Full publication list: https://iowarp.ai/research/
+
+## 10. Active Research Directions
+
+- **Context Compaction**: Reducing agent context window usage while preserving scientific fidelity
+- **Hierarchical Memory for Agents**: Multi-tier memory management for agent state
+- **Multi-Agent Orchestration**: Coordinating specialist agents for complex scientific workflows
+- **Scientific Workflow Optimization**: End-to-end optimization of data-intensive scientific pipelines
+- Details: https://iowarp.ai/research/wip/
+
+## 11. Site Map (All 20 Pages)
+
+| URL | Title | Description |
+|-----|-------|-------------|
+| https://iowarp.ai/ | Home | Landing page — context engineering platform overview |
+| https://iowarp.ai/platform/ | Platform | Four-engine context orchestration overview |
+| https://iowarp.ai/platform/clio-agent/ | CLIO Agent | Agent intelligence, context reasoning, multi-agent coordination |
+| https://iowarp.ai/platform/storage/ | Storage Architecture | Hierarchical storage from GPU HBM to tape |
+| https://iowarp.ai/platform/performance/ | Performance Benchmarks | SC'24 benchmarks, real-world metrics |
+| https://iowarp.ai/clio-kit/ | CLIO Kit | 15+ MCP servers, 150+ tools for scientific computing |
+| https://iowarp.ai/use-cases/ | Use Cases | Climate, materials, genomics, seismology deployments |
+| https://iowarp.ai/docs/ | Documentation | Documentation hub and quick start |
+| https://iowarp.ai/docs/getting-started/ | Getting Started | Docker and Spack installation guide |
+| https://iowarp.ai/docs/mcp/ | MCP Servers | Detailed MCP server reference and setup |
+| https://iowarp.ai/docs/sdk/ | SDK Reference | Hermes, Chimaera, CLIO Transfer, OMNI |
+| https://iowarp.ai/docs/api/ | Python API | iowarp.clio module reference |
+| https://iowarp.ai/docs/deployment/ | Deployment | HPC cluster deployment with Spack |
+| https://iowarp.ai/docs/faq/ | FAQ | Troubleshooting and common questions |
+| https://iowarp.ai/research/ | Research | Context engineering paradigm, publications |
+| https://iowarp.ai/research/demos/ | Demos | Scientific agent video demonstrations |
+| https://iowarp.ai/research/wip/ | Work in Progress | Active research directions |
+| https://iowarp.ai/community/ | Community | Open-source community hub |
+| https://iowarp.ai/news/ | News | Releases, grants, milestones |
+| https://iowarp.ai/about/ | About | Mission, team, naming, NSF funding |
+
+## 12. Repositories
+
+| Repository | Description | URL |
+|-----------|-------------|-----|
+| iowarp/iowarp | Core platform (CLIO Core engines, Hermes, Chimaera) | https://github.com/iowarp/iowarp |
+| iowarp/clio-kit | MCP servers and agent tools (15+ servers, 150+ tools) | https://github.com/iowarp/clio-kit |
+| iowarp/clio-agent | CLIO Agent framework (agent intelligence layer) | https://github.com/iowarp/clio-agent |
+
+## 13. Contact & Community
+
+- **Email**: grc@illinoistech.edu
+- **Zulip Chat**: https://iowarp.zulipchat.com
+- **GitHub**: https://github.com/iowarp
+- **Twitter/X**: @grc_iit
+
+## 14. Glossary
+
+- **Context Engineering**: The discipline of transforming raw data, metadata, telemetry, and computational state into unified, actionable intelligence for AI agents
+- **CLIO**: Context Layer for IO — the software platform name
+- **MCP**: Model Context Protocol — open standard for agent-tool communication
+- **HPC**: High-Performance Computing
+- **IOWarp**: The project name (NSF research project)
+- **Hermes**: High-performance shared memory and tiered I/O system
+- **Chimaera**: Distributed task runtime engine
+- **MegaMmap**: Memory-mapped storage extension technology
+- **OMNI**: Universal scientific file format
+- **GRC**: Gnosis Research Center at Illinois Institute of Technology
