@@ -1,0 +1,2208 @@
+{
+ "version": "4.0",
+ "items": [
+  {
+   "id": "qa-01",
+   "question": "What is IOWarp?",
+   "answer": "IOWarp is the team at the Gnosis Research Center that builds CLIO, an open-source stack for AI-driven science that runs from GPU kernels and the Linux I/O path through storage and a context runtime to scientific agents, applications, and research tools. Its thesis is that context is part of the system. The team works in the open with scientists, engineers, and facilities.",
+   "keywords": [
+    "project",
+    "overview",
+    "context",
+    "stack",
+    "scientific",
+    "ai",
+    "about"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    },
+    {
+     "title": "About",
+     "url": "/about/"
+    }
+   ]
+  },
+  {
+   "id": "qa-02",
+   "question": "What does CLIO stand for?",
+   "answer": "CLIO means Context Layer for I/O. It is the name of the open stack the IOWarp team builds, which keeps scientific data, metadata, and computational context together for people and agents.",
+   "keywords": [
+    "clio",
+    "acronym",
+    "name",
+    "meaning"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    }
+   ]
+  },
+  {
+   "id": "qa-03",
+   "question": "What are the layers of the CLIO stack?",
+   "answer": "Seven layers, bottom to top: accelerators (CLIO Core GPU runtime, GPU compression, direct GPU I/O research); operating system (a GPU-NVMe kernel module prototype, Linux I/O backends); storage systems (tiered block devices, I/O adapters and connectors); the context runtime (CLIO Core, Jarvis); agents and tools (the flagships CLIO Agent and CLIO Coder with the CLIO Kit tools they share, plus CLIO Relay, GACT, and more); applications (Materio and science workflows); and research tooling (CLIO Author, Researcher, and Bench).",
+   "keywords": [
+    "architecture",
+    "layers",
+    "stack",
+    "agent",
+    "kit",
+    "core",
+    "gpu",
+    "kernel",
+    "storage"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    },
+    {
+     "title": "Every component, layer by layer",
+     "url": "/platform/#everything-else"
+    }
+   ]
+  },
+  {
+   "id": "qa-04",
+   "question": "What is CLIO Core?",
+   "answer": "CLIO Core is the context runtime under the CLIO platform. It ships context transport primitives, a modular runtime, and three engines for assimilation, transfer, and exploration, with Python and C++ APIs and an MCP path for agents.",
+   "keywords": [
+    "core",
+    "storage",
+    "engines",
+    "architecture"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Core on the platform",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "Python API guide",
+     "url": "/docs/#api"
+    }
+   ]
+  },
+  {
+   "id": "qa-05",
+   "question": "What does CLIO Ingest do?",
+   "answer": "The Context Assimilation Engine in CLIO Core ingests data from local and parallel file systems and Globus endpoints, described by OMNI files, so it enters the runtime with its meaning attached.",
+   "keywords": [
+    "ingest",
+    "format",
+    "assimilation",
+    "data"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Core on the platform",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "Storage systems layer",
+     "url": "/platform/#layer-storage"
+    }
+   ]
+  },
+  {
+   "id": "qa-06",
+   "question": "What does CLIO Transfer do?",
+   "answer": "The Context Transfer Engine in CLIO Core places data across memory and storage tiers. In source builds, adapters for POSIX, STDIO, HDF5 VOL and VFD, and FUSE, with an optional MPI-IO adapter, let existing applications use it without code changes.",
+   "keywords": [
+    "transfer",
+    "movement",
+    "tier",
+    "placement"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Core on the platform",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "Storage systems layer",
+     "url": "/platform/#layer-storage"
+    }
+   ]
+  },
+  {
+   "id": "qa-07",
+   "question": "What does CLIO Explore do?",
+   "answer": "The Context Exploration Engine in CLIO Core lets people and agents bundle, query, and retrieve context through C++ and Python APIs.",
+   "keywords": [
+    "explore",
+    "discovery",
+    "query",
+    "search"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Core on the platform",
+     "url": "/platform/#core"
+    }
+   ]
+  },
+  {
+   "id": "qa-08",
+   "question": "Is there a CLIO Plugin engine?",
+   "answer": "No. CLIO Core has three engines, for assimilation, transfer, and exploration, on a modular runtime. Packages for simulations, storage services, and benchmarks come from Jarvis, the deployment framework.",
+   "keywords": [
+    "plugin",
+    "interface",
+    "connector",
+    "integration"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    },
+    {
+     "title": "CLIO Core on the platform",
+     "url": "/platform/#core"
+    }
+   ]
+  },
+  {
+   "id": "qa-09",
+   "question": "What is CLIO Agent?",
+   "answer": "CLIO Agent is one of the two agentic flagships. It is a scientific data agent, currently in beta, for scientists and data teams. It works directly with workspace tools; installable packs add an orchestrator, domain experts, and short-lived workers. ARC memory is stored in CLIO Core by default. It is released under BSD-3-Clause, with product guides at clio.iowarp.ai.",
+   "keywords": [
+    "agent",
+    "intelligence",
+    "autonomous",
+    "reasoning"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Agent on the platform",
+     "url": "/platform/#agent"
+    },
+    {
+     "title": "CLIO Agent guides",
+     "url": "https://clio.iowarp.ai/docs/"
+    }
+   ]
+  },
+  {
+   "id": "qa-10",
+   "question": "How do CLIO agents use tools?",
+   "answer": "CLIO Agent reaches scientific tools through its tool gateway, and its marketplace packs launch CLIO Kit servers for data formats, HPC operations, visualization, and discovery.",
+   "keywords": [
+    "agent",
+    "tools",
+    "mcp",
+    "connection"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Agent on the platform",
+     "url": "/platform/#agent"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-11",
+   "question": "What is CLIO Kit?",
+   "answer": "CLIO Kit is a meta-marketplace for scientific computing: MCP servers, workflow skills, agents, hooks, plugins, and community marketplace collections. Install its small launcher from PyPI as clio-kit, then choose individual components or a workflow plugin. Selected components download on demand, and server dependencies stay isolated and locked. Guides are at toolkit.iowarp.ai.",
+   "keywords": [
+    "kit",
+    "toolkit",
+    "mcp",
+    "servers",
+    "tools",
+    "marketplace",
+    "components",
+    "workflows"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit: MCP servers for science",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "CLIO Kit guides",
+     "url": "https://toolkit.iowarp.ai/docs/intro"
+    }
+   ]
+  },
+  {
+   "id": "qa-12",
+   "question": "What is MCP?",
+   "answer": "The Model Context Protocol (MCP) is an open standard through which AI applications call external tools and read external resources. CLIO Kit uses MCP to expose scientific data and systems to any compatible agent.",
+   "keywords": [
+    "model",
+    "context",
+    "protocol",
+    "definition"
+   ],
+   "sources": [
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    }
+   ]
+  },
+  {
+   "id": "qa-13",
+   "question": "Which MCP servers are in CLIO Kit?",
+   "answer": "CLIO Kit covers data formats, HPC operations, visualization, earth science, discovery, and systems tools. The CLIO Kit guides at toolkit.iowarp.ai list every server in the current release, and running clio-kit mcp-servers shows what your installation carries.",
+   "keywords": [
+    "server",
+    "count",
+    "tools",
+    "catalog"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit: MCP servers for science",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "CLIO Kit guides",
+     "url": "https://toolkit.iowarp.ai/docs/intro"
+    }
+   ]
+  },
+  {
+   "id": "qa-14",
+   "question": "Can I use CLIO Kit with Claude Code?",
+   "answer": "Yes. Register an individual server with claude mcp add and the clio-kit mcp-server command, or use the Kit workflow installer for a Claude Code project. Native Claude plugin installation is also documented. The client guide explains the differences and component support.",
+   "keywords": [
+    "claude",
+    "code",
+    "setup",
+    "integration"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit client setup and component support",
+     "url": "https://toolkit.iowarp.ai/docs/clients#component-support"
+    }
+   ]
+  },
+  {
+   "id": "qa-15",
+   "question": "Can I use CLIO Kit with Cursor?",
+   "answer": "Yes. CLIO Kit supports project installation of skills and MCP configuration for Cursor. Agents and hooks have client-specific limits; use the client guide to choose supported components rather than assuming every workflow runs unchanged.",
+   "keywords": [
+    "cursor",
+    "setup",
+    "integration"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit client setup and component support",
+     "url": "https://toolkit.iowarp.ai/docs/clients#component-support"
+    }
+   ]
+  },
+  {
+   "id": "qa-16",
+   "question": "Can I use CLIO Kit with VS Code?",
+   "answer": "Yes. CLIO Kit supports project installation of skills and MCP configuration for VS Code. Its GitHub Copilot configuration and the Codex extension use different client settings. The client guide documents the paths and component limits.",
+   "keywords": [
+    "vscode",
+    "visual",
+    "studio",
+    "code",
+    "setup"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit client setup and component support",
+     "url": "https://toolkit.iowarp.ai/docs/clients#component-support"
+    }
+   ]
+  },
+  {
+   "id": "qa-17",
+   "question": "Can an agent read HDF5 data?",
+   "answer": "Yes. The CLIO Kit HDF5 server lets an agent list groups, inspect datasets and attributes, and read slices without loading whole files.",
+   "keywords": [
+    "hdf5",
+    "read",
+    "dataset",
+    "group",
+    "attributes"
+   ],
+   "sources": [
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-18",
+   "question": "Can an agent submit Slurm jobs?",
+   "answer": "Yes. The CLIO Kit Slurm server exposes job management tools, including job submission.",
+   "keywords": [
+    "slurm",
+    "submit",
+    "job",
+    "scheduler"
+   ],
+   "sources": [
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    }
+   ]
+  },
+  {
+   "id": "qa-19",
+   "question": "Can CLIO analyze Darshan logs?",
+   "answer": "Yes. The CLIO Kit Darshan server parses Darshan logs for I/O profiling and analysis.",
+   "keywords": [
+    "darshan",
+    "logs",
+    "io",
+    "profiling"
+   ],
+   "sources": [
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    }
+   ]
+  },
+  {
+   "id": "qa-20",
+   "question": "Can CLIO make ParaView visualizations?",
+   "answer": "Yes. CLIO Kit includes a ParaView server so an agent can build and adjust scientific visualizations.",
+   "keywords": [
+    "paraview",
+    "visualization",
+    "render"
+   ],
+   "sources": [
+    {
+     "title": "Connect an MCP client",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-21",
+   "question": "How does CLIO Agent find scientific tools?",
+   "answer": "CLIO Agent connects through a FastMCP gateway; CLIO Kit supplies specialized servers for scientific data, HPC operations, visualization, and discovery.",
+   "keywords": [
+    "tool discovery",
+    "gateway",
+    "mcp",
+    "agent",
+    "kit"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Agent on the platform",
+     "url": "/platform/#agent"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-22",
+   "question": "Which scientific formats are supported?",
+   "answer": "It depends on the component. The CLIO Kit catalog has servers for HDF5, Parquet, ADIOS, SAC waveforms, GeoJSON, and other scientific data. CLIO Core has its own assimilation adapters, which depend on the build. Check the specific server or adapter before relying on a format in a workflow.",
+   "keywords": [
+    "formats",
+    "file",
+    "types",
+    "data",
+    "support"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit catalog",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Storage systems layer",
+     "url": "/platform/#layer-storage"
+    }
+   ]
+  },
+  {
+   "id": "qa-23",
+   "question": "Does CLIO support NetCDF and Zarr?",
+   "answer": "The CLIO Kit catalog does not list dedicated NetCDF or Zarr servers. Check the component repositories and release notes for an adapter that supports your exact workflow.",
+   "keywords": [
+    "netcdf",
+    "zarr",
+    "climate",
+    "arrays"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit catalog",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Core source",
+     "url": "https://github.com/iowarp/clio-core"
+    }
+   ]
+  },
+  {
+   "id": "qa-24",
+   "question": "Can CLIO Kit inspect SAC seismic waveforms?",
+   "answer": "Yes. CLIO Kit’s Seismology MCP server works with SAC waveforms and seismic archives. Start it with clio-kit mcp-server seismology, then use the documented tools for the data and analysis you need.",
+   "keywords": [
+    "sac",
+    "seismic",
+    "waveform",
+    "earth",
+    "format"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit catalog",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Seismology MCP guide",
+     "url": "https://toolkit.iowarp.ai/docs/mcps/seismology"
+    }
+   ]
+  },
+  {
+   "id": "qa-25",
+   "question": "Can CLIO Kit work with GeoJSON?",
+   "answer": "Yes. CLIO Kit’s Geo MCP server works with GeoJSON vector layers and maps them with basemaps. Start it with clio-kit mcp-server geo and check the server guide for its operations and dependencies.",
+   "keywords": [
+    "geojson",
+    "geospatial",
+    "map",
+    "format"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit catalog",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Geo MCP guide",
+     "url": "https://toolkit.iowarp.ai/docs/mcps/geo"
+    }
+   ]
+  },
+  {
+   "id": "qa-26",
+   "question": "What are the storage tiers?",
+   "answer": "CLIO Core places data across host memory, fast local storage, and shared scientific storage according to the workload and the enabled devices. GPU, distributed, and remote tiers have their own build and environment requirements, so the hierarchy differs between installations.",
+   "keywords": [
+    "storage",
+    "hierarchy",
+    "hbm",
+    "dram",
+    "nvme",
+    "filesystem",
+    "tape"
+   ],
+   "sources": [
+    {
+     "title": "Storage systems layer",
+     "url": "/platform/#layer-storage"
+    },
+    {
+     "title": "Runtime configuration",
+     "url": "/docs/#deployment"
+    }
+   ]
+  },
+  {
+   "id": "qa-27",
+   "question": "What is MegaMmap?",
+   "answer": "MegaMmap is earlier research from the team on blending distributed memory and storage for out-of-core workloads, published at SC 2024. It is part of the research lineage behind CLIO; the paper states its workloads and measurements.",
+   "keywords": [
+    "megammap",
+    "mmap",
+    "memory",
+    "extension",
+    "sc24"
+   ],
+   "sources": [
+    {
+     "title": "Research record",
+     "url": "/research/"
+    },
+    {
+     "title": "MegaMmap, SC 2024",
+     "url": "https://doi.org/10.1109/SC41406.2024.00114"
+    }
+   ]
+  },
+  {
+   "id": "qa-28",
+   "question": "What is Hermes?",
+   "answer": "Hermes is an earlier research system for policy-driven placement across heterogeneous storage tiers. Its placement ideas inform the CLIO research lineage.",
+   "keywords": [
+    "hermes",
+    "shared",
+    "memory",
+    "ipc"
+   ],
+   "sources": [
+    {
+     "title": "About IOWarp",
+     "url": "/about/"
+    },
+    {
+     "title": "Hermes source",
+     "url": "https://github.com/HDFGroup/hermes"
+    }
+   ]
+  },
+  {
+   "id": "qa-29",
+   "question": "What is Chimaera?",
+   "answer": "Chimaera was the modular runtime in IOWarp’s lineage, itself descended from LabStor. It was renamed and folded into CLIO Core in 2026: the execution layer is now the CLIO Runtime, and hermes_shm became the Context Transport Primitives.",
+   "keywords": [
+    "chimaera",
+    "distributed",
+    "runtime",
+    "modules",
+    "labstor",
+    "lineage"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "CLIO Core runtime source",
+     "url": "https://github.com/iowarp/clio-core/tree/v2.3.1/context-runtime"
+    }
+   ]
+  },
+  {
+   "id": "qa-30",
+   "question": "What is OMNI?",
+   "answer": "CLIO Core uses OMNI-YAML to describe data ingestion in its Context Assimilation Engine. It is an ingestion configuration approach, not a universal file format that every scientific dataset must use.",
+   "keywords": [
+    "omni",
+    "universal",
+    "format"
+   ],
+   "sources": [
+    {
+     "title": "Components and modules",
+     "url": "/docs/#sdk"
+    },
+    {
+     "title": "Assimilation engine source",
+     "url": "https://github.com/iowarp/clio-core/tree/v2.3.1/context-assimilation-engine"
+    }
+   ]
+  },
+  {
+   "id": "qa-31",
+   "question": "How do I install or get started with IOWarp?",
+   "answer": "Choose the product closest to your task. CLIO Agent works with scientific data and has platform-specific installers at clio.iowarp.ai. CLIO Coder works on scientific software: curl -fsSL https://coder.iowarp.ai/install.sh | sh. Standalone CLIO Kit installs with uv tool install clio-kit for scientific tools and workflow plugins. CLIO Core installs with pip install iowarp-core for the context runtime and APIs. The documentation hub links each installation guide and its prerequisites.",
+   "keywords": [
+    "quickstart",
+    "install",
+    "setup",
+    "begin",
+    "installation",
+    "start",
+    "started",
+    "try"
+   ],
+   "sources": [
+    {
+     "title": "Documentation",
+     "url": "/docs/"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    }
+   ]
+  },
+  {
+   "id": "qa-32",
+   "question": "Can I deploy IOWarp with Docker?",
+   "answer": "CLIO Agent documents a Docker path for its terminal and web interfaces, and CLIO Core ships a Docker quickstart for the runtime. Check each repository for its current container instructions.",
+   "keywords": [
+    "docker",
+    "compose",
+    "deploy",
+    "container"
+   ],
+   "sources": [
+    {
+     "title": "First commands",
+     "url": "/docs/#install"
+    },
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    }
+   ]
+  },
+  {
+   "id": "qa-33",
+   "question": "Can I install IOWarp with Spack?",
+   "answer": "The CLIO Core repository ships a Spack package recipe. The documented install paths are the Python wheel, the conda channel, and source builds; check the repository before using the Spack path.",
+   "keywords": [
+    "spack",
+    "install",
+    "hpc",
+    "cluster"
+   ],
+   "sources": [
+    {
+     "title": "Install CLIO Core",
+     "url": "/docs/#getting-started"
+    },
+    {
+     "title": "CLIO Core installation",
+     "url": "https://core.iowarp.ai/docs/installation.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-34",
+   "question": "Where is IOWarp configured?",
+   "answer": "The published CLIO Core wheel seeds its configuration at ~/.clio/clio.yaml on first import. Other products and source builds have their own configuration; check the owning repository before editing settings.",
+   "keywords": [
+    "config",
+    "configuration",
+    "yaml",
+    "settings"
+   ],
+   "sources": [
+    {
+     "title": "Runtime configuration",
+     "url": "/docs/#deployment"
+    },
+    {
+     "title": "CLIO Core installation",
+     "url": "https://core.iowarp.ai/docs/installation.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-35",
+   "question": "How can I verify a deployment?",
+   "answer": "For a compatible CLIO Core installation, start the runtime with clio_run start and follow the Python API guide to attach a client and try a documented operation. For CLIO Agent, clio-agent doctor checks its model, gateway, and file-policy health.",
+   "keywords": [
+    "verify",
+    "status",
+    "benchmark",
+    "installation"
+   ],
+   "sources": [
+    {
+     "title": "Python API guide",
+     "url": "/docs/#api"
+    },
+    {
+     "title": "CLIO Agent on the platform",
+     "url": "/platform/#agent"
+    },
+    {
+     "title": "Core Python API",
+     "url": "https://core.iowarp.ai/docs/python-api.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-36",
+   "question": "Is there a Python API?",
+   "answer": "Yes. CLIO Core ships clio_cee for bundling, querying, retrieving, and destroying contexts, and clio_cte_core_ext for tags, blobs, and search. Its Python guide explains runtime attachment and indexing requirements.",
+   "keywords": [
+    "python",
+    "api",
+    "availability",
+    "sdk"
+   ],
+   "sources": [
+    {
+     "title": "Python API guide",
+     "url": "/docs/#api"
+    },
+    {
+     "title": "CLIO Core Python usage",
+     "url": "https://core.iowarp.ai/docs/python-api.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-37",
+   "question": "Is there a C++ SDK?",
+   "answer": "Yes. CLIO Core has C++ modules for transport, runtime, assimilation, transfer, and exploration. Build from source for custom modules and adapters, and use the repository headers and tagged examples for exact signatures.",
+   "keywords": [
+    "cpp",
+    "c++",
+    "sdk",
+    "library"
+   ],
+   "sources": [
+    {
+     "title": "Components and modules",
+     "url": "/docs/#sdk"
+    },
+    {
+     "title": "CLIO Core source",
+     "url": "https://github.com/iowarp/clio-core"
+    }
+   ]
+  },
+  {
+   "id": "qa-38",
+   "question": "What are Jarvis packages?",
+   "answer": "Workflow integrations come from Jarvis, the deployment framework: packages for simulations, storage services, and benchmarks that compose into repeatable pipelines. CLIO Kit separately exposes a Jarvis MCP server so an agent can drive those pipelines.",
+   "keywords": [
+    "jarvis",
+    "cd",
+    "plugin",
+    "catalog",
+    "integrations"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    }
+   ]
+  },
+  {
+   "id": "qa-39",
+   "question": "Which simulations does Jarvis package?",
+   "answer": "Jarvis packages cover simulations such as LAMMPS, Gray-Scott, WarpX, and OpenFOAM, among others. The Jarvis repository lists the current package catalog.",
+   "keywords": [
+    "simulation",
+    "plugins",
+    "lammps",
+    "gadget",
+    "gray",
+    "scott"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    },
+    {
+     "title": "Jarvis source",
+     "url": "https://github.com/grc-iit/jarvis-cd"
+    }
+   ]
+  },
+  {
+   "id": "qa-40",
+   "question": "Does Jarvis package OrangeFS and Redis?",
+   "answer": "Jarvis includes packages for storage and data services such as OrangeFS and Redis. Check the Jarvis repository for the current catalog.",
+   "keywords": [
+    "orangefs",
+    "redis",
+    "plugins",
+    "storage"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    },
+    {
+     "title": "Jarvis source",
+     "url": "https://github.com/grc-iit/jarvis-cd"
+    }
+   ]
+  },
+  {
+   "id": "qa-41",
+   "question": "Can I benchmark with IOR or FIO?",
+   "answer": "Yes. Jarvis has packages for I/O benchmarks such as IOR and FIO, and CLIO Kit includes a Darshan server for reading I/O traces.",
+   "keywords": [
+    "ior",
+    "fio",
+    "benchmark",
+    "plugins"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-42",
+   "question": "What is Jarvis-CD?",
+   "answer": "Jarvis is the deployment framework in the CLIO stack. Pipeline descriptions record the scheduler, modules, network, and storage choices of each system, so CLIO Core and scientific workloads deploy the same way on a laptop, a cluster, or a national system.",
+   "keywords": [
+    "jarvis",
+    "cd",
+    "pipeline",
+    "deployment"
+   ],
+   "sources": [
+    {
+     "title": "Jarvis on the platform",
+     "url": "/platform/#jarvis"
+    },
+    {
+     "title": "Jarvis source",
+     "url": "https://github.com/grc-iit/jarvis-cd"
+    }
+   ]
+  },
+  {
+   "id": "qa-43",
+   "question": "Where can I see scientific demos?",
+   "answer": "The demonstrations page has two parts: the 2026 series, planned recordings across the stack from GPU payload offload to the DOE Genesis Mission projects, listed as placeholders until published; and the 2025 archive of recorded videos covering EarthScope data, LAMMPS, ParaView, ADIOS2, Slurm workflow automation, an end-to-end IOWarp workflow, and reproducible deployment.",
+   "keywords": [
+    "demo",
+    "demos",
+    "video",
+    "examples",
+    "recordings",
+    "2025",
+    "2026"
+   ],
+   "sources": [
+    {
+     "title": "Scientific demonstrations",
+     "url": "/research/demos/"
+    }
+   ]
+  },
+  {
+   "id": "qa-44",
+   "question": "Who funds IOWarp?",
+   "answer": "The U.S. National Science Foundation supports IOWarp through collaborative awards OAC-2411318 and OAC-2411319. The About page describes the team and its support.",
+   "keywords": [
+    "funding",
+    "nsf",
+    "award",
+    "sponsors"
+   ],
+   "sources": [
+    {
+     "title": "Team and support",
+     "url": "/about/#team"
+    }
+   ]
+  },
+  {
+   "id": "qa-45",
+   "question": "How can an organization support IOWarp?",
+   "answer": "Organizations can propose a research partnership, provide compute or infrastructure, contribute open-source engineering, or bring a scientific use case. Formal sponsorship terms and research agreements are arranged with the Gnosis Research Center, which you can reach through the contact form on the community page.",
+   "keywords": [
+    "sponsor",
+    "support",
+    "partner",
+    "contribute",
+    "tiers"
+   ],
+   "sources": [
+    {
+     "title": "Ways to collaborate",
+     "url": "/community/#collaborate"
+    },
+    {
+     "title": "Contact the team",
+     "url": "/community/#contact"
+    }
+   ]
+  },
+  {
+   "id": "qa-46",
+   "question": "Who are the institutional partners?",
+   "answer": "The IOWarp team works at the Gnosis Research Center at Illinois Tech. The University of Utah team contributes materials science workflows and AI research, and The HDF Group is the community integration partner. The team also works with Argonne and PNNL through the DOE Genesis projects SPOTTER-AI and PORTUS, the National Data Platform, NCSA, and Oak Ridge co-authors, and uses NVIDIA GPU technologies in its research.",
+   "keywords": [
+    "institutions",
+    "partners",
+    "collaborators",
+    "university",
+    "hdf",
+    "iit",
+    "grc",
+    "argonne",
+    "pnnl"
+   ],
+   "sources": [
+    {
+     "title": "Team and support",
+     "url": "/about/#team"
+    }
+   ]
+  },
+  {
+   "id": "qa-47",
+   "question": "What is CLIO Coder?",
+   "answer": "CLIO Coder is an open-source coding agent for scientific software, published on npm as @iowarp/clio-coder under Apache-2.0. It combines repository context, declared checks, worktree workers, playbooks for fleet contracts, and run receipts. Sandboxed extensions load after capability approval. Its semantic context index is optional: background indexing is off by default, and scanned PDF recognition and raw video embedding are unsupported. SSH workers are experimental and the desktop app is alpha.",
+   "keywords": [
+    "coder",
+    "coding",
+    "agent",
+    "repository",
+    "tests",
+    "worktree"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Coder on the platform",
+     "url": "/platform/#coder"
+    },
+    {
+     "title": "CLIO Coder guides",
+     "url": "https://coder.iowarp.ai/"
+    },
+    {
+     "title": "CLIO Coder released behavior and limits",
+     "url": "https://github.com/iowarp/clio-coder/releases/tag/v0.6.2"
+    }
+   ]
+  },
+  {
+   "id": "qa-48",
+   "question": "What does CLIO Researcher do?",
+   "answer": "CLIO Researcher is the research-tooling component for measured experimentation on I/O systems. It proposes a change to code or configuration, measures it against a baseline, applies confidence and holdout checks, and stages only supported improvements for human review. It is open source under the Apache-2.0 license.",
+   "keywords": [
+    "researcher",
+    "autoresearch",
+    "experiment",
+    "measurement",
+    "loop"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#researcher"
+    }
+   ]
+  },
+  {
+   "id": "qa-49",
+   "question": "What is CLIO Author?",
+   "answer": "CLIO Author is the research-tooling component for the paper lifecycle: it ingests sources, checks citations, drafts, reviews, and exports scholarly work, driven from MCP clients or CLIO Coder. It is open source under the BSD-3-Clause license.",
+   "keywords": [
+    "author",
+    "paper",
+    "writing",
+    "citation",
+    "review"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#author"
+    }
+   ]
+  },
+  {
+   "id": "qa-50",
+   "question": "What is CLIO Bench?",
+   "answer": "CLIO Bench is a run recorder with a live dashboard for benchmarks and model comparisons. It stores, streams, and compares measurements and shows verdicts supplied by the producing workflow; it does not issue its own. It is open source under the MIT license.",
+   "keywords": [
+    "bench",
+    "benchmark",
+    "dashboard",
+    "runs",
+    "evidence"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#bench"
+    }
+   ]
+  },
+  {
+   "id": "qa-51",
+   "question": "Who leads IOWarp?",
+   "answer": "Anthony Kougkas created IOWarp and leads it, setting its vision, architecture, and engineering (akougkas.io). The rest of the team is listed by contribution on the About page: core developers, agent and tool developers, researchers, and partners at the University of Utah and The HDF Group, with Xian-He Sun as senior advisor.",
+   "keywords": [
+    "team",
+    "people",
+    "leads",
+    "lead",
+    "leader",
+    "project",
+    "who",
+    "created",
+    "creator",
+    "founded",
+    "built",
+    "sun",
+    "kougkas",
+    "heber",
+    "hochhalter",
+    "srikumar",
+    "anthony",
+    "xian",
+    "gerd",
+    "jacob",
+    "vivek",
+    "jake"
+   ],
+   "sources": [
+    {
+     "title": "Team and support",
+     "url": "/about/#team"
+    },
+    {
+     "title": "Anthony Kougkas",
+     "url": "https://akougkas.io"
+    }
+   ]
+  },
+  {
+   "id": "qa-52",
+   "question": "What is the difference between IOWarp and CLIO?",
+   "answer": "IOWarp is the team at the Gnosis Research Center that builds CLIO. CLIO, the Context Layer for I/O, is the open-source platform it produces: the agentic flagships CLIO Agent and CLIO Coder, the CLIO Kit tools they share, the CLIO Core context runtime, and the GPU, storage, application, and research components around them.",
+   "keywords": [
+    "difference",
+    "name",
+    "project",
+    "software"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    }
+   ]
+  },
+  {
+   "id": "qa-53",
+   "question": "What is the CLIO SDK?",
+   "answer": "The CLIO SDK is a planned integration layer that packages tested combinations of the stack’s components. It is in design, and there is no SDK package or API yet. Install components separately: pip install iowarp-core, uv tool install clio-kit, or npm install -g @iowarp/clio-coder.",
+   "keywords": [
+    "sdk",
+    "api",
+    "integration",
+    "platform",
+    "iowarp-clio"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#layer-research"
+    },
+    {
+     "title": "First commands",
+     "url": "/docs/#install"
+    }
+   ]
+  },
+  {
+   "id": "qa-55",
+   "question": "Does CLIO run on DeltaAI?",
+   "answer": "Yes. CLIO Core builds and runs on DeltaAI at NCSA, which is built on NVIDIA Grace Hopper superchips, through an ACCESS allocation. Performance figures from DeltaAI belong with their conditions in papers and project documentation, not on this site.",
+   "keywords": [
+    "deltaai",
+    "ncsa",
+    "gh200",
+    "grace",
+    "hopper",
+    "delta",
+    "access"
+   ],
+   "sources": [
+    {
+     "title": "National research systems",
+     "url": "/applications/national-infrastructure/"
+    }
+   ]
+  },
+  {
+   "id": "qa-56",
+   "question": "Has CLIO run on Aurora?",
+   "answer": "The Gnosis project record reports that the team ported CLIO Core to Aurora at the INCITE GPU hackathon and ran scientific workloads there. Public Aurora deployment recipes are available in the stable Core source. This is an institutional account; independently published scaling data is not linked here.",
+   "keywords": [
+    "aurora",
+    "alcf",
+    "argonne",
+    "incite",
+    "hackathon",
+    "polaris",
+    "scale"
+   ],
+   "sources": [
+    {
+     "title": "National research systems",
+     "url": "/applications/national-infrastructure/"
+    },
+    {
+     "title": "Gnosis project record",
+     "url": "https://grc.iit.edu/research/projects/iowarp/"
+    },
+    {
+     "title": "CLIO Core Aurora deployment recipes",
+     "url": "https://github.com/iowarp/clio-core/tree/v2.2.1/jarvis_clio_core/pipelines/aurora"
+    }
+   ]
+  },
+  {
+   "id": "qa-57",
+   "question": "Is IOWarp deployed at national laboratories?",
+   "answer": "The Gnosis project record reports a CLIO Core port and scientific workload runs on Argonne’s Aurora system. The team works in two DOE Genesis Mission projects at national laboratories: SPOTTER-AI at Argonne and PORTUS at PNNL. Oak Ridge researchers co-author papers with the team. No Lawrence Livermore deployment is claimed.",
+   "keywords": [
+    "national",
+    "laboratory",
+    "labs",
+    "doe",
+    "genesis",
+    "llnl",
+    "ornl",
+    "pnnl",
+    "argonne",
+    "deployed",
+    "deployment"
+   ],
+   "sources": [
+    {
+     "title": "National research systems",
+     "url": "/applications/national-infrastructure/"
+    },
+    {
+     "title": "SPOTTER-AI",
+     "url": "/applications/genesis-spotter/"
+    },
+    {
+     "title": "PORTUS",
+     "url": "/applications/genesis-portus/"
+    },
+    {
+     "title": "Gnosis project record",
+     "url": "https://grc.iit.edu/research/projects/iowarp/"
+    }
+   ]
+  },
+  {
+   "id": "qa-58",
+   "question": "What is IOWarp doing with the DOE Genesis mission?",
+   "answer": "The IOWarp team joined two DOE Genesis Mission projects in August 2026. SPOTTER-AI, at Argonne, traces integrity attacks on scientific AI workflows through provenance; CLIO Agent supplies the investigating agents, including a Spotter approval mode, and the agent marketplace carries a read-only provenance MCP server for it. PORTUS, at PNNL, builds performance models that let agents plan and adapt scientific workflows across HPC and cloud; the IOWarp team works on its workflow motifs and performance models, and CLIO Coder fleets are being connected to it.",
+   "keywords": [
+    "genesis",
+    "doe",
+    "energy",
+    "mission",
+    "spotter",
+    "portus",
+    "argonne",
+    "pnnl"
+   ],
+   "sources": [
+    {
+     "title": "SPOTTER-AI",
+     "url": "/applications/genesis-spotter/"
+    },
+    {
+     "title": "PORTUS",
+     "url": "/applications/genesis-portus/"
+    },
+    {
+     "title": "DOE Genesis Mission",
+     "url": "https://genesis.energy.gov/"
+    }
+   ]
+  },
+  {
+   "id": "qa-59",
+   "question": "How does IOWarp work with the National Data Platform?",
+   "answer": "CLIO Kit includes an NDP MCP server that searches datasets across NDP catalogs. In an IEEE eScience 2025 evaluation, an agent with IOWarp context completed EarthScope data retrieval and visualization through NDP, while an agent without that context did not complete the workflow.",
+   "keywords": [
+    "ndp",
+    "national",
+    "platform",
+    "earthscope",
+    "catalog",
+    "federated"
+   ],
+   "sources": [
+    {
+     "title": "National Data Platform",
+     "url": "/applications/national-data-platform/"
+    }
+   ]
+  },
+  {
+   "id": "qa-60",
+   "question": "What is the University of Utah materials science work?",
+   "answer": "The University of Utah team contributes materials science workflows and AI research, and is the project’s primary domain science partner. Its reference workflow, from a Utah and Purdue fatigue study of topology-optimized, additively manufactured parts, joins design on HPC with Abaqus and Tosca, X-ray tomography with segmentation, and materials data management. The collaboration has produced Abaqus agent skills, the wtf-MS research-planning workflow and its CLIO Coder port Materio, and the InfiniteScienceGym benchmark. An end-to-end run on IOWarp is next.",
+   "keywords": [
+    "utah",
+    "materials",
+    "hochhalter",
+    "tomography",
+    "abaqus",
+    "additive",
+    "manufacturing",
+    "fatigue",
+    "jake",
+    "purdue"
+   ],
+   "sources": [
+    {
+     "title": "Materials science",
+     "url": "/applications/materials-science/"
+    }
+   ]
+  },
+  {
+   "id": "qa-61",
+   "question": "Does IOWarp work with NVIDIA?",
+   "answer": "Yes, as research, not sponsorship. CLIO Core uses NVIDIA technologies such as CUDA, cuFile, NIXL, and nvCOMP in its GPU runtime and compression work, and the team published a characterization of GPUDirect transfers through NIXL at eScience 2025.",
+   "keywords": [
+    "nvidia",
+    "gpu",
+    "cuda",
+    "nixl",
+    "gpudirect",
+    "kv",
+    "cache",
+    "kernels"
+   ],
+   "sources": [
+    {
+     "title": "GPU direct I/O and compression",
+     "url": "/applications/gpu-data-movement/"
+    }
+   ]
+  },
+  {
+   "id": "qa-63",
+   "question": "Is there an IOWarp user group meeting?",
+   "answer": "Yes. The team plans user group meetings where upcoming releases are discussed and user feedback shapes what comes next. The user group first gathers around IOWarp’s events at SC26 in Chicago, November 15–20, 2026. Register interest in Zulip or through the contact form on the community page.",
+   "keywords": [
+    "user",
+    "group",
+    "meeting",
+    "sc26",
+    "supercomputing",
+    "event",
+    "workshop"
+   ],
+   "sources": [
+    {
+     "title": "IOWarp at SC26",
+     "url": "/community/#sc26"
+    },
+    {
+     "title": "The user group",
+     "url": "/community/#user-group"
+    },
+    {
+     "title": "Contact the team",
+     "url": "/community/#contact"
+    }
+   ]
+  },
+  {
+   "id": "qa-64",
+   "question": "What has IOWarp actually released?",
+   "answer": "Publicly released and open source: CLIO Core, CLIO Kit, CLIO Agent in beta, CLIO Coder, CLIO Relay, GACT and Agent Workspace, the agent marketplace, CLIO Web Search, CLIO Schemas, wtf-MS, and the research tools CLIO Author, CLIO Researcher, and CLIO Bench. Current GPU adapters and operating-system backends have source-build prerequisites. Earlier BaM and GPU–NVMe bridge prototypes remain in archived source. Each repository’s release notes carry the versions.",
+   "keywords": [
+    "released",
+    "release",
+    "versions",
+    "status",
+    "available"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/"
+    },
+    {
+     "title": "Where results live",
+     "url": "/progress/#where-results-live"
+    }
+   ]
+  },
+  {
+   "id": "qa-65",
+   "question": "Which papers acknowledge the IOWarp award?",
+   "answer": "The research page lists the papers in the IOWarp record, and each paper’s own acknowledgments state its support. Recent examples include PKAS (HPDC 2026) and Trigger, Render, Reason (SC 2026), both of which acknowledge the NSF awards, and the IEEE eScience 2025 posters on AI-driven workflows and NIXL. Some related team research is listed as related work rather than as IOWarp-supported.",
+   "keywords": [
+    "papers",
+    "publications",
+    "acknowledge",
+    "award",
+    "published"
+   ],
+   "sources": [
+    {
+     "title": "Research record",
+     "url": "/research/"
+    }
+   ]
+  },
+  {
+   "id": "qa-66",
+   "question": "How can I contribute to IOWarp?",
+   "answer": "Pick a component on GitHub, add or improve a CLIO Kit server, work on CLIO Core from GPU code to the context engines, bring a reproducible workload, or join the Zulip community. The Community page also describes the user group and the Technical Advisory Board.",
+   "keywords": [
+    "contribute",
+    "contributing",
+    "developer",
+    "help",
+    "github",
+    "zulip"
+   ],
+   "sources": [
+    {
+     "title": "Community",
+     "url": "/community/"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    }
+   ]
+  },
+  {
+   "id": "qa-67",
+   "question": "What licenses does IOWarp use?",
+   "answer": "CLIO Core, Kit, Agent, and Author use BSD-3-Clause; CLIO Coder and CLIO Researcher use Apache-2.0; CLIO Relay, CLIO Bench, GACT, CLIO Web Search, and wtf-MS use MIT.",
+   "keywords": [
+    "license",
+    "licenses",
+    "bsd",
+    "apache",
+    "mit",
+    "open",
+    "source"
+   ],
+   "sources": [
+    {
+     "title": "Software",
+     "url": "/platform/"
+    }
+   ]
+  },
+  {
+   "id": "qa-68",
+   "question": "What is context management for AI agents?",
+   "answer": "Deciding what an agent sees, when, and with what authority: data, tool results, prior decisions, and limits. IOWarp treats it as a systems problem with placement, lifetime, and provenance.",
+   "keywords": [
+    "context",
+    "management",
+    "engineering",
+    "memory"
+   ],
+   "sources": [
+    {
+     "title": "Context management",
+     "url": "/topics/context-management/"
+    }
+   ]
+  },
+  {
+   "id": "qa-69",
+   "question": "What is SPOTTER-AI?",
+   "answer": "SPOTTER-AI is a DOE Genesis Mission project at Argonne National Laboratory that began in August 2026. Argonne National Laboratory leads SPOTTER-AI, with Oak Ridge National Laboratory, Illinois Tech, and Hewlett Packard Enterprise as partners. It detects integrity attacks on scientific AI workflows and traces them to their source using provenance. The IOWarp team builds the investigating agents: CLIO Agent provides a Spotter approval mode, and its marketplace carries a pack for provenance investigation with a read-only provenance MCP server qualified against Flowcept and CMF.",
+   "keywords": [
+    "spotter",
+    "spotter-ai",
+    "provenance",
+    "integrity",
+    "security",
+    "argonne",
+    "nicolae",
+    "genesis"
+   ],
+   "sources": [
+    {
+     "title": "SPOTTER-AI",
+     "url": "/applications/genesis-spotter/"
+    }
+   ]
+  },
+  {
+   "id": "qa-70",
+   "question": "What is PORTUS?",
+   "answer": "PORTUS is a DOE Genesis Mission project at Pacific Northwest National Laboratory that began in August 2026, with Princeton Plasma Physics Laboratory, Iowa State University, the University of Delaware, and Illinois Tech as partners and Oak Ridge National Laboratory and HPE collaborating. It builds surrogate performance models over recurring workflow motifs so agents can predict, rank, and adapt scientific workflows on the Genesis Mission Platform across HPC and cloud. The IOWarp team works on the motifs and performance models, extending the AMAT matching methodology to workflow dataflow, and CLIO Coder fleets are being connected to the PORTUS loop.",
+   "keywords": [
+    "portus",
+    "pnnl",
+    "tallent",
+    "orchestration",
+    "slurm",
+    "workflow",
+    "genesis",
+    "dataflow"
+   ],
+   "sources": [
+    {
+     "title": "PORTUS",
+     "url": "/applications/genesis-portus/"
+    }
+   ]
+  },
+  {
+   "id": "qa-71",
+   "question": "Does CLIO Core support GPUs and CUDA?",
+   "answer": "Yes, in source builds. CUDA, ROCm, and SYCL builds let GPU kernels submit work to the CLIO runtime, keep GPU-resident data backed by transfer-engine storage, and spill payloads to host memory and NVMe. GPU compression uses nvCOMP, cuSZ, cuSZp, ndzip, and ZFP for SYCL. GPU features have build and hardware prerequisites, and some GPU validation is opt-in. Follow the tagged build configuration for the path you need.",
+   "keywords": [
+    "gpu",
+    "cuda",
+    "rocm",
+    "sycl",
+    "offload",
+    "nvme",
+    "compression",
+    "kernel",
+    "hbm"
+   ],
+   "sources": [
+    {
+     "title": "GPU direct I/O and compression",
+     "url": "/applications/gpu-data-movement/"
+    },
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#layer-gpu"
+    },
+    {
+     "title": "CLIO Core tagged GPU build configuration",
+     "url": "https://github.com/iowarp/clio-core/blob/v2.3.1/CMakePresets.json"
+    }
+   ]
+  },
+  {
+   "id": "qa-72",
+   "question": "Does IOWarp work on the Linux kernel or operating system?",
+   "answer": "CLIO Core includes io_uring, libaio, and POSIX AIO backends and a FUSE adapter. Earlier gpu_nvme_bridge and BaM prototypes remain in the archived Core source and are absent from the current release. The runtime descends from LabStor (SC 2022), a platform for building customized I/O stacks in user space.",
+   "keywords": [
+    "linux",
+    "kernel",
+    "os",
+    "operating",
+    "system",
+    "io_uring",
+    "fuse",
+    "labstor",
+    "nvme",
+    "module"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#layer-os"
+    },
+    {
+     "title": "Archived BaM and GPU–NVMe bridge prototypes",
+     "url": "https://github.com/iowarp/clio-core/tree/v2.2.1/external/bam"
+    }
+   ]
+  },
+  {
+   "id": "qa-73",
+   "question": "What is the IOWarp Technical Advisory Board?",
+   "answer": "IOWarp plans a Technical Advisory Board with members from academia, industry, and government laboratories. It keeps CLIO aligned with real data management needs, carries user feedback into release planning, and advises on development priorities. Invitations follow SC26, the board forms at the end of November 2026, and members will be listed on the Community page once they accept.",
+   "keywords": [
+    "advisory",
+    "board",
+    "tab",
+    "governance",
+    "steering",
+    "community"
+   ],
+   "sources": [
+    {
+     "title": "Community",
+     "url": "/community/#advisory-board"
+    }
+   ]
+  },
+  {
+   "id": "qa-74",
+   "question": "What is GACT?",
+   "answer": "GACT is an open wire contract for agent front ends. Agent Workspace, a React and Tauri application in the gact-tui repository, renders any agent that speaks the contract; CLIO Agent is the reference implementation. It is released under MIT.",
+   "keywords": [
+    "gact",
+    "workspace",
+    "tui",
+    "frontend",
+    "interface",
+    "tauri",
+    "contract"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#gact"
+    }
+   ]
+  },
+  {
+   "id": "qa-75",
+   "question": "What is CLIO Relay?",
+   "answer": "CLIO Relay lets a desktop tool submit work to a remote cluster, follow it while it runs, and collect logs, artifacts, and provenance, through a CLI, an HTTP API, or MCP tools. It is the federation layer behind CLIO Agent, released under MIT.",
+   "keywords": [
+    "relay",
+    "remote",
+    "cluster",
+    "federation",
+    "submit",
+    "jobs"
+   ],
+   "sources": [
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#relay"
+    }
+   ]
+  },
+  {
+   "id": "qa-76",
+   "question": "What are Materio and wtf-MS?",
+   "answer": "wtf-MS is a materials research-planning workflow that turns a materials question into a synthesis of the supplied literature, a map of the available laboratory, and an assumption-checked research plan with a reviewed paper handoff. It comes from the University of Utah materials team, with guardrail scripts from The HDF Group, and has reached a stable release under MIT. Materio is its port for CLIO Coder.",
+   "keywords": [
+    "materio",
+    "wtf-ms",
+    "wtfms",
+    "materials",
+    "research",
+    "planning",
+    "daisy",
+    "quach"
+   ],
+   "sources": [
+    {
+     "title": "Materials science",
+     "url": "/applications/materials-science/"
+    },
+    {
+     "title": "The CLIO platform",
+     "url": "/platform/#materio"
+    }
+   ]
+  },
+  {
+   "id": "qa-77",
+   "question": "What demonstrations are planned for 2026?",
+   "answer": "The 2026 series covers: zero to agent with CLIO Kit; EarthScope through the National Data Platform; an HPC operator with Slurm and Darshan; GPU payload offload with CLIO Core CUDA kernels; CLIO on DeltaAI and Aurora via Jarvis; Materio for materials research; CLIO Agent memory across sessions; DOE Genesis with SPOTTER-AI and PORTUS; and CLIO Coder fleet dispatch on a cluster. They are listed as placeholders until each video is published.",
+   "keywords": [
+    "2026",
+    "planned",
+    "upcoming",
+    "demo",
+    "demos",
+    "recordings",
+    "series"
+   ],
+   "sources": [
+    {
+     "title": "Demonstrations",
+     "url": "/research/demos/"
+    }
+   ]
+  },
+  {
+   "id": "qa-78",
+   "question": "What is InfiniteScienceGym?",
+   "answer": "InfiniteScienceGym is a procedurally generated benchmark for scientific data analysis from the University of Utah team, accepted at COLM 2026. It tests whether models can tell when a question cannot be answered from the data, and current models still fall well short on its question-answering task. The public leaderboard carries the scores.",
+   "keywords": [
+    "infinitesciencegym",
+    "benchmark",
+    "colm",
+    "srikumar",
+    "bentham",
+    "utah",
+    "evaluation"
+   ],
+   "sources": [
+    {
+     "title": "Agents in the materials workflow",
+     "url": "/applications/materials-science/"
+    },
+    {
+     "title": "InfiniteScienceGym leaderboard",
+     "url": "https://infinitesciencegym.github.io/"
+    }
+   ]
+  },
+  {
+   "id": "qa-79",
+   "question": "How does NeuroH5 work with IOWarp?",
+   "answer": "NeuroH5 was onboarded through a transfer-engine-backed HDF5 VOL connector and loads without application code changes.",
+   "keywords": [
+    "neuroh5",
+    "neuroscience",
+    "miv",
+    "simulator",
+    "hdf5",
+    "vol",
+    "neural"
+   ],
+   "sources": [
+    {
+     "title": "National research systems",
+     "url": "/applications/national-infrastructure/"
+    }
+   ]
+  },
+  {
+   "id": "qa-80",
+   "question": "Is IOWarp at SC26?",
+   "answer": "Yes. IOWarp and the CLIO platform soft launch at SC26 in Chicago, November 15–20, 2026, at McCormick Place. The confirmed program includes PDSW workshop presentations on GPUH5, GDSight, and trigger-gated simulation monitoring on Monday, November 16; research posters on I/O explainability, GNN feature streaming, StageOnce, and ToolFuse on Tuesday, November 17; Trigger, Render, Reason on Wednesday, November 18, from 4:30 to 5:00 pm; and the HDF5 birds-of-a-feather session on Thursday, November 19, from 12:15 to 1:15 pm. All times are CST. The community page lists every title, room, and official program entry.",
+   "keywords": [
+    "sc26",
+    "sc",
+    "supercomputing",
+    "conference",
+    "chicago",
+    "launch",
+    "november",
+    "bof",
+    "paper",
+    "event",
+    "activities",
+    "schedule",
+    "posters",
+    "workshops"
+   ],
+   "sources": [
+    {
+     "title": "IOWarp at SC26",
+     "url": "/community/#sc26"
+    },
+    {
+     "title": "SC26 conference site",
+     "url": "https://sc26.supercomputing.org/"
+    }
+   ]
+  },
+  {
+   "id": "qa-81",
+   "question": "When did IOWarp join the DOE Genesis Mission?",
+   "answer": "The IOWarp team joined the DOE Genesis Mission in August 2026, when SPOTTER-AI at Argonne and PORTUS at PNNL both began.",
+   "keywords": [
+    "genesis",
+    "doe",
+    "august",
+    "2026",
+    "partner",
+    "spotter",
+    "portus"
+   ],
+   "sources": [
+    {
+     "title": "SPOTTER-AI",
+     "url": "/applications/genesis-spotter/"
+    },
+    {
+     "title": "PORTUS",
+     "url": "/applications/genesis-portus/"
+    }
+   ]
+  },
+  {
+   "id": "qa-82",
+   "question": "How do I install CLIO Kit?",
+   "answer": "Run uv tool install clio-kit for the standalone launcher. Then clio-kit mcp-servers lists its servers, and clio-kit mcp-server hdf5 downloads and starts the HDF5 component in its isolated runtime. You can also install individual skills or a workflow plugin into a supported client’s project. Follow the Kit installation guide for prerequisites, updates, and client setup.",
+   "keywords": [
+    "install",
+    "installation",
+    "uv",
+    "servers",
+    "mcp",
+    "setup"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    }
+   ]
+  },
+  {
+   "id": "qa-83",
+   "question": "How do I install CLIO Agent?",
+   "answer": "On Linux or macOS, run curl -fsSL https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.sh | bash. On Windows, use irm https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.ps1 | iex in PowerShell. The stable installer sets up the backend, matching terminal UI, and clio launcher, and prepares a web UI bundle when it can be unpacked. Use Python 3.12 or Python 3.13 for its tested dependency set. Agent keeps its tested Core dependency family and pinned Kit launcher for marketplace packs.",
+   "keywords": [
+    "install",
+    "installation",
+    "script",
+    "setup",
+    "curl"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Agent",
+     "url": "/platform/#agent"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    },
+    {
+     "title": "Agent installation guide",
+     "url": "https://clio.iowarp.ai/docs/install/"
+    },
+    {
+     "title": "Stable Agent installer notes",
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/README.md"
+    }
+   ]
+  },
+  {
+   "id": "qa-84",
+   "question": "How do I install CLIO Coder?",
+   "answer": "On Linux or macOS, run curl -fsSL https://coder.iowarp.ai/install.sh | sh; the installer supplies Node.js. Alternatively, use npm install -g @iowarp/clio-coder with Node.js 22.19 or newer. Windows has PowerShell and CMD installers, with native interactive use still best effort. Connect a model that supports tool calling, then use clio-coder doctor to check the installation and connections.",
+   "keywords": [
+    "install",
+    "installation",
+    "npm",
+    "node",
+    "setup"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Coder",
+     "url": "/platform/#coder"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    },
+    {
+     "title": "CLIO Coder stable installation guide",
+     "url": "https://github.com/iowarp/clio-coder/blob/v0.6.2/README.md"
+    },
+    {
+     "title": "Coder documentation and installation",
+     "url": "https://coder.iowarp.ai/docs.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-85",
+   "question": "How do I install CLIO Core?",
+   "answer": "Install the standalone runtime with pip install iowarp-core, or follow the conda guide. Check the linked PyPI files for current CPython versions, operating systems, and architectures. GPU, MPI, and some format adapters need a source build. Linux wheels need libfuse3 to mount, Windows needs WinFsp, and macOS mounting requires a source build with macFUSE. Keep Agent’s tested Core dependency when installing Agent.",
+   "keywords": [
+    "install",
+    "installation",
+    "pip",
+    "conda",
+    "wheel",
+    "setup",
+    "source"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Core",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    },
+    {
+     "title": "CLIO Core stable installation and FUSE guide",
+     "url": "https://core.iowarp.ai/docs/installation.html"
+    },
+    {
+     "title": "Published CLIO Core wheel files",
+     "url": "https://pypi.org/project/iowarp-core/2.3.1/#files"
+    }
+   ]
+  },
+  {
+   "id": "qa-86",
+   "question": "Do I need CLIO Core?",
+   "answer": "CLIO Agent installs Core and uses it for memory by default, with a local file backend available as an alternative. Its stable release keeps Core in a tested compatible release family and uses a pinned Kit launcher. CLIO Coder and standalone Kit do not require Core for their own installation. Standalone releases have separate upgrade paths; follow the product’s compatibility guidance.",
+   "keywords": [
+    "depend",
+    "dependency",
+    "required",
+    "require",
+    "coder",
+    "kit",
+    "run",
+    "runtime",
+    "without",
+    "need"
+   ],
+   "sources": [
+    {
+     "title": "The flagships",
+     "url": "/platform/#flagships"
+    },
+    {
+     "title": "CLIO Core",
+     "url": "/platform/#core"
+    },
+    {
+     "title": "Agent’s tested dependency declarations",
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/pyproject.toml"
+    }
+   ]
+  },
+  {
+   "id": "qa-87",
+   "question": "What is the difference between a Kit component and a workflow plugin?",
+   "answer": "A component provides one MCP server, skill, agent, or hook. A workflow plugin selects components that work together, such as scientific I/O tools and their skills, or a dataset-report workflow with evidence review and verification hooks. You can choose components individually or install a workflow into a supported client’s project.",
+   "keywords": [
+    "component",
+    "components",
+    "plugin",
+    "plugins",
+    "bundle",
+    "workflow",
+    "skills",
+    "hooks"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Kit components and workflows",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit plugin composition",
+     "url": "https://toolkit.iowarp.ai/docs/plugins"
+    }
+   ]
+  },
+  {
+   "id": "qa-88",
+   "question": "Can I use CLIO Kit with Codex or OpenCode?",
+   "answer": "Yes. CLIO Kit has project installers for Codex and OpenCode, alongside Claude Code, Cursor, Antigravity, and VS Code. For Codex, clio-kit plugin install clio-scientific-io --client codex --project /path/to/project installs that workflow’s skills and MCP configuration. Scientific agents and Dataset Report hooks have adapters for Codex, Claude Code, and OpenCode; other clients have component limits documented in the guide.",
+   "keywords": [
+    "codex",
+    "opencode",
+    "client",
+    "project",
+    "installation",
+    "workflow",
+    "integration"
+   ],
+   "sources": [
+    {
+     "title": "Install a Kit workflow",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit client setup and component support",
+     "url": "https://toolkit.iowarp.ai/docs/clients#component-support"
+    }
+   ]
+  },
+  {
+   "id": "qa-89",
+   "question": "Where are the CLIO product docs?",
+   "answer": "CLIO Agent guides are at clio.iowarp.ai/docs/, CLIO Coder guides at coder.iowarp.ai/docs.html, CLIO Kit guides at toolkit.iowarp.ai/docs/intro, and CLIO Core guides at core.iowarp.ai/docs/index.html. The IOWarp documentation hub links installation, platform requirements, APIs, and release-tag evidence.",
+   "keywords": [
+    "documentation",
+    "docs",
+    "guides",
+    "website",
+    "portal",
+    "manual"
+   ],
+   "sources": [
+    {
+     "title": "Product documentation sites",
+     "url": "/docs/#sites"
+    },
+    {
+     "title": "CLIO Agent guides",
+     "url": "https://clio.iowarp.ai/docs/"
+    },
+    {
+     "title": "CLIO Coder guides",
+     "url": "https://coder.iowarp.ai/docs.html"
+    },
+    {
+     "title": "CLIO Kit guides",
+     "url": "https://toolkit.iowarp.ai/docs/intro"
+    },
+    {
+     "title": "CLIO Core guides",
+     "url": "https://core.iowarp.ai/docs/index.html"
+    }
+   ]
+  },
+  {
+   "id": "qa-90",
+   "question": "How do I check a CLIO Kit installation?",
+   "answer": "Run clio-kit doctor --server hdf5 --connect to check prerequisites and an MCP connection for the HDF5 server. Then try a documented tool call on known data. A successful connection does not validate a whole scientific workflow; native backends, cluster access, and scientific results need their own checks.",
+   "keywords": [
+    "doctor",
+    "health",
+    "verify",
+    "check",
+    "connection",
+    "prerequisites",
+    "installation"
+   ],
+   "sources": [
+    {
+     "title": "Connect and verify Kit tools",
+     "url": "/clio-kit/#connect"
+    },
+    {
+     "title": "Kit validation and acceptance boundaries",
+     "url": "https://toolkit.iowarp.ai/docs/marketplace#scientific-acceptance-boundaries"
+    }
+   ]
+  },
+  {
+   "id": "qa-91",
+   "question": "Should I upgrade the Kit installed by CLIO Agent?",
+   "answer": "Agent keeps Core in its tested compatible release family and pins Kit for its marketplace packs. Keep that combination when installing Agent. Standalone Core and Kit have separate release and upgrade paths; a newer standalone package does not establish Agent compatibility.",
+   "keywords": [
+    "upgrade",
+    "compatibility",
+    "pinned",
+    "agent",
+    "kit",
+    "packs",
+    "core"
+   ],
+   "sources": [
+    {
+     "title": "Agent and Kit installation guidance",
+     "url": "/docs/#faq"
+    },
+    {
+     "title": "Agent installer and its Kit pin",
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/install.sh"
+    },
+    {
+     "title": "Agent’s tested dependency declarations",
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/pyproject.toml"
+    }
+   ]
+  },
+  {
+   "id": "qa-92",
+   "question": "Does CLIO Core include the GPU–NVMe bridge?",
+   "answer": "The GPU–NVMe bridge and the earlier BaM adapter remain in archived CLIO Core source. The current release keeps cuFile and NIXL paths as optional source-build features. Use the archived bridge design to study that prototype, and check the current release and backend prerequisites for an installation.",
+   "keywords": [
+    "nvme",
+    "bridge",
+    "bam",
+    "kernel",
+    "module",
+    "prototype",
+    "archived",
+    "include"
+   ],
+   "sources": [
+    {
+     "title": "Archived GPU–NVMe bridge",
+     "url": "/platform/#gnb"
+    },
+    {
+     "title": "GPU data movement",
+     "url": "/applications/gpu-data-movement/"
+    },
+    {
+     "title": "Archived bridge design",
+     "url": "https://github.com/iowarp/clio-core/blob/v2.2.1/external/bam/gnb/DESIGN.md"
+    }
+   ]
+  },
+  {
+   "id": "qa-93",
+   "question": "Which Python versions does CLIO Core support?",
+   "answer": "Check the published PyPI files for the current release’s CPython versions, operating systems, and architectures. Wheel compatibility changes between releases. The standalone runtime and Agent’s tested Core dependency have separate upgrade paths; follow the installation guide for the product you are using.",
+   "keywords": [
+    "python",
+    "cpython",
+    "versions",
+    "version",
+    "compatibility",
+    "wheels",
+    "wheel",
+    "support",
+    "platform"
+   ],
+   "sources": [
+    {
+     "title": "Core installation and compatibility",
+     "url": "/docs/#faq"
+    },
+    {
+     "title": "Core guides",
+     "url": "/docs/#core-guides"
+    },
+    {
+     "title": "Published Core wheel files",
+     "url": "https://pypi.org/project/iowarp-core/2.3.1/#files"
+    }
+   ]
+  },
+  {
+   "id": "qa-94",
+   "question": "Does CLIO Coder have a semantic context index?",
+   "answer": "Yes, as an optional beta feature. Coder can build a persistent semantic index for repository code, approved memory, evidence, and recorded worker output. Background indexing is off by default. Supported media processing has its own prerequisites; raw video embedding and scanned PDF recognition are unsupported. Check the released guide before enabling it.",
+   "keywords": [
+    "semantic",
+    "index",
+    "indexing",
+    "embeddings",
+    "embedding",
+    "optional",
+    "beta",
+    "memory",
+    "coder"
+   ],
+   "sources": [
+    {
+     "title": "CLIO Coder capabilities",
+     "url": "/platform/#coder"
+    },
+    {
+     "title": "Coder extensions and semantic context",
+     "url": "/docs/#faq"
+    },
+    {
+     "title": "Released semantic context guide",
+     "url": "https://github.com/iowarp/clio-coder/blob/v0.6.2/docs/guide/semantic-context.md"
+    }
+   ]
+  },
+  {
+   "id": "qa-95",
+   "question": "Which IOWarp workshop presentations are at SC26?",
+   "answer": "The PDSW workshop presentations take place on Monday, November 16, 2026, in Room W175bc: GPUH5: A GPU-first I/O Library for Scientific Data, from 10:50 to 11:10 am; GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage, from 11:30 to 11:50 am; and Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring, from 12:15 to 12:20 pm. The trigger-gated presentation is work in progress. All times are CST.",
+   "keywords": [
+    "sc26",
+    "pdsw",
+    "workshop",
+    "workshops",
+    "gpuh5",
+    "gdsight",
+    "trigger-gated"
+   ],
+   "sources": [
+    {
+     "title": "GPUH5 workshop presentation",
+     "url": "/community/#sc26-gpuh5"
+    },
+    {
+     "title": "GDSight workshop presentation",
+     "url": "/community/#sc26-gdsight"
+    },
+    {
+     "title": "Trigger-gated simulation monitoring",
+     "url": "/community/#sc26-trigger-gated"
+    }
+   ]
+  },
+  {
+   "id": "qa-96",
+   "question": "Which IOWarp research posters are at SC26?",
+   "answer": "The SC26 research posters are Extending I/O Observability to Explainability for Targeted Optimization; GNNs Beyond HBM: Compressed, Bit-Exact Feature Streaming for Out-of-Core Training; StageOnce: Speculative Cross-Job Data Staging for LLM Agent Fleets; and ToolFuse: Provenance-Aware In-Flight Coalescing of Redundant Agent Tool Calls. The display session is Tuesday, November 17, 2026, from 10:00 am to 5:00 pm CST in Skyline Ballroom North Pre-Function. The conference program also marks these entries for Poster Blitz; the display time is not a separate blitz time.",
+   "keywords": [
+    "sc26",
+    "poster",
+    "posters",
+    "stageonce",
+    "toolfuse",
+    "gnnpress",
+    "pearl",
+    "observability",
+    "hbm",
+    "blitz"
+   ],
+   "sources": [
+    {
+     "title": "I/O explainability poster",
+     "url": "/community/#sc26-io-explainability"
+    },
+    {
+     "title": "GNN feature streaming poster",
+     "url": "/community/#sc26-gnns-beyond-hbm"
+    },
+    {
+     "title": "StageOnce poster",
+     "url": "/community/#sc26-stageonce"
+    },
+    {
+     "title": "ToolFuse poster",
+     "url": "/community/#sc26-toolfuse"
+    }
+   ]
+  },
+  {
+   "id": "qa-97",
+   "question": "When is Trigger, Render, Reason presented at SC26?",
+   "answer": "Trigger, Render, Reason: Multimodal LLM Agents for Science-Aware Scientific Simulation Monitoring is scheduled for Wednesday, November 18, 2026, from 4:30 to 5:00 pm CST in Room W181abc. It is part of Papers in Conversation: Scientific AI at Extreme Scale. Vigil combines science-aware triggers, rendering, and multimodal reasoning to inspect running simulations for invalid scientific states.",
+   "keywords": [
+    "sc26",
+    "trigger",
+    "render",
+    "reason",
+    "vigil",
+    "simulation",
+    "monitoring",
+    "paper",
+    "time",
+    "schedule"
+   ],
+   "sources": [
+    {
+     "title": "Trigger, Render, Reason at SC26",
+     "url": "/community/#sc26-trigger-render-reason"
+    }
+   ]
+  }
+ ]
+}

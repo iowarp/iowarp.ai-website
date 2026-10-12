@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>IOWarp publications</title>
+<link>https://iowarp.ai/research/#publications</link>
+<description>Papers and posters from the IOWarp research record, newest first by year.</description>
+<language>en-us</language>
+<atom:link href="https://iowarp.ai/research/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>PagedEviction: Structured Block-wise KV Cache Pruning for Efficient Large Language Model Inference</title>
+<link>https://iowarp.ai/research/#chittyvenkata2026paged</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#chittyvenkata2026paged</guid>
+<category>Paper</category>
+<description>&lt;p&gt;K. T. Chitty-Venkata, J. Ye, S. Raskar, A. Kougkas, X.-H. Sun, M. Emani, V. Vishwanath, B. Nicolae&lt;/p&gt;&lt;p&gt;Findings of the Association for Computational Linguistics: EACL 2026, 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.18653/v1/2026.findings-eacl.168&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>PKAS: Predictive KVCache-Aware Scheduling for Faster LLM and Transformer Inferences</title>
+<link>https://iowarp.ai/research/#ye2026pkas</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#ye2026pkas</guid>
+<category>Paper</category>
+<description>&lt;p&gt;J. Ye, A. Maurya, K. T. Chitty-Venkata, B. Nicolae, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the 35th International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1145/3806645.3807819&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Characterizing Dataflow for I/O-Aware Scheduling in HPC Workflows</title>
+<link>https://iowarp.ai/research/#tang2026dataflow</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#tang2026dataflow</guid>
+<category>Paper</category>
+<description>&lt;p&gt;M. Tang, L. Guo, A. Kougkas, X.-H. Sun, N. R. Tallent&lt;/p&gt;&lt;p&gt;2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1109/IPDPS65963.2026.00076&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>AgentStage: Exploiting LLM Thinking for Data Staging in Scientific Agents</title>
+<link>https://iowarp.ai/research/#yildirim2026agentstage</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#yildirim2026agentstage</guid>
+<category>Paper</category>
+<description>&lt;p&gt;I. Yildirim, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;2026 IEEE International Conference on eScience (eScience), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.escience-conference.org/2026/papers&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Acropolis: A Portable, AI-Driven Semantic Search System for HPC</title>
+<link>https://iowarp.ai/research/#pawar2026acropolis</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#pawar2026acropolis</guid>
+<category>Paper</category>
+<description>&lt;p&gt;R. P. Pawar, L. Logan, J. Cernuda, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;2026 IEEE International Conference on eScience (eScience), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.escience-conference.org/2026/papers&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Trigger, Render, Reason: Multimodal LLM Agents for Science-Aware Scientific Simulation Monitoring</title>
+<link>https://iowarp.ai/research/#xu2026triggerrenderreason</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#xu2026triggerrenderreason</guid>
+<category>Paper</category>
+<description>&lt;p&gt;H. Xu, J. Cernuda, A. Gainaru, S. Klasky, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;International Conference for High Performance Computing, Networking, Storage, and Analysis (SC 2026), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://grc.iit.edu/publications/xu-2026-trigger-render-reason-multimodal-llm-agents-c360/&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>InfiniteScienceGym: An Unbounded, Procedurally-Generated Benchmark for Scientific Analysis</title>
+<link>https://iowarp.ai/research/#bentham2026infinitesciencegym</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#bentham2026infinitesciencegym</guid>
+<category>Paper</category>
+<description>&lt;p&gt;O. Bentham, V. Srikumar&lt;/p&gt;&lt;p&gt;Conference on Language Modeling (COLM 2026), 2026&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2604.13201&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>WisIO: Automated I/O Bottleneck Detection with Multi-Perspective Views for HPC Workflows</title>
+<link>https://iowarp.ai/research/#yildirim_wisio_2025</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#yildirim_wisio_2025</guid>
+<category>Paper</category>
+<description>&lt;p&gt;I. Yildirim, H. Devarajan, A. Kougkas, X.-H. Sun, K. Mohror&lt;/p&gt;&lt;p&gt;ICS'25: 2025 International Conference on Supercomputing, 2025&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1145/3721145.3725742&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Towards an AI-driven scientific workflow</title>
+<link>https://iowarp.ai/research/#islam2025aidriven</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#islam2025aidriven</guid>
+<category>Poster</category>
+<description>&lt;p&gt;S. Islam, J. Cernuda, I. Muradli, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;2025 IEEE International Conference on eScience (eScience), 2025&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1109/eScience65000.2025.00074&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Insights into GPUDirect Data Transfer through NIXL Benchmarking</title>
+<link>https://iowarp.ai/research/#muradli2025nixl</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#muradli2025nixl</guid>
+<category>Poster</category>
+<description>&lt;p&gt;I. Muradli, J. Ye, L. Logan, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;2025 IEEE International Conference on eScience (eScience), 2025&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1109/eScience65000.2025.00075&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Jarvis: Towards a Shared, User-Friendly, and Reproducible I/O Infrastructure</title>
+<link>https://iowarp.ai/research/#cernuda2024jarvis</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#cernuda2024jarvis</guid>
+<category>Paper</category>
+<description>&lt;p&gt;J. Cernuda, L. Logan, N. Lewis, S. Byna, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;The International Parallel Data Systems Workshop (PDSW'24), 2024&lt;/p&gt;</description>
+</item>
+<item>
+<title>Uncover the Overhead and Resource Usage for Handling KV Cache Overflow in LLM Inference</title>
+<link>https://iowarp.ai/research/#ye2024kvcache_poster</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#ye2024kvcache_poster</guid>
+<category>Poster</category>
+<description>&lt;p&gt;J. Ye, B. Nicolae, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'24), 2024&lt;/p&gt;</description>
+</item>
+<item>
+<title>MegaMmap: Blurring the Boundary Between Memory and Storage for Data-Intensive Workloads</title>
+<link>https://iowarp.ai/research/#logan2024megammap</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#logan2024megammap</guid>
+<category>Paper</category>
+<description>&lt;p&gt;L. Logan, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis SC, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1109/SC41406.2024.00114&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>DFTracer: An Analysis-Friendly Data Flow Tracer for AI-Driven Workflows</title>
+<link>https://iowarp.ai/research/#devarajan2024dftracer</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#devarajan2024dftracer</guid>
+<category>Paper</category>
+<description>&lt;p&gt;H. Devarajan, L. Pottier, K. Velusamy, H. Zheng, I. Yildirim, O. Kogiou, W. Yu, A. Kougkas, X.-H. Sun, J. S. Yeom, K. Mohror&lt;/p&gt;&lt;p&gt;Proceedings of the International Conference for High Performance Computing, Networking, Storage, and Analysis, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dl.acm.org/doi/abs/10.1109/SC41406.2024.00023&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>To Derive or Not to Derive: I/O Libraries Take Charge of Derived Quantities Computation</title>
+<link>https://iowarp.ai/research/#gainaru2024derive</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#gainaru2024derive</guid>
+<category>Paper</category>
+<description>&lt;p&gt;A. Gainaru, N. Podhorszki, L. Dulac, Q. Gong, S. Klasky, G. Eisenhauer, A. Kougkas, X.-H. Sun, J. Lofstead&lt;/p&gt;&lt;p&gt;2024 IEEE 36th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/10763877&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics</title>
+<link>https://iowarp.ai/research/#tang2024dayu</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#tang2024dayu</guid>
+<category>Paper</category>
+<description>&lt;p&gt;M. Tang, J. Cernuda, J. Ye, L. Guo, N. R. Tallent, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the IEEE International Conference on Cluster Computing, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/10740817&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>An Evaluation of DAOS for Simulation and Deep Learning HPCWorkloads</title>
+<link>https://iowarp.ai/research/#logan2024daos</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#logan2024daos</guid>
+<category>Paper</category>
+<description>&lt;p&gt;L. Logan, J. Lofstead, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;Proceedings of the ACM SIGOPS Operating Systems Review, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1145/3689051.3689058&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Viper: A High-Performance I/O Framework for Transparently Updating, Storing, and Transferring Deep Neural Network Models</title>
+<link>https://iowarp.ai/research/#ye2024viper</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#ye2024viper</guid>
+<category>Paper</category>
+<description>&lt;p&gt;J. Ye, J. Cernuda, N. Rajesh, K. Bateman, O. Yildiz, T. Peterka, A. Nigmetov, D. Morozov, X.-H. Sun, A. Kougkas, B. Nicolae&lt;/p&gt;&lt;p&gt;Proceedings of the 53rd International Conference on Parallel Processing, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1145/3673038.3673070&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>HStream: A hierarchical data streaming engine for high-throughput scientific applications</title>
+<link>https://iowarp.ai/research/#cernuda2024hstream</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#cernuda2024hstream</guid>
+<category>Paper</category>
+<description>&lt;p&gt;J. Cernuda, J. Ye, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the 53rd International Conference on Parallel Processing, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dl.acm.org/doi/abs/10.1145/3673038.3673150&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>TunIO: An AI-powered Framework for Optimizing HPC I/O</title>
+<link>https://iowarp.ai/research/#rajesh2024tunio</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#rajesh2024tunio</guid>
+<category>Paper</category>
+<description>&lt;p&gt;N. Rajesh, K. Bateman, J. L. Bez, S. Byna, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the International Parallel and Distributed Processing Symposium, 2024&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/10579249&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Data Flow Lifecycles for Optimizing Workflow Coordination</title>
+<link>https://iowarp.ai/research/#lee2023data</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#lee2023data</guid>
+<category>Paper</category>
+<description>&lt;p&gt;H. Lee, L. Guo, M. Tang, J. Firoz, N. Tallent, A. Kougkas, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, 2023&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dl.acm.org/doi/abs/10.1145/3581784.3607104&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>IOMax: Maximizing Out-of-Core I/O Analysis Performance on HPC Systems</title>
+<link>https://iowarp.ai/research/#yildirim2023iomax</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#yildirim2023iomax</guid>
+<category>Paper</category>
+<description>&lt;p&gt;I. Yildirim, H. Devarajan, A. Kougkas, X.-H. Sun, K. Mohror&lt;/p&gt;&lt;p&gt;Proceedings of the SC'23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis, 2023&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dl.acm.org/doi/abs/10.1145/3624062.3624191&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>An Evaluation of DAOS for Simulation and Deep Learning HPC Workloads</title>
+<link>https://iowarp.ai/research/#logan2023evaluation</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#logan2023evaluation</guid>
+<category>Paper</category>
+<description>&lt;p&gt;L. Logan, J. Lofstead, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;Proceedings of the 3rd Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems, 2023&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dl.acm.org/doi/abs/10.1145/3578353.3589542&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>LabStor: A modular and extensible platform for developing high-performance, customized I/O stacks in userspace</title>
+<link>https://iowarp.ai/research/#logan2022labstor</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#logan2022labstor</guid>
+<category>Paper</category>
+<description>&lt;p&gt;L. Logan, J. Cernuda, J. Lofstead, X.-H. Sun, A. Kougkas&lt;/p&gt;&lt;p&gt;Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, 2022&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/abstract/document/10046077&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Stimulus: Accelerate Data Management for Scientific AI applications in HPC</title>
+<link>https://iowarp.ai/research/#devarajan2022stimulus</link>
+<guid isPermaLink="true">https://iowarp.ai/research/#devarajan2022stimulus</guid>
+<category>Paper</category>
+<description>&lt;p&gt;H. Devarajan, A. Kougkas, H. Zheng, V. Vishwanath, X.-H. Sun&lt;/p&gt;&lt;p&gt;Proceedings of the 22nd IEEE International Symposium on Cluster, Cloud and Internet Computing, 2022&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/abstract/document/9826104&quot;&gt;Read it&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+</channel>
+</rss>

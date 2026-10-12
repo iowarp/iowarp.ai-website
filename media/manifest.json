@@ -1,0 +1,234 @@
+{
+  "clips": {
+    "h2-sort": {
+      "stamp": "5e86fa85a6700c9c",
+      "source": "Cubes_organizing_into_connected_…_20260929075731.mp4",
+      "aspect": 1.3333333333333333,
+      "width": 720,
+      "height": 540,
+      "fps": 24,
+      "seconds": 7.25,
+      "loop": {
+        "start": 6,
+        "end": 191,
+        "fade": 12,
+        "matchDb": 31.9,
+        "wrapDb": 40.2
+      },
+      "files": {
+        "h2-sort-720.webm": 1002617,
+        "h2-sort-720.mp4": 960226,
+        "h2-sort-poster.webp": 27932,
+        "h2-sort-480.webm": 386608,
+        "h2-sort-480.mp4": 392784
+      }
+    },
+    "h0-expand": {
+      "stamp": "5b6b9df6201e47d8",
+      "source": "Cubes_dispersing_and_reassembling_1080p_20260929074157.mp4",
+      "aspect": 1.3333333333333333,
+      "width": 720,
+      "height": 540,
+      "fps": 24,
+      "seconds": 7.21,
+      "loop": {
+        "start": 7,
+        "end": 191,
+        "fade": 12,
+        "matchDb": 28.9,
+        "wrapDb": 37.9
+      },
+      "files": {
+        "h0-expand-720.webm": 779255,
+        "h0-expand-720.mp4": 713875,
+        "h0-expand-poster.webp": 25044,
+        "h0-expand-480.webm": 405784,
+        "h0-expand-480.mp4": 395103
+      }
+    },
+    "h1-breathe": {
+      "stamp": "dbb7703cad5734f4",
+      "source": "Logo_cubes_expanding_and_contrac…_20260929075628.mp4",
+      "aspect": 1.3333333333333333,
+      "width": 720,
+      "height": 540,
+      "fps": 24,
+      "seconds": 3.96,
+      "loop": {
+        "start": 24,
+        "end": 130,
+        "fade": 12,
+        "matchDb": 38.3,
+        "wrapDb": 52.8
+      },
+      "files": {
+        "h1-breathe-720.webm": 323590,
+        "h1-breathe-720.mp4": 326911,
+        "h1-breathe-poster.webp": 23262,
+        "h1-breathe-480.webm": 168755,
+        "h1-breathe-480.mp4": 165848
+      }
+    },
+    "h3-stream": {
+      "stamp": "aeb164be4a975d11",
+      "source": "Cubes_peeling_and_reforming_1080p_20260929075811.mp4",
+      "aspect": 1.3333333333333333,
+      "width": 720,
+      "height": 540,
+      "fps": 24,
+      "seconds": 7,
+      "loop": {
+        "start": 13,
+        "end": 192,
+        "fade": 12,
+        "matchDb": 34.5,
+        "wrapDb": 35.1
+      },
+      "files": {
+        "h3-stream-720.webm": 965390,
+        "h3-stream-720.mp4": 909918,
+        "h3-stream-poster.webp": 23368,
+        "h3-stream-480.webm": 404125,
+        "h3-stream-480.mp4": 408066
+      }
+    },
+    "a1": {
+      "stamp": "beb6fbf816992d54",
+      "source": "CLIO_icon_animation_and_flow_20261011195028.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 7.5,
+      "loop": {
+        "start": 0,
+        "end": 191,
+        "fade": 12,
+        "matchDb": 38.1,
+        "wrapDb": 53.5
+      },
+      "files": {
+        "a1-720.webm": 289380,
+        "a1-720.mp4": 262607,
+        "a1-poster.webp": 12808,
+        "a1-480.webm": 179744,
+        "a1-480.mp4": 157341
+      }
+    },
+    "a2": {
+      "stamp": "183cddd3e5e22232",
+      "source": "Animation_unwinds_rings_into_paths_20261011195127.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 7.5,
+      "loop": {
+        "start": 0,
+        "end": 191,
+        "fade": 12,
+        "matchDb": 26.6,
+        "wrapDb": 33.6
+      },
+      "files": {
+        "a2-720.webm": 411137,
+        "a2-720.mp4": 356732,
+        "a2-poster.webp": 17976,
+        "a2-480.webm": 262400,
+        "a2-480.mp4": 219119
+      }
+    },
+    "a3": {
+      "stamp": "604e19a04b632473",
+      "source": "Motion_graphics_animation_of_CLIO_20261011195134.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 6.17,
+      "loop": {
+        "start": 7,
+        "end": 166,
+        "fade": 12,
+        "matchDb": 20.8,
+        "wrapDb": 38.2
+      },
+      "files": {
+        "a3-720.webm": 231997,
+        "a3-720.mp4": 213781,
+        "a3-poster.webp": 10832,
+        "a3-480.webm": 151610,
+        "a3-480.mp4": 131112
+      }
+    },
+    "a4": {
+      "stamp": "0093f5a5de1dc2d9",
+      "source": "CLIO_icon_animation_balancing_load_20261011195144.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 4.58,
+      "loop": {
+        "start": 34,
+        "end": 155,
+        "fade": 12,
+        "matchDb": 34.8,
+        "wrapDb": 47.2
+      },
+      "files": {
+        "a4-720.webm": 137625,
+        "a4-720.mp4": 162374,
+        "a4-poster.webp": 14974,
+        "a4-480.webm": 86363,
+        "a4-480.mp4": 101822
+      }
+    },
+    "a5": {
+      "stamp": "c3b3f9e4680ae636",
+      "source": "CLIO_icon_animation_with_superco…_20261011195154.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 4.67,
+      "loop": {
+        "start": 31,
+        "end": 154,
+        "fade": 12,
+        "matchDb": 31.5,
+        "wrapDb": 45.2
+      },
+      "files": {
+        "a5-720.webm": 171473,
+        "a5-720.mp4": 170217,
+        "a5-poster.webp": 16706,
+        "a5-480.webm": 111590,
+        "a5-480.mp4": 107763
+      }
+    },
+    "a6": {
+      "stamp": "a918c6abf2997190",
+      "source": "Data_blocks_moving_to_storage_20261011195204.mp4",
+      "aspect": 1.7777777777777777,
+      "width": 720,
+      "height": 406,
+      "fps": 24,
+      "seconds": 5.21,
+      "loop": {
+        "start": 0,
+        "end": 136,
+        "fade": 12,
+        "matchDb": 24.9,
+        "wrapDb": 35.4
+      },
+      "files": {
+        "a6-720.webm": 163044,
+        "a6-720.mp4": 161630,
+        "a6-poster.webp": 14672,
+        "a6-480.webm": 105613,
+        "a6-480.mp4": 98145
+      }
+    }
+  }
+}

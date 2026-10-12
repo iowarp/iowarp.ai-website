@@ -1,26 +1,15 @@
 {
   "name": "IOWarp",
   "short_name": "IOWarp",
-  "description": "Context engineering platform for autonomous AI agents in scientific computing.",
+  "description": "IOWarp builds CLIO, an open stack for AI-driven science, from GPU kernels to agents.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#071119",
+  "theme_color": "#071119",
   "icons": [
-    {
-      "src": "/images/favicons/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "/images/favicons/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/images/favicons/favicon-64x64.png",
-      "sizes": "64x64",
-      "type": "image/png"
-    }
+    { "src": "/images/favicons/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/images/favicons/favicon-64x64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/images/favicons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/favicons/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
