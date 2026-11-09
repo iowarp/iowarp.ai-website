@@ -128,7 +128,7 @@ Who should get in touch
 
 Materials groups with simulation, manufacturing, or characterization pipelines, facility data teams, and anyone whose workflow crosses more instruments and machines than one person can track.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20Agents%20in%20the%20materials%20workflow) [Join the community](https://iowarp.ai/community/)
 
 Related
 

@@ -93,7 +93,7 @@ The SPOTTER provenance investigator pack and its read-only provenance MCP server
 
 Open source ↗
 
-<https://github.com/iowarp/clio-agent-marketplace/tree/main/spotter-ai>
+<https://github.com/iowarp/clio-agent-marketplace/tree/main/plugins/spotter>
 
 03 / Component**CLIO Kit**
 
@@ -115,7 +115,7 @@ Who should get in touch
 
 Facility security teams, provenance-system developers, and owners of AI workflows who need to know when a result can be trusted.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20Provenance%20and%20integrity%20for%20AI-driven%20science) [Join the community](https://iowarp.ai/community/)
 
 Related
 
@@ -135,7 +135,7 @@ Related
 3. [Flowcept workflow provenance system (Oak Ridge National Laboratory)](https://github.com/ORNL/flowcept)
 4. [CLIO Agent source repository](https://github.com/iowarp/clio-agent)
 5. [SPOTTER-AI project repositories, including vllm-kvnorm token-importance capture](https://github.com/spotter-ai-genesis)
-6. [SPOTTER provenance investigator pack in the CLIO Agent marketplace](https://github.com/iowarp/clio-agent-marketplace/tree/main/spotter-ai)
+6. [SPOTTER provenance investigator pack in the CLIO Agent marketplace](https://github.com/iowarp/clio-agent-marketplace/tree/main/plugins/spotter)
 
 Next application · A4
 

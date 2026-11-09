@@ -16,7 +16,7 @@ November 15–20, 2026 · McCormick Place, Chicago
 
 Talk to us
 
-[Zulip ↗](https://iowarp.zulipchat.com/) · [Email the team](https://iowarp.ai/community/#contact)
+[Zulip ↗](https://iowarp.zulipchat.com/) · [Email the team](mailto:info@iowarp.ai?subject=%5BIOWarp-website%5D%20Contact)
 
 On this page
 
@@ -37,13 +37,13 @@ IOWarp and the CLIO platform soft launch at SC26 in Chicago. The team presents w
 
 - 01
   ### Workshop [GPUH5: A GPU-first I/O Library for Scientific Data](https://sc26.conference-program.com/presentation/?id=ws_pdsw111&sess=sess129)
-  Monday, November 16, 2026, 10:50–11:10 am CST · Room W175bc PDSW’26: The 11th International Parallel Data Systems Workshop GPU-initiated writes for persistent kernels, with hierarchical paths and chunked arrays backed by a key-value store.
+  Monday, November 16, 2026, 10:50–11:10 am CST · Room W179b PDSW’26: The 11th International Parallel Data Systems Workshop GPU-initiated writes for persistent kernels, with hierarchical paths and chunked arrays backed by a key-value store.
 - 02
   ### Workshop [GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage](https://sc26.conference-program.com/presentation/?id=ws_pdsw125&sess=sess129)
-  Monday, November 16, 2026, 11:30–11:50 am CST · Room W175bc PDSW’26: The 11th International Parallel Data Systems Workshop eBPF tracing that attributes NVMe device commands to the cuFile or POSIX operation that caused them.
+  Monday, November 16, 2026, 11:30–11:50 am CST · Room W179b PDSW’26: The 11th International Parallel Data Systems Workshop eBPF tracing that attributes NVMe device commands to the cuFile or POSIX operation that caused them.
 - 03
   ### Workshop [Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring](https://sc26.conference-program.com/presentation/?id=ws_pdswwip113&sess=sess129)
-  Monday, November 16, 2026, 12:15–12:20 pm CST · Room W175bc PDSW’26: The 11th International Parallel Data Systems Workshop Work-in-progress presentation on Vigil: deterministic triggers, in-transit rendering, and agent-driven ParaView inspection on the simulation I/O path.
+  Monday, November 16, 2026, 12:15–12:20 pm CST · Room W179b PDSW’26: The 11th International Parallel Data Systems Workshop Work-in-progress presentation on Vigil: deterministic triggers, in-transit rendering, and agent-driven ParaView inspection on the simulation I/O path.
 - 04
   ### Poster [Extending I/O Observability to Explainability for Targeted Optimization](https://sc26.conference-program.com/presentation/?id=rpost229&sess=sess313)
   Tuesday, November 17, 2026, 10:00 am–5:00 pm CST · Skyline Ballroom North Pre-Function Research posters display · Poster Blitz PEARL, an eBPF tracing plugin for DataCrumbs, follows requests from system calls to disk completion to explain the causes of I/O bottlenecks.
@@ -76,7 +76,7 @@ How to take part
 1. Tell the team you are interested in
   [Zulip](https://iowarp.zulipchat.com/)
   or by
-  [email](https://iowarp.ai/community/#contact)
+  [email](mailto:info@iowarp.ai?subject=%5BIOWarp-website%5D%20User%20group)
   .
 2. Name the component you use and the workflow you would bring.
 3. The team sends details before each gathering and follows up on what you raise in the public issue trackers.
@@ -126,12 +126,12 @@ Invitations follow SC26, starting with the research collaborators who have worke
   ### Research partnership
   Define a scientific workload, a research question, an evaluation plan, and a shared publication path with the team.
   Discuss a collaboration →
-  <https://iowarp.ai/community/#contact>
+  <mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration>
 - 02 / Contribution path
   ### Compute and infrastructure
   Provide machines, storage, instruments, or test environments where context systems have to work for real.
   Discuss resources →
-  <https://iowarp.ai/community/#contact>
+  <mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Resources>
 - 03 / Contribution path
   ### Build a scientific tool
   Connect a format, scheduler, instrument, or analysis library through CLIO Kit. Servers are small, separately versioned, and a good first contribution.
@@ -153,7 +153,7 @@ Invitations follow SC26, starting with the research collaborators who have worke
   Read the applications →
   <https://iowarp.ai/applications/>
 
-For institutional sponsorship terms or a formal research agreement, write to the Gnosis Research Center by [email](https://iowarp.ai/community/#contact). The team and its support are described on the [About page](https://iowarp.ai/about/#team).
+For institutional sponsorship terms or a formal research agreement, write to the IOWarp team by [email](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Sponsorship). The team and its support are described on the [About page](https://iowarp.ai/about/#team).
 
 05 / A good first exchange
 
@@ -166,7 +166,7 @@ For institutional sponsorship terms or a formal research agreement, write to the
 3. 03
   Bring a proposed fix or a benchmark when possible. Tests and documentation that make a scientific workflow repeatable are valuable contributions.
 4. 04
-  Continue the conversation in [Zulip](https://iowarp.zulipchat.com/) or write to the Gnosis Research Center [by email](https://iowarp.ai/community/#contact) about a collaboration.
+  Continue the conversation in [Zulip](https://iowarp.zulipchat.com/) or write to the IOWarp team [by email](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration) about a collaboration.
 
 06 / Gatherings
 
@@ -186,10 +186,14 @@ For institutional sponsorship terms or a formal research agreement, write to the
 
 ## Write to the team.
 
-The contact form is for collaboration proposals, questions about using CLIO, and press requests. Formal sponsorship terms and research agreements start here too. For quick questions from users and contributors, [Zulip](https://iowarp.zulipchat.com/) is faster, and the answers help others.
+Contact IOWarp using the project inbox that matches your question.
+
+[info@iowarp.ai](mailto:info@iowarp.ai) General questions about IOWarp.
+
+[partnerships@iowarp.ai](mailto:partnerships@iowarp.ai) Collaborations, partner institutions, and industry partnerships.
 
 Next step
 
 ## Bring the hard problem.
 
-[Join the conversation on Zulip](https://iowarp.zulipchat.com/) [Write to the team](https://iowarp.ai/community/#contact)
+[Join the conversation on Zulip](https://iowarp.zulipchat.com/) [Write to the team](mailto:info@iowarp.ai?subject=%5BIOWarp-website%5D%20Contact)

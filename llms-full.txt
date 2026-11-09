@@ -1,6 +1,6 @@
 # IOWarp: full project reference
 # Website: https://iowarp.ai/
-# Generated from site data at build time: 2026-10-12
+# Generated from site data at build time: 2026-11-09
 # Each page is also available as Markdown at <page>/index.md; the short index is https://iowarp.ai/llms.txt
 
 ## Identity
@@ -270,7 +270,7 @@ Record:
 - CLIO Agent shipped a Spotter approval mode in August 2026: a watcher agent observes the session, and destructive tool calls fail closed unless the watcher clears them. Sources: CLIO Agent changelog, including the Spotter approval mode <https://github.com/iowarp/clio-agent/blob/v0.9.4.24/CHANGELOG.md>.
 - A unified, read-only Spotter provenance MCP server was implemented in the CLIO Agent marketplace and qualified live against the Flowcept and CMF provenance providers. Sources: CLIO Agent design note: unified Spotter provenance MCP server <https://github.com/iowarp/clio-agent/blob/v0.9.4.24/docs/design/unified-spotter-provenance-mcp-2026-08.md>; Flowcept workflow provenance system (Oak Ridge National Laboratory) <https://github.com/ORNL/flowcept>.
 - CLIO Agent can stamp its records of model calls with the response identifier that joins them to token-importance signals captured from vLLM inference, so an investigation can join agent activity to evidence from inside the model. Conditions: Off by default; enabled through the kvnorm option with Flowcept. Sources: CLIO Agent source repository <https://github.com/iowarp/clio-agent>; SPOTTER-AI project repositories, including vllm-kvnorm token-importance capture <https://github.com/spotter-ai-genesis>.
-- A SPOTTER provenance investigator pack is published in the CLIO Agent marketplace. Sources: SPOTTER provenance investigator pack in the CLIO Agent marketplace <https://github.com/iowarp/clio-agent-marketplace/tree/main/spotter-ai>.
+- A SPOTTER provenance investigator pack is published in the CLIO Agent marketplace. Sources: SPOTTER provenance investigator pack in the CLIO Agent marketplace <https://github.com/iowarp/clio-agent-marketplace/tree/main/plugins/spotter>.
 
 Next: Connect the investigation layer to the project’s scientific testbed workflows. Instruction-tune a foundation model for provenance analysis. Record a demonstration of CLIO Agent working with SPOTTER-AI.
 
@@ -357,9 +357,9 @@ Next: Publish GPU offload measurements with GPU model, interconnect, storage, an
 IOWarp and the CLIO platform soft launch at SC26 in Chicago. The team presents work on simulation monitoring, GPU I/O, storage observability, compressed training data, and agent fleets through workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session. SC26, The International Conference for High Performance Computing, Networking, Storage, and Analysis: November 15–20, 2026, McCormick Place, Chicago, Illinois (https://sc26.supercomputing.org/).
 
 Confirmed sessions:
-- Workshop: GPUH5: A GPU-first I/O Library for Scientific Data. Monday, November 16, 2026, 10:50–11:10 am CST, Room W175bc, PDSW’26: The 11th International Parallel Data Systems Workshop. GPU-initiated writes for persistent kernels, with hierarchical paths and chunked arrays backed by a key-value store. https://sc26.conference-program.com/presentation/?id=ws_pdsw111&sess=sess129
-- Workshop: GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage. Monday, November 16, 2026, 11:30–11:50 am CST, Room W175bc, PDSW’26: The 11th International Parallel Data Systems Workshop. eBPF tracing that attributes NVMe device commands to the cuFile or POSIX operation that caused them. https://sc26.conference-program.com/presentation/?id=ws_pdsw125&sess=sess129
-- Workshop: Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring. Monday, November 16, 2026, 12:15–12:20 pm CST, Room W175bc, PDSW’26: The 11th International Parallel Data Systems Workshop. Work-in-progress presentation on Vigil: deterministic triggers, in-transit rendering, and agent-driven ParaView inspection on the simulation I/O path. https://sc26.conference-program.com/presentation/?id=ws_pdswwip113&sess=sess129
+- Workshop: GPUH5: A GPU-first I/O Library for Scientific Data. Monday, November 16, 2026, 10:50–11:10 am CST, Room W179b, PDSW’26: The 11th International Parallel Data Systems Workshop. GPU-initiated writes for persistent kernels, with hierarchical paths and chunked arrays backed by a key-value store. https://sc26.conference-program.com/presentation/?id=ws_pdsw111&sess=sess129
+- Workshop: GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage. Monday, November 16, 2026, 11:30–11:50 am CST, Room W179b, PDSW’26: The 11th International Parallel Data Systems Workshop. eBPF tracing that attributes NVMe device commands to the cuFile or POSIX operation that caused them. https://sc26.conference-program.com/presentation/?id=ws_pdsw125&sess=sess129
+- Workshop: Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring. Monday, November 16, 2026, 12:15–12:20 pm CST, Room W179b, PDSW’26: The 11th International Parallel Data Systems Workshop. Work-in-progress presentation on Vigil: deterministic triggers, in-transit rendering, and agent-driven ParaView inspection on the simulation I/O path. https://sc26.conference-program.com/presentation/?id=ws_pdswwip113&sess=sess129
 - Poster: Extending I/O Observability to Explainability for Targeted Optimization. Tuesday, November 17, 2026, 10:00 am–5:00 pm CST, Skyline Ballroom North Pre-Function, Research posters display · Poster Blitz. PEARL, an eBPF tracing plugin for DataCrumbs, follows requests from system calls to disk completion to explain the causes of I/O bottlenecks. https://sc26.conference-program.com/presentation/?id=rpost229&sess=sess313
 - Poster: GNNs Beyond HBM: Compressed, Bit-Exact Feature Streaming for Out-of-Core Training. Tuesday, November 17, 2026, 10:00 am–5:00 pm CST, Skyline Ballroom North Pre-Function, Research posters display · Poster Blitz. GnnPress streams compressed node features through a bounded GPU memory window for graph neural network training, with a lossless path that preserves exact values. https://sc26.conference-program.com/presentation/?id=rpost258&sess=sess313
 - Poster: StageOnce: Speculative Cross-Job Data Staging for LLM Agent Fleets. Tuesday, November 17, 2026, 10:00 am–5:00 pm CST, Skyline Ballroom North Pre-Function, Research posters display · Poster Blitz. A node-local daemon coordinates speculative input staging across agent jobs, sharing immutable dataset copies while preserving versions and private outputs. https://sc26.conference-program.com/presentation/?id=rpost305&sess=sess313
@@ -593,7 +593,7 @@ Each page, then its Markdown twin.
 - https://iowarp.ai/about/ (Markdown: https://iowarp.ai/about/index.md)
 - https://iowarp.ai/progress/ (Markdown: https://iowarp.ai/progress/index.md)
 
-Contact form (prepares an email in your mail app): https://iowarp.ai/community/#contact
+Contact: https://iowarp.ai/community/#contact; info@iowarp.ai for general questions about IOWarp; partnerships@iowarp.ai for collaborations, partner institutions, and industry partnerships.
 Feeds (RSS): https://iowarp.ai/rss.xml for news and releases, https://iowarp.ai/research/rss.xml for publications.
 
 Acknowledgment: IOWarp is supported by the U.S. National Science Foundation through collaborative awards OAC-2411318 and OAC-2411319. The DOE Genesis Mission and the American Science Cloud (AmSC) support IOWarp with computing and collaboration. The team is described at https://iowarp.ai/about/#team

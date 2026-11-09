@@ -120,7 +120,7 @@ Who should get in touch
 
 Data platform operators, catalog maintainers, and domain scientists whose data is already findable but still hard to use.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20Agents%20on%20the%20National%20Data%20Platform) [Join the community](https://iowarp.ai/community/)
 
 Related
 

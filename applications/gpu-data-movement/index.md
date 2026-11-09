@@ -116,7 +116,7 @@ Who should get in touch
 
 GPU systems researchers, inference-serving teams, and facilities with GPU-attached NVMe or GPUDirect-capable storage.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20GPU%20direct%20I%2FO%20and%20compression) [Join the community](https://iowarp.ai/community/)
 
 Related
 

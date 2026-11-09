@@ -942,7 +942,7 @@
   {
    "id": "qa-45",
    "question": "How can an organization support IOWarp?",
-   "answer": "Organizations can propose a research partnership, provide compute or infrastructure, contribute open-source engineering, or bring a scientific use case. Formal sponsorship terms and research agreements are arranged with the Gnosis Research Center, which you can reach through the contact form on the community page.",
+   "answer": "Organizations can propose a research partnership, provide compute or infrastructure, contribute open-source engineering, or bring a scientific use case. Formal sponsorship terms and research agreements are arranged with the IOWarp team at partnerships@iowarp.ai.",
    "keywords": [
     "sponsor",
     "support",
@@ -1321,7 +1321,7 @@
   {
    "id": "qa-63",
    "question": "Is there an IOWarp user group meeting?",
-   "answer": "Yes. The team plans user group meetings where upcoming releases are discussed and user feedback shapes what comes next. The user group first gathers around IOWarp’s events at SC26 in Chicago, November 15–20, 2026. Register interest in Zulip or through the contact form on the community page.",
+   "answer": "Yes. The team plans user group meetings where upcoming releases are discussed and user feedback shapes what comes next. The user group first gathers around IOWarp’s events at SC26 in Chicago, November 15–20, 2026. Register interest in Zulip or by email at info@iowarp.ai.",
    "keywords": [
     "user",
     "group",
@@ -2121,7 +2121,7 @@
   {
    "id": "qa-95",
    "question": "Which IOWarp workshop presentations are at SC26?",
-   "answer": "The PDSW workshop presentations take place on Monday, November 16, 2026, in Room W175bc: GPUH5: A GPU-first I/O Library for Scientific Data, from 10:50 to 11:10 am; GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage, from 11:30 to 11:50 am; and Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring, from 12:15 to 12:20 pm. The trigger-gated presentation is work in progress. All times are CST.",
+   "answer": "The PDSW workshop presentations take place on Monday, November 16, 2026, in Room W179b: GPUH5: A GPU-first I/O Library for Scientific Data, from 10:50 to 11:10 am; GDSight: Per-Operation Cross-Layer Attribution for GPUDirect Storage, from 11:30 to 11:50 am; and Trigger-Gated Multimodal LLM Agents for In-situ Scientific Simulation Monitoring, from 12:15 to 12:20 pm. The trigger-gated presentation is work in progress. All times are CST.",
    "keywords": [
     "sc26",
     "pdsw",

@@ -134,7 +134,7 @@ Tools for writing, measuring, and testing research claims.
 ## Optional
 
 - Acknowledgment: IOWarp is supported by the U.S. National Science Foundation through collaborative awards OAC-2411318 and OAC-2411319. The DOE Genesis Mission and the American Science Cloud (AmSC) support IOWarp with computing and collaboration. The team is described at https://iowarp.ai/about/#team
-- Contact form (prepares an email in your mail app): https://iowarp.ai/community/#contact
+- Contact: https://iowarp.ai/community/#contact; info@iowarp.ai for general questions about IOWarp; partnerships@iowarp.ai for collaborations, partner institutions, and industry partnerships.
 - News and releases feed (RSS): https://iowarp.ai/rss.xml
 - Publications feed (RSS): https://iowarp.ai/research/rss.xml
 - Search the site: https://iowarp.ai/?q={query}

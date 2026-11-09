@@ -111,7 +111,7 @@ Who should get in touch
 
 Facility staff, allocation holders, and application teams on ACCESS and DOE systems who want a context runtime measured on their machines.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20CLIO%20on%20national%20research%20systems) [Join the community](https://iowarp.ai/community/)
 
 Related
 

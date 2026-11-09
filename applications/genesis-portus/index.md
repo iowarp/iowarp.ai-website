@@ -120,7 +120,7 @@ Who should get in touch
 
 Workflow system developers, HPC and cloud facility teams, and application groups whose workflows change while they run.
 
-[Propose a collaboration](https://iowarp.ai/community/#contact) [Join the community](https://iowarp.ai/community/)
+[Propose a collaboration](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20Agentic%20workflows%20across%20HPC%20and%20cloud) [Join the community](https://iowarp.ai/community/)
 
 Related
 

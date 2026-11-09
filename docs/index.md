@@ -224,6 +224,6 @@ Next step
 
 ## Not sure where to start?
 
-[Compare the flagships](https://iowarp.ai/platform/#flagships) [Talk to the team](https://iowarp.ai/community/#contact)
+[Compare the flagships](https://iowarp.ai/platform/#flagships) [Talk to the team](mailto:info@iowarp.ai?subject=%5BIOWarp-website%5D%20Contact)
 
 CLIO Agent works with scientific data and CLIO Coder works on scientific software. Both can use scientific tools from CLIO Kit.
