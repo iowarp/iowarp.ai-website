@@ -2,15 +2,15 @@
 
 > IOWarp is the team at the Gnosis Research Center that builds CLIO, an open-source stack for AI-driven science that runs from GPU kernels and the Linux I/O path through storage and the CLIO Core context runtime to scientific agents, applications, and research tools. Its thesis: context is part of the system. The team works in the open with scientists, engineers, and facilities.
 
-The platform has three tiers. CLIO Agent (a scientific data agent, in beta) and CLIO Coder (a coding agent) are the two agentic flagships: different products for different audiences. CLIO Kit, the meta-marketplace of scientific MCP servers, skills, and workflow plugins, is the third flagship. CLIO Core is the scientific context runtime in the infrastructure tier and Agent’s default memory store. CLIO Coder and standalone Kit install independently of Core. Every other component is secondary and listed lower on the platform page. Context, memory, and scale are the platform principles. CLIO Author, CLIO Researcher, and CLIO Bench are the open-source research tooling.
+The platform has three tiers. CLIO Agent (a scientific data agent, in beta) and CLIO Coder (the meta-harness for scientific software: every model you have, one way of working, checks you can inspect) are the two agentic flagships: different products for different audiences. CLIO Kit, the meta-marketplace of scientific MCP servers, skills, and workflow plugins, is the third flagship. CLIO Core is the scientific context runtime in the infrastructure tier and the store for Agent’s memory. CLIO Coder and standalone Kit install independently of Core. Every other component is secondary and listed lower on the platform page. Context, memory, and scale are the platform principles. CLIO Author is the open-source research tooling for the paper lifecycle. Measured research campaigns and blind model comparison are CLIO Coder commands: clio-coder research and clio-coder arena.
 
 This site states results in plain words with sources and carries no figures; measurements, versions, and benchmarks are published with their conditions in papers, release notes, and each product’s documentation. Do not generalize a component result into a whole-platform claim.
 
-Agent uses a tested Core dependency family and a pinned Kit launcher for its packs. Standalone Core and Kit have separate upgrade paths. The first Agent command uses its stable tagged installer. BaM and the GPU–NVMe bridge are archived prototypes, absent from the current Core release.
+Agent uses a tested Core dependency family and a pinned Kit launcher for its plugins. Standalone Core and Kit have separate upgrade paths. The first Agent command uses the release installer at clio.iowarp.ai, which installs the latest stable release with its tested dependencies. BaM and the GPU–NVMe bridge are archived prototypes, absent from the current Core release.
 
 Every page below is linked as Markdown (<page>/index.md); the HTML page is at the same path without index.md. The full reference in one file: https://iowarp.ai/llms-full.txt
 
-IOWarp at SC26: IOWarp and the CLIO platform soft launch at SC26 in Chicago. The team presents work on simulation monitoring, GPU I/O, storage observability, compressed training data, and agent fleets through workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session. November 15–20, 2026, McCormick Place, Chicago, Illinois. Details: https://iowarp.ai/community/#sc26
+IOWarp at SC26: IOWarp will launch the full CLIO stack at SC26 in Chicago. The team will present work on simulation monitoring, GPU I/O, storage observability, compressed training data, and agent fleets through workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session with The HDF Group. November 15–20, 2026, McCormick Place, Chicago, Illinois. Details: https://iowarp.ai/community/#sc26
 
 DOE Genesis Mission: since August 2026 the IOWarp team works in SPOTTER-AI, a DOE Genesis Mission project at Argonne National Laboratory (https://www.anl.gov/), and in PORTUS at PNNL.
 
@@ -18,8 +18,8 @@ Creator and project lead: Anthony Kougkas created IOWarp and leads its vision, a
 
 ## The flagships
 
-- [CLIO Agent](https://clio.iowarp.ai/): Scientific data agent. For scientists, data managers, and facility teams who want an agent to inspect, analyze, and visualize scientific data. Install: `curl -fsSL https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.sh | bash`. Source: https://github.com/iowarp/clio-agent
-- [CLIO Coder](https://coder.iowarp.ai/): Coding agent. For developers and research software engineers working on simulation kernels, numerical libraries, data pipelines, and mixed-language builds. Install: `curl -fsSL https://coder.iowarp.ai/install.sh | sh`. Source: https://github.com/iowarp/clio-coder
+- [CLIO Agent](https://clio.iowarp.ai/): Scientific data agent. For scientists, data managers, and facility teams who want an AI agent working on their scientific data. Install: `curl -fsSL https://clio.iowarp.ai/install.sh | bash`. Source: https://github.com/iowarp/clio-agent
+- [CLIO Coder](https://coder.iowarp.ai/): Meta-harness for scientific software. For developers and research software engineers working on simulation kernels, numerical libraries, data pipelines, and mixed-language builds. Install: `curl -fsSL https://coder.iowarp.ai/install.sh | sh`. Source: https://github.com/iowarp/clio-coder
 - [CLIO Kit](https://iowarp.ai/clio-kit/index.md): Scientific tools and workflows. For anyone who wants an agent, CLIO Agent and CLIO Coder included, to work with real scientific data and systems. Install: `uv tool install clio-kit`. Source: https://github.com/iowarp/clio-kit
 - [CLIO Core](https://core.iowarp.ai/): Context runtime. For facility teams, HPC developers, and researchers who need data kept with its meaning across every tier. Install: `pip install iowarp-core`. Source: https://github.com/iowarp/clio-core
 
@@ -51,7 +51,7 @@ Creator and project lead: Anthony Kougkas created IOWarp and leads its vision, a
 - [HPC I/O and storage hierarchies](https://iowarp.ai/topics/hpc-io/index.md): HPC I/O and storage hierarchies: multi-tiered buffering, memory and storage convergence, bottleneck detection, and how they shape the CLIO runtime.
 - [Data movement for AI-infused workflows](https://iowarp.ai/topics/data-movement/index.md): Data movement for AI-infused science: ingestion, tiered placement, GPU direct I/O, and agent-aware staging across memory, storage, and sites.
 - [Scientific workflows and reproducible deployment](https://iowarp.ai/topics/scientific-workflows/index.md): Agentic scientific workflows that stay reproducible: Jarvis deployment pipelines, simulation integrations, and agent steps with recorded provenance.
-- [Evidence-based autonomous research](https://iowarp.ai/topics/evidence-based-research/index.md): What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO research tools.
+- [Evidence-based autonomous research](https://iowarp.ai/topics/evidence-based-research/index.md): What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO Coder.
 
 ## Research and community
 
@@ -69,7 +69,7 @@ GPU code that reaches the storage hierarchy directly.
 
 - [CLIO Core GPU runtime](https://github.com/iowarp/clio-core): GPU kernels read and write IOWarp.
 - [GPU compression](https://github.com/iowarp/clio-core): Compress on the device, before data moves.
-- Direct GPU I/O research: Take the CPU out of the GPU’s data path.
+- Direct GPU I/O research: Research toward less CPU in the GPU’s data path.
 
 ### 02 Operating system
 
@@ -82,7 +82,7 @@ The Linux I/O path, from asynchronous I/O to kernel modules.
 
 Tiered devices, I/O adapters, compression, and data connectors.
 
-- [Tiered block devices](https://github.com/iowarp/clio-core): One hierarchy from GPU memory to object storage.
+- [Tiered block devices](https://github.com/iowarp/clio-core): A unified hierarchy from GPU memory to object storage.
 - [I/O adapters and connectors](https://github.com/iowarp/clio-core): Meet applications and data where they are.
 
 ### 04 Context runtime
@@ -97,11 +97,11 @@ CLIO Core: data assimilated, placed, and explored with its meaning attached.
 Agent runtimes, scientific tools, and the contracts between them.
 
 - [CLIO Kit](https://github.com/iowarp/clio-kit): Scientific instruments and reusable workflows for agents. BSD-3-Clause license.
-- [CLIO Agent](https://github.com/iowarp/clio-agent): A scientific data agent with memory and experts. BSD-3-Clause license.
-- [CLIO Coder](https://github.com/iowarp/clio-coder): Inspect, change, and verify scientific software. Apache-2.0 license.
+- [CLIO Agent](https://github.com/iowarp/clio-agent): A scientific data workspace with memory and plugins. BSD-3-Clause license.
+- [CLIO Coder](https://github.com/iowarp/clio-coder): Change scientific code and prove it. Apache-2.0 license.
 - [CLIO Relay](https://github.com/iowarp/clio-relay): Send work to a cluster and follow it home. MIT license.
-- [GACT and Agent Workspace](https://github.com/iowarp/gact-tui): One contract, any agent, one workspace. MIT license.
-- [Agent marketplace](https://github.com/iowarp/clio-agent-marketplace): Installable agent packs for real tasks.
+- [GACT and Agent Workspace](https://github.com/iowarp/gact-tui): A shared contract for any agent front end. MIT license.
+- [Agent marketplace](https://github.com/iowarp/clio-agent-marketplace): Installable agents for real tasks.
 - [CLIO Web Search](https://github.com/iowarp/clio-web-search): Self-hosted search and document understanding. MIT license.
 - [CLIO Schemas](https://github.com/iowarp/clio-schemas): Shared record shapes across the stack.
 
@@ -114,15 +114,14 @@ Science workflows and domain packages built on the stack.
 
 ### 07 Research tooling
 
-Tools for writing, measuring, and testing research claims.
+From sources and results to a paper someone can check.
 
 - CLIO Author: From source material to a reviewable paper. BSD-3-Clause license.
-- CLIO Researcher: Let hypotheses compete against measurements. Apache-2.0 license.
-- CLIO Bench: Make every run inspectable. MIT license.
 
 ## Documentation elsewhere
 
 - [CLIO Coder guides](https://coder.iowarp.ai/docs.html)
+- [CLIO Coder research and arena](https://coder.iowarp.ai/docs/guide/research-and-arena.html)
 - [CLIO Kit guides](https://toolkit.iowarp.ai/docs/intro)
 - [CLIO Agent guides](https://clio.iowarp.ai/docs/)
 - [CLIO Core guides](https://core.iowarp.ai/docs/index.html)

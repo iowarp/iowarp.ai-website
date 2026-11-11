@@ -1,14 +1,14 @@
 ---
 title: "Results and milestones | IOWarp"
-description: "What IOWarp has built, run, and published since 2024, what comes next, and where the figures behind each result are published."
+description: "IOWarp builds CLIO, the open stack for AI-driven science. See where the work stands, what comes next, and where each result is published."
 url: https://iowarp.ai/progress/
 ---
 
-> What IOWarp has built, run, and published since 2024, what comes next, and where the figures behind each result are published.
+> IOWarp builds CLIO, the open stack for AI-driven science. See where the work stands, what comes next, and where each result is published.
 
 # Results and milestones.
 
-For reviewers, collaborators, and anyone evaluating the work: what the project has built, run, and published since 2024, and what comes next. Results are stated in plain words with their sources. The figures behind them live with their conditions in papers, release notes, and the project documentation listed at the end of this page.
+IOWarp is the team at the Gnosis Research Center that builds CLIO, the open-source stack connecting AI agents to scientific data and systems. It matters because organizations running scientific computing need AI they can check, and this page keeps the record of the work since 2024. IOWarp will launch the full stack at SC26 in Chicago. Results appear in plain words with their sources, and the figures live with their conditions in the papers, release notes, and documentation listed at the end of this page.
 
 Timeline
 
@@ -20,7 +20,7 @@ What the work has shown
 
 Updated
 
-9 November 2026
+11 November 2026
 
 01 / Timeline
 
@@ -59,19 +59,30 @@ Updated
   #### Science partnerships
     - The team joins two DOE Genesis Mission projects, SPOTTER-AI at Argonne and PORTUS at PNNL.
       [11]
-    - A coordinated release across CLIO Core, Kit, Agent, CLIO Coder, and Relay adds the Spotter approval mode to CLIO Agent.
+    - A coordinated release across CLIO Core, CLIO Kit, CLIO Agent, CLIO Coder, and CLIO Relay adds the Spotter approval mode to CLIO Agent.
       [12]
     - Materio ships in CLIO Coder and wtf-MS reaches its first stable release.
       [13]
       [14]
+5. Oct 2026 to Nov 2026
+  #### Evidence in the tools
+    - CLIO Coder adds verified research campaigns, a blind model arena, sealed run records, reproduction checks from pinned inputs, and a claims ledger for each project.
+    - CLIO Kit publishes selective components and workflow plugins, then improves its scientific servers by running them through CLIO Coder on planted datasets.
+      [2]
+    - CLIO Agent ships a redesigned desktop and web workbench with tool scripts, live data streams, shared browsing, comments on figures and LaTeX papers, linked studies, and National Data Platform integration.
+      [15]
+    - The agent marketplace is rebuilt around per-agent plugins, including the SPOTTER plugin.
+      [16]
+    - CLIO Core lets Python callers inspect capacity and add storage while the runtime stays active, so a managed store can recover from a full tier.
+      [1]
 
 ### Ahead
 
 1. Nov 2026 to Summer 2027
   #### Launch and validation
-    - IOWarp and the CLIO platform soft launch at SC26 in Chicago, November 15–20, 2026, with workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session.
-      [15]
-    - The Technical Advisory Board forms at the end of November 2026, after SC26.
+    - IOWarp will launch the full CLIO stack at SC26 in Chicago, November 15–20, 2026, with workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session.
+      [17]
+    - The Technical Advisory Board will form at the end of November 2026, after SC26.
     - The Utah materials workflow runs end to end on IOWarp, new HDF5 applications are onboarded, and CLIO Agent consumes wtf-MS.
     - CLIO Core gets broader resilience testing under node failures, deeper integration with inference engines such as llama.cpp, vLLM, and SGLang, and federation across sites.
 2. Autumn 2027 onward
@@ -87,22 +98,22 @@ Updated
   ### [National research systems](https://iowarp.ai/applications/national-infrastructure/)
   The Gnosis project record reports that the team ported CLIO Core to Aurora at the INCITE GPU hackathon and ran scientific workloads there. This is an institutional account, accompanied by public Aurora deployment recipes; independently published scaling data is not linked here. It builds and runs on DeltaAI and on the Ares cluster at Illinois Tech.
   NeuroH5 was onboarded through a transfer-engine-backed HDF5 VOL connector without application code changes.
-  Sources [8] [10] [16] [1]
+  Sources [8] [10] [18] [1]
 - 02
   ### [Agents on scientific data](https://iowarp.ai/applications/national-data-platform/)
   With IOWarp context, an agent completed EarthScope data retrieval and visualization through the National Data Platform, where a comparison agent without that context did not.
   Agent-assisted LAMMPS analysis and IOR deployment finished faster than the same tasks done by hand, across several agent and model combinations. The IEEE eScience 2025 poster states the models, prompts, and timings.
-  Sources [6] [17]
+  Sources [6] [19]
 - 03
   ### [Data movement and GPUs](https://iowarp.ai/applications/gpu-data-movement/)
   GPU kernels submit I/O to CLIO without exiting the kernel, and a workflow-aware compression system chooses a codec for the data at hand. Both are in the CLIO Core source builds.
   The team also characterized GPUDirect data transfer through NVIDIA NIXL for AI workloads.
-  Sources [18] [7]
+  Sources [20] [7]
 - 04
   ### [Applications and partnerships](https://iowarp.ai/applications/)
   The University of Utah team released the InfiniteScienceGym benchmark. wtf-MS and its CLIO Coder port, Materio, carry materials research planning.
   For SPOTTER-AI, CLIO Agent added the Spotter approval mode, and a read-only provenance MCP server in the agent marketplace was qualified against Flowcept and CMF. For PORTUS, the IOWarp team works on workflow motifs and performance models.
-  Sources [13] [19] [12] [20] [21]
+  Sources [13] [21] [12] [22] [23]
 
 03 / Where the figures live
 
@@ -119,7 +130,7 @@ This site tells the story of the project. Numbers need their machine, workload, 
 - [CLIO Kit guides](https://toolkit.iowarp.ai/docs/intro)
   Scientific tools, selective installation, and workflow plugins.
 - [CLIO Coder guides](https://coder.iowarp.ai/docs.html)
-  Installation, fleets, run receipts, and context continuity.
+  Installation, fleets, research campaigns, the arena, and context continuity.
 
 ### Papers and posters
 
@@ -138,7 +149,7 @@ This site tells the story of the project. Numbers need their machine, workload, 
 
 ## Sources
 
-Every source links to its public page. A source without one says what it is.
+Every source links to its public page. A source without a public page says what it is.
 
 1. [CLIO Core source repository](https://github.com/iowarp/clio-core)
 2. [CLIO Kit source repository](https://github.com/iowarp/clio-kit)
@@ -151,16 +162,18 @@ Every source links to its public page. A source without one says what it is.
 9. [NERSC event record: ALCF INCITE GPU Hackathon, April 28–30, 2026](https://www.nersc.gov/news-and-events/calendar-of-events/alcf-incite-gpu-hackathon-2026)
 10. [CLIO Core Jarvis deployment pipelines for Aurora, Delta, and other systems](https://github.com/iowarp/clio-core/tree/v2.2.1/jarvis_clio_core/pipelines)
 11. [U.S. Department of Energy Genesis Mission](https://genesis.energy.gov/)
-12. [CLIO Agent changelog, including the Spotter approval mode](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/CHANGELOG.md)
+12. [CLIO Agent changelog, including the Spotter approval mode](https://github.com/iowarp/clio-agent/blob/v0.9.6.1/CHANGELOG.md)
 13. [wtf-MS materials research planning system](https://github.com/iowarp/wtf-ms)
 14. [Materio materials research workflow in the CLIO Coder library](https://github.com/iowarp/clio-coder/tree/main/library/plugins/materio)
-15. [SC26: The International Conference for High Performance Computing, Networking, Storage, and Analysis, Chicago, November 15–20, 2026](https://sc26.supercomputing.org/)
-16. [DeltaAI system at NCSA](https://www.ncsa.illinois.edu/resources-and-services/compute-resources/deltaai/)
-17. [eScience 2025 poster PDF: EarthScope, LAMMPS, ParaView, and IOR agent workflows](http://cs.iit.edu/~scs/assets/files/islam2025aidriven_poster.pdf)
-18. [CLIO Core GPU, compression, and cuFile adapter sources](https://github.com/iowarp/clio-core/tree/v2.3.1/context-transfer-engine/adapter)
-19. [Bentham and Srikumar. InfiniteScienceGym: An unbounded, procedurally generated benchmark for scientific analysis. COLM 2026 (arXiv:2604.13201)](https://arxiv.org/abs/2604.13201)
-20. [CLIO Agent design note: unified Spotter provenance MCP server](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/docs/design/unified-spotter-provenance-mcp-2026-08.md)
-21. [Dataflow Performance Matcher: I/O cost prediction across storage tiers and node counts](https://gitlab.com/perflab-exact/dpm/dpm)
+15. [CLIO Agent source repository](https://github.com/iowarp/clio-agent)
+16. [SPOTTER provenance plugin in the CLIO Agent marketplace](https://github.com/iowarp/clio-agent-marketplace/tree/main/plugins/spotter)
+17. [SC26: The International Conference for High Performance Computing, Networking, Storage, and Analysis, Chicago, November 15–20, 2026](https://sc26.supercomputing.org/)
+18. [DeltaAI system at NCSA](https://www.ncsa.illinois.edu/resources-and-services/compute-resources/deltaai/)
+19. [eScience 2025 poster PDF: EarthScope, LAMMPS, ParaView, and IOR agent workflows](http://cs.iit.edu/~scs/assets/files/islam2025aidriven_poster.pdf)
+20. [CLIO Core GPU, compression, and cuFile adapter sources](https://github.com/iowarp/clio-core/tree/v2.4.1/context-transfer-engine/adapter)
+21. [Bentham and Srikumar. InfiniteScienceGym: An unbounded, procedurally generated benchmark for scientific analysis. COLM 2026 (arXiv:2604.13201)](https://arxiv.org/abs/2604.13201)
+22. [CLIO Agent design note: unified Spotter provenance MCP server](https://github.com/iowarp/clio-agent/blob/v0.9.6.1/docs/design/unified-spotter-provenance-mcp-2026-08.md)
+23. [Dataflow Performance Matcher: I/O cost prediction across storage tiers and node counts](https://gitlab.com/perflab-exact/dpm/dpm)
 
 Next step
 

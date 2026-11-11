@@ -95,7 +95,7 @@ Related
 
 1. [Muradli, Ye, Logan, Kougkas, Sun. Insights into GPUDirect data transfer through NIXL benchmarking. IEEE eScience 2025 (poster and extended abstract)](https://doi.org/10.1109/eScience65000.2025.00075)
 2. [IEEE eScience 2026 accepted papers, including Acropolis and AgentStage](https://www.escience-conference.org/2026/papers)
-3. [CLIO Core Globus materials-science assimilation test](https://github.com/iowarp/clio-core/tree/v2.3.1/context-assimilation-engine/test/integration/globus_matsci)
+3. [CLIO Core Globus materials-science assimilation test](https://github.com/iowarp/clio-core/tree/v2.4.1/context-assimilation-engine/test/integration/globus_matsci)
 
 ## Other concepts
 

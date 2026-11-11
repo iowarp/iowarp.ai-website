@@ -1,14 +1,14 @@
 ---
 title: "About IOWarp | IOWarp"
-description: "The systems research CLIO grew from, the collaborators the IOWarp team works with, and the team behind the stack."
+description: "IOWarp is the team at the Gnosis Research Center building CLIO, the open stack for AI-driven science. Meet the people and the research behind it."
 url: https://iowarp.ai/about/
 ---
 
-> The systems research CLIO grew from, the collaborators the IOWarp team works with, and the team behind the stack.
+> IOWarp is the team at the Gnosis Research Center building CLIO, the open stack for AI-driven science. Meet the people and the research behind it.
 
-# Built by a research community.
+# The team behind CLIO.
 
-IOWarp turns years of systems research into CLIO, an open stack for AI-driven science. This page traces the ideas the stack grew from, the collaborators the IOWarp team works with, and the team itself.
+IOWarp is the research and engineering team at the Gnosis Research Center, Illinois Tech, that builds CLIO, the open-source stack connecting AI agents to scientific data and systems. It matters because organizations running scientific computing need AI they can inspect and run on their own terms. CLIO grows from long-running systems research, and IOWarp will launch the full stack at SC26.
 
 Ideas
 
@@ -24,11 +24,11 @@ Team and support
 
 01 / Systems lineage
 
-## One question, asked from many angles.
+## Research that became a product.
 
-The systems behind CLIO developed primitives for placement, runtime, intent, order, and task scheduling over years of work at the Gnosis Research Center. Agents made those primitives newly urgent. LabStor’s runtime evolved directly into CLIO Core, and Hermes’s shared-memory library became its transport primitives; the others contributed ideas.
+The systems behind CLIO developed primitives for placement, runtime, intent, order, and task scheduling over years of work at the Gnosis Research Center. AI agents gave those primitives an urgent new client. LabStor’s runtime evolved directly into CLIO Core, and Hermes’s shared-memory library became its transport primitives; the others contributed ideas.
 
-IOWarp builds on Hermes, an earlier system for buffering data across memory and storage tiers. The project set out to bend the I/O fabric for advancing AI-infused scientific workflows. It framed the unit of exchange as Content, data plus a self-description that any workflow stage can read. As AI agents became real clients of scientific systems, that idea widened into context.
+IOWarp builds on Hermes, an earlier system for buffering data across memory and storage tiers. The project set out to reshape the I/O layer for AI-infused scientific workflows. It framed the unit of exchange as Content, data plus a self-description that any workflow stage can read. As AI agents became real clients of scientific systems, that idea widened into context.
 
 1. 01**Hermes**Placement
   Policy-driven buffering across memory and storage tiers. The system IOWarp builds on.
@@ -55,7 +55,7 @@ IOWarp builds on Hermes, an earlier system for buffering data across memory and 
 
 - 01
   ### [Argonne National Laboratory](https://iowarp.ai/applications/genesis-spotter/)
-  Home of SPOTTER-AI, a DOE Genesis Mission project at Argonne National Laboratory; Aurora at the Argonne Leadership Computing Facility; co-authored KV-cache research. [Official site of Argonne National Laboratory ↗](https://www.anl.gov/) [ALCF ↗](https://www.alcf.anl.gov/)
+  Home of SPOTTER-AI, a DOE Genesis Mission project IOWarp works on, and of Aurora at the Argonne Leadership Computing Facility. [Official site of Argonne National Laboratory ↗](https://www.anl.gov/) [ALCF ↗](https://www.alcf.anl.gov/)
   DOE Genesis · facility
 - 02
   ### [Pacific Northwest National Laboratory](https://iowarp.ai/applications/genesis-portus/)
@@ -63,11 +63,11 @@ IOWarp builds on Hermes, an earlier system for buffering data across memory and 
   DOE Genesis
 - 03
   ### [National Data Platform](https://iowarp.ai/applications/national-data-platform/)
-  Agent tools for NDP catalogs and the EarthScope demonstrations. [Official site of National Data Platform ↗](https://nationaldataplatform.org/)
+  Agent tools for National Data Platform catalogs. [Official site of National Data Platform ↗](https://nationaldataplatform.org/)
   Data platform
 - 04
   ### [NCSA](https://iowarp.ai/applications/national-infrastructure/)
-  DeltaAI, where CLIO Core builds and runs. [Official site of NCSA ↗](https://www.ncsa.illinois.edu/)
+  Home of DeltaAI, a national system CLIO Core supports. [Official site of NCSA ↗](https://www.ncsa.illinois.edu/)
   Facility
 - 05
   ### [Oak Ridge National Laboratory](https://iowarp.ai/research/directions/)
@@ -145,7 +145,7 @@ Systems and agent research
 
 - **[Xian-He Sun](https://www.iit.edu/directory/people/xian-he-sun) Illinois Tech**Senior advisor
 
-Many more people contribute through code, issues, testing, and talks. Every repository’s contributor history is public on [GitHub](https://github.com/iowarp). Summer interns, course projects, and community coding sessions have added to the work since 2025.
+Others contribute through code, issues, testing, and talks. Every repository’s contributor history is public on [GitHub](https://github.com/iowarp). Summer interns, course projects, and community coding sessions have added to the work since 2025.
 
 **Support.** The U.S. National Science Foundation supports IOWarp through collaborative awards OAC-2411318 and OAC-2411319.
 
@@ -159,4 +159,4 @@ Next step
 
 [IOWarp at SC26](https://iowarp.ai/community/#sc26) [Ways to collaborate](https://iowarp.ai/community/#collaborate)
 
-SC26 runs November 15–20, 2026, at McCormick Place.
+IOWarp will launch the full CLIO stack at SC26, November 15–20, 2026, at McCormick Place.

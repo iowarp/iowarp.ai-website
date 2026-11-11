@@ -63,18 +63,13 @@ Model memory has the same shape. The KV cache of LLM inference grows with contex
   Current source builds provide NVIDIA cuFile and NIXL paths. Earlier research explored a BaM-style GPU page cache and a Linux kernel module that gave GPUs their own NVMe queues; those prototypes remain in archived source.
   GPU I/O · archived prototypes
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them. What each stage has produced so far is listed in the record below.
 
 03 / The record
 
 ## What the work has produced.
 
-1. Primitives let GPU kernels submit I/O commands to CLIO without exiting the kernel, and a dynamic compression system chooses a method for the workflow. [1]
-  CONDITIONS · Source builds only
-2. CLIO Core includes GPU-resident vectors, GPU compression backends, a cuFile adapter, and NIXL transport support in its source builds. [1]
-  CONDITIONS · Optional source builds; GPU validation depends on the backend and some tests remain opt-in
-3. Characterization of GPUDirect data transfer through NVIDIA NIXL for AI workloads. [2]
-4. Related team research with Argonne collaborators treats the LLM KV cache as a tier: PKAS schedules inference with the cache in view, and PagedEviction prunes cache blocks for long contexts. [3] [4]
+1. NIXL benchmarking, published at IEEE eScience 2025, characterizes GPUDirect data transfer for AI workloads. [1]
 
 04 / Software in the loop
 
@@ -133,10 +128,7 @@ Related
 
 ## Sources
 
-1. [CLIO Core GPU, compression, and cuFile adapter sources](https://github.com/iowarp/clio-core/tree/v2.3.1/context-transfer-engine/adapter)
-2. [Muradli, Ye, Logan, Kougkas, Sun. Insights into GPUDirect data transfer through NIXL benchmarking. IEEE eScience 2025 (poster and extended abstract)](https://doi.org/10.1109/eScience65000.2025.00075)
-3. [Ye, Maurya, Chitty-Venkata, Nicolae, Kougkas, Sun. PKAS: Predictive KVCache-aware scheduling for faster LLM and transformer inferences. HPDC 2026](https://doi.org/10.1145/3806645.3807819)
-4. [Chitty-Venkata, Ye, Raskar, Kougkas, Sun, Emani, Vishwanath, Nicolae. PagedEviction: Structured block-wise KV cache pruning for efficient LLM inference. Findings of EACL 2026](https://doi.org/10.18653/v1/2026.findings-eacl.168)
+1. [Muradli, Ye, Logan, Kougkas, Sun. Insights into GPUDirect data transfer through NIXL benchmarking. IEEE eScience 2025 (poster and extended abstract)](https://doi.org/10.1109/eScience65000.2025.00075)
 
 Next application · A1
 

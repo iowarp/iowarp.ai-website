@@ -8,7 +8,7 @@ url: https://iowarp.ai/topics/context-management/
 
 # Context management for AI agents.
 
-Context management is the work of deciding what an AI agent sees, when, and with what authority: which data, which tool results, which prior decisions, and which limits. For scientific agents it is a systems problem as much as a prompting problem, because the relevant context lives in files, catalogs, schedulers, and instruments, not in a chat window.
+Context management is the work of deciding what an AI agent sees, when, and with what authority: which data, which tool results, which prior decisions, and which limits. For scientific agents it is a systems problem, because the relevant context lives in files, catalogs, schedulers, and instruments.
 
 01 Why a larger context window is not enough 02 Context as a storage hierarchy 03 Bounded and inspectable 04 How IOWarp approaches it 05 Common questions
 
@@ -26,7 +26,7 @@ That slice has several parts with different lifetimes: working context for the c
 
 Storage systems already solve a similar problem: keep hot data close to compute, move cold data to cheaper tiers, and record where everything is. IOWarp applies the same discipline to agent context. Placement, eviction, and prefetching are as relevant to an agent’s memory as they are to a simulation’s checkpoint files.
 
-The same idea reaches into the model itself. KV-cache research in the project treats the inference cache as a tier to be placed and evicted, not an unbounded buffer.
+The same idea reaches into the model. KV-cache research in the project places and evicts the inference cache like any other tier.
 
 03
 
@@ -48,7 +48,7 @@ Open ↗
 
 02**CLIO Agent**
 
-ARC memory, which uses CLIO Core as its default store, carries useful context across sessions, and packs with experts and workers give each one only what its task needs.
+ARC memory, stored in CLIO Core, carries context across sessions. Each agent loads only the plugins its work needs.
 
 Continue →
 

@@ -62,8 +62,8 @@ Archive
   What would prove an agent made progress?
   ### Evidence for agentic science
   Scientific workflows need baselines, holdouts, provenance, and run records. A persuasive narrative cannot substitute for measurements tied to their producer and conditions.
-  [Worked on in: CLIO Researcher and CLIO Bench in the research tooling →](https://iowarp.ai/platform/#layer-research)
-  Related [CLIO Researcher](https://iowarp.ai/platform/#researcher) [CLIO Bench](https://iowarp.ai/platform/#bench) [Agents in the materials workflow](https://iowarp.ai/applications/materials-science/) [Evidence-based autonomous research](https://iowarp.ai/topics/evidence-based-research/)
+  [Worked on in: CLIO Coder research and arena ↗](https://coder.iowarp.ai/docs/guide/research-and-arena.html)
+  Related [CLIO Coder](https://iowarp.ai/platform/#coder) [CLIO Author](https://iowarp.ai/platform/#author) [Agents in the materials workflow](https://iowarp.ai/applications/materials-science/) [Evidence-based autonomous research](https://iowarp.ai/topics/evidence-based-research/)
 
 02 / New results
 

@@ -1,10 +1,10 @@
 ---
 title: "Evidence-based autonomous research | IOWarp"
-description: "What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO research tools."
+description: "What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO Coder."
 url: https://iowarp.ai/topics/evidence-based-research/
 ---
 
-> What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO research tools.
+> What makes AI-driven research trustworthy: baselines, holdouts, confidence checks, run records, and human review, as applied in CLIO Coder.
 
 # Measure the claim, not the story.
 
@@ -22,19 +22,19 @@ A system that generates both the change and the explanation can produce a persua
 
 ## How IOWarp is approaching it
 
-CLIO Researcher runs a loop that proposes a change to systems code or configuration, measures candidate against baseline in alternating trials, applies confidence and holdout checks, and stages only supported improvements for human review. CLIO Bench records runs and streams them to a dashboard without issuing its own verdicts.
+clio-coder research runs a budgeted hill climb on one measured number in a project. It measures the base against itself to establish the noise, lets the agent propose a change in a fresh worktree, compares candidate and base in interleaved trials, and keeps the change only when a bootstrap interval excludes zero and every correctness gate passes. Kept changes land on a separate branch for a person to review and merge, and research report regrades every verdict from the raw samples. clio-coder arena gives one prompt to several models side by side and hides their identities until you vote. Neither command asks a model to judge quality.
 
 How IOWarp approaches it
 
 ## Where to go deeper.
 
-01**Research tooling**
+01**CLIO Coder research and arena**
 
-CLIO Researcher, Bench, and Author in the stack.
+Declare an objective and its gates, run a campaign, and compare models blind.
 
-Continue →
+Open ↗
 
-<https://iowarp.ai/platform/#layer-research>
+<https://coder.iowarp.ai/docs/guide/research-and-arena.html>
 
 02**Results and milestones**
 
@@ -83,9 +83,9 @@ Common questions
 
 ## Common questions.
 
-**Can I use CLIO Researcher now?**
+**Can I run a research campaign now?**
 
-Yes. CLIO Researcher is open source and listed with the research tooling on the platform page.
+Yes. Install CLIO Coder, declare a metric and its correctness checks in the project’s verifier catalog, and run clio-coder research start with an iteration limit.
 
 Related
 

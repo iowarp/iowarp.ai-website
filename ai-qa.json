@@ -45,7 +45,7 @@
   {
    "id": "qa-03",
    "question": "What are the layers of the CLIO stack?",
-   "answer": "Seven layers, bottom to top: accelerators (CLIO Core GPU runtime, GPU compression, direct GPU I/O research); operating system (a GPU-NVMe kernel module prototype, Linux I/O backends); storage systems (tiered block devices, I/O adapters and connectors); the context runtime (CLIO Core, Jarvis); agents and tools (the flagships CLIO Agent and CLIO Coder with the CLIO Kit tools they share, plus CLIO Relay, GACT, and more); applications (Materio and science workflows); and research tooling (CLIO Author, Researcher, and Bench).",
+   "answer": "Seven layers, bottom to top: accelerators (CLIO Core GPU runtime, GPU compression, direct GPU I/O research); operating system (a GPU-NVMe kernel module prototype, Linux I/O backends); storage systems (tiered block devices, I/O adapters and connectors); the context runtime (CLIO Core, Jarvis); agents and tools (the flagships CLIO Agent and CLIO Coder with the CLIO Kit tools they share, plus CLIO Relay, GACT, and more); applications (Materio and science workflows); and research tooling (CLIO Author).",
    "keywords": [
     "architecture",
     "layers",
@@ -172,12 +172,15 @@
   {
    "id": "qa-09",
    "question": "What is CLIO Agent?",
-   "answer": "CLIO Agent is one of the two agentic flagships. It is a scientific data agent, currently in beta, for scientists and data teams. It works directly with workspace tools; installable packs add an orchestrator, domain experts, and short-lived workers. ARC memory is stored in CLIO Core by default. It is released under BSD-3-Clause, with product guides at clio.iowarp.ai.",
+   "answer": "CLIO Agent is one of the two agentic flagships. It is an AI workspace for scientific data, currently in beta, in a desktop app or a browser. Scientists work with files, live streams, visualizations, shared web pages, and LaTeX papers alongside a tabbed workbench, and the agent can run Python scripts against its own tools without filling the conversation. Each agent combines a flow, an identity, and marketplace plugins, with ARC memory stored in CLIO Core. It is released under BSD-3-Clause, with product guides at clio.iowarp.ai.",
    "keywords": [
     "agent",
     "intelligence",
     "autonomous",
-    "reasoning"
+    "reasoning",
+    "workspace",
+    "workbench",
+    "desktop"
    ],
    "sources": [
     {
@@ -193,7 +196,7 @@
   {
    "id": "qa-10",
    "question": "How do CLIO agents use tools?",
-   "answer": "CLIO Agent reaches scientific tools through its tool gateway, and its marketplace packs launch CLIO Kit servers for data formats, HPC operations, visualization, and discovery.",
+   "answer": "CLIO Agent reaches scientific tools through its tool gateway, and its marketplace plugins launch CLIO Kit servers for data formats, HPC operations, visualization, and discovery.",
    "keywords": [
     "agent",
     "tools",
@@ -214,7 +217,7 @@
   {
    "id": "qa-11",
    "question": "What is CLIO Kit?",
-   "answer": "CLIO Kit is a meta-marketplace for scientific computing: MCP servers, workflow skills, agents, hooks, plugins, and community marketplace collections. Install its small launcher from PyPI as clio-kit, then choose individual components or a workflow plugin. Selected components download on demand, and server dependencies stay isolated and locked. Guides are at toolkit.iowarp.ai.",
+   "answer": "CLIO Kit is a meta-marketplace for scientific computing: MCP servers, workflow skills, agents, hooks, plugins, and community marketplace collections. Install its small launcher from PyPI as clio-kit, then choose individual components or a workflow plugin. Selected components download on demand, and server dependencies stay isolated and locked. Recent server improvements came from running the tools through CLIO Coder on planted scientific datasets. Guides are at toolkit.iowarp.ai.",
    "keywords": [
     "kit",
     "toolkit",
@@ -472,7 +475,7 @@
   {
    "id": "qa-23",
    "question": "Does CLIO support NetCDF and Zarr?",
-   "answer": "The CLIO Kit catalog does not list dedicated NetCDF or Zarr servers. Check the component repositories and release notes for an adapter that supports your exact workflow.",
+   "answer": "The CLIO Kit catalog does not list dedicated NetCDF or Zarr servers. CLIO Coder’s data tool inspects HDF5, NetCDF, and Parquet files. Check the component repositories and release notes for an adapter that supports your exact workflow.",
    "keywords": [
     "netcdf",
     "zarr",
@@ -619,7 +622,7 @@
     },
     {
      "title": "CLIO Core runtime source",
-     "url": "https://github.com/iowarp/clio-core/tree/v2.3.1/context-runtime"
+     "url": "https://github.com/iowarp/clio-core/tree/v2.4.1/context-runtime"
     }
    ]
   },
@@ -639,14 +642,14 @@
     },
     {
      "title": "Assimilation engine source",
-     "url": "https://github.com/iowarp/clio-core/tree/v2.3.1/context-assimilation-engine"
+     "url": "https://github.com/iowarp/clio-core/tree/v2.4.1/context-assimilation-engine"
     }
    ]
   },
   {
    "id": "qa-31",
    "question": "How do I install or get started with IOWarp?",
-   "answer": "Choose the product closest to your task. CLIO Agent works with scientific data and has platform-specific installers at clio.iowarp.ai. CLIO Coder works on scientific software: curl -fsSL https://coder.iowarp.ai/install.sh | sh. Standalone CLIO Kit installs with uv tool install clio-kit for scientific tools and workflow plugins. CLIO Core installs with pip install iowarp-core for the context runtime and APIs. The documentation hub links each installation guide and its prerequisites.",
+   "answer": "Choose the product closest to your task. CLIO Agent works with scientific data: curl -fsSL https://clio.iowarp.ai/install.sh | bash for the service and web workspace, or curl -fsSL https://clio.iowarp.ai/desktop.sh | bash for the Desktop app. CLIO Coder works on scientific software: curl -fsSL https://coder.iowarp.ai/install.sh | sh. Standalone CLIO Kit installs with uv tool install clio-kit for scientific tools and workflow plugins. CLIO Core installs with pip install iowarp-core for the context runtime and APIs. The documentation hub links each installation guide and its prerequisites.",
    "keywords": [
     "quickstart",
     "install",
@@ -671,7 +674,7 @@
   {
    "id": "qa-32",
    "question": "Can I deploy IOWarp with Docker?",
-   "answer": "CLIO Agent documents a Docker path for its terminal and web interfaces, and CLIO Core ships a Docker quickstart for the runtime. Check each repository for its current container instructions.",
+   "answer": "CLIO Agent documents a Docker path for its web interface, and CLIO Core ships a Docker quickstart for the runtime. Check each repository for its current container instructions.",
    "keywords": [
     "docker",
     "compose",
@@ -734,7 +737,7 @@
   {
    "id": "qa-35",
    "question": "How can I verify a deployment?",
-   "answer": "For a compatible CLIO Core installation, start the runtime with clio_run start and follow the Python API guide to attach a client and try a documented operation. For CLIO Agent, clio-agent doctor checks its model, gateway, and file-policy health.",
+   "answer": "For a compatible CLIO Core installation, start the runtime with clio_run start and follow the Python API guide to attach a client and try a documented operation. For CLIO Agent, clio doctor checks its prerequisites and install layout.",
    "keywords": [
     "verify",
     "status",
@@ -986,7 +989,7 @@
   {
    "id": "qa-47",
    "question": "What is CLIO Coder?",
-   "answer": "CLIO Coder is an open-source coding agent for scientific software, published on npm as @iowarp/clio-coder under Apache-2.0. It combines repository context, declared checks, worktree workers, playbooks for fleet contracts, and run receipts. Sandboxed extensions load after capability approval. Its semantic context index is optional: background indexing is off by default, and scanned PDF recognition and raw video embedding are unsupported. SSH workers are experimental and the desktop app is alpha.",
+   "answer": "CLIO Coder is the meta-harness for scientific software: every model you have, one way of working, and checks you can inspect. It is open source under Apache-2.0 and published on npm as @iowarp/clio-coder. Project guidance, tools, safety rules, and evidence stay the same whichever model answers. Checks cover tests, numerical comparison within a tolerance, and reruns from pinned inputs. clio-coder research climbs a project metric, and clio-coder arena compares models blind. The terminal is the primary interface and the desktop app is alpha.",
    "keywords": [
     "coder",
     "coding",
@@ -1006,25 +1009,32 @@
     },
     {
      "title": "CLIO Coder released behavior and limits",
-     "url": "https://github.com/iowarp/clio-coder/releases/tag/v0.6.2"
+     "url": "https://github.com/iowarp/clio-coder/releases/tag/v0.7.0"
     }
    ]
   },
   {
    "id": "qa-48",
-   "question": "What does CLIO Researcher do?",
-   "answer": "CLIO Researcher is the research-tooling component for measured experimentation on I/O systems. It proposes a change to code or configuration, measures it against a baseline, applies confidence and holdout checks, and stages only supported improvements for human review. It is open source under the Apache-2.0 license.",
+   "question": "What does clio-coder research do?",
+   "answer": "clio-coder research is a CLIO Coder command that runs a budgeted, verified hill climb on one measured number in your project, such as wall time or an error. It measures the noise first, runs the agent in fresh worktrees, and keeps a change only when interleaved trials show a real gain and every correctness check passes. Kept changes land on a separate branch for you to review and merge.",
    "keywords": [
-    "researcher",
+    "research",
+    "campaign",
     "autoresearch",
     "experiment",
     "measurement",
-    "loop"
+    "metric",
+    "loop",
+    "coder"
    ],
    "sources": [
     {
-     "title": "The CLIO platform",
-     "url": "/platform/#researcher"
+     "title": "CLIO Coder on the platform",
+     "url": "/platform/#coder"
+    },
+    {
+     "title": "CLIO Coder research and arena guide",
+     "url": "https://coder.iowarp.ai/docs/guide/research-and-arena.html"
     }
    ]
   },
@@ -1048,19 +1058,27 @@
   },
   {
    "id": "qa-50",
-   "question": "What is CLIO Bench?",
-   "answer": "CLIO Bench is a run recorder with a live dashboard for benchmarks and model comparisons. It stores, streams, and compares measurements and shows verdicts supplied by the producing workflow; it does not issue its own. It is open source under the MIT license.",
+   "question": "What is clio-coder arena?",
+   "answer": "clio-coder arena is a CLIO Coder command that gives one prompt to several models side by side, each in its own worktree. You see their answers and diffs with identities hidden, vote, and get standings from your votes. CLIO Coder never grades a contender.",
    "keywords": [
-    "bench",
+    "arena",
     "benchmark",
-    "dashboard",
-    "runs",
-    "evidence"
+    "compare",
+    "models",
+    "blind",
+    "vote",
+    "standings",
+    "evidence",
+    "coder"
    ],
    "sources": [
     {
-     "title": "The CLIO platform",
-     "url": "/platform/#bench"
+     "title": "CLIO Coder on the platform",
+     "url": "/platform/#coder"
+    },
+    {
+     "title": "CLIO Coder research and arena guide",
+     "url": "https://coder.iowarp.ai/docs/guide/research-and-arena.html"
     }
    ]
   },
@@ -1186,7 +1204,7 @@
     },
     {
      "title": "CLIO Core Aurora deployment recipes",
-     "url": "https://github.com/iowarp/clio-core/tree/v2.2.1/jarvis_clio_core/pipelines/aurora"
+     "url": "https://github.com/iowarp/clio-core/tree/v2.4.1/jarvis_clio_core/pipelines/aurora"
     }
    ]
   },
@@ -1349,7 +1367,7 @@
   {
    "id": "qa-64",
    "question": "What has IOWarp actually released?",
-   "answer": "Publicly released and open source: CLIO Core, CLIO Kit, CLIO Agent in beta, CLIO Coder, CLIO Relay, GACT and Agent Workspace, the agent marketplace, CLIO Web Search, CLIO Schemas, wtf-MS, and the research tools CLIO Author, CLIO Researcher, and CLIO Bench. Current GPU adapters and operating-system backends have source-build prerequisites. Earlier BaM and GPU–NVMe bridge prototypes remain in archived source. Each repository’s release notes carry the versions.",
+   "answer": "Publicly released and open source: CLIO Core, CLIO Kit, CLIO Agent in beta, CLIO Coder, CLIO Relay, GACT and Agent Workspace, the agent marketplace, CLIO Web Search, CLIO Schemas, wtf-MS, and CLIO Author. Current GPU adapters and operating-system backends have source-build prerequisites. Earlier BaM and GPU–NVMe bridge prototypes remain in archived source. Each repository’s release notes carry the versions.",
    "keywords": [
     "released",
     "release",
@@ -1412,7 +1430,7 @@
   {
    "id": "qa-67",
    "question": "What licenses does IOWarp use?",
-   "answer": "CLIO Core, Kit, Agent, and Author use BSD-3-Clause; CLIO Coder and CLIO Researcher use Apache-2.0; CLIO Relay, CLIO Bench, GACT, CLIO Web Search, and wtf-MS use MIT.",
+   "answer": "CLIO Core, Kit, Agent, and Author use BSD-3-Clause; CLIO Coder uses Apache-2.0; CLIO Relay, GACT, CLIO Web Search, and wtf-MS use MIT.",
    "keywords": [
     "license",
     "licenses",
@@ -1449,7 +1467,7 @@
   {
    "id": "qa-69",
    "question": "What is SPOTTER-AI?",
-   "answer": "SPOTTER-AI is a DOE Genesis Mission project at Argonne National Laboratory that began in August 2026. Argonne National Laboratory leads SPOTTER-AI, with Oak Ridge National Laboratory, Illinois Tech, and Hewlett Packard Enterprise as partners. It detects integrity attacks on scientific AI workflows and traces them to their source using provenance. The IOWarp team builds the investigating agents: CLIO Agent provides a Spotter approval mode, and its marketplace carries a pack for provenance investigation with a read-only provenance MCP server qualified against Flowcept and CMF.",
+   "answer": "SPOTTER-AI is a DOE Genesis Mission project at Argonne National Laboratory that began in August 2026. Argonne leads it, with Oak Ridge National Laboratory, Illinois Tech, and Hewlett Packard Enterprise as partners. It detects integrity attacks on scientific AI workflows and traces them to their source using provenance. The IOWarp team builds the investigating agents: CLIO Agent provides a Spotter approval mode, and its marketplace carries a plugin for provenance investigation with a read-only provenance MCP server qualified against Flowcept and CMF.",
    "keywords": [
     "spotter",
     "spotter-ai",
@@ -1514,7 +1532,7 @@
     },
     {
      "title": "CLIO Core tagged GPU build configuration",
-     "url": "https://github.com/iowarp/clio-core/blob/v2.3.1/CMakePresets.json"
+     "url": "https://github.com/iowarp/clio-core/blob/v2.4.1/CMakePresets.json"
     }
    ]
   },
@@ -1695,7 +1713,7 @@
   {
    "id": "qa-80",
    "question": "Is IOWarp at SC26?",
-   "answer": "Yes. IOWarp and the CLIO platform soft launch at SC26 in Chicago, November 15–20, 2026, at McCormick Place. The confirmed program includes PDSW workshop presentations on GPUH5, GDSight, and trigger-gated simulation monitoring on Monday, November 16; research posters on I/O explainability, GNN feature streaming, StageOnce, and ToolFuse on Tuesday, November 17; Trigger, Render, Reason on Wednesday, November 18, from 4:30 to 5:00 pm; and the HDF5 birds-of-a-feather session on Thursday, November 19, from 12:15 to 1:15 pm. All times are CST. The community page lists every title, room, and official program entry.",
+   "answer": "Yes. IOWarp launches the full CLIO stack at SC26 in Chicago, November 15–20, 2026, at McCormick Place. The confirmed program includes PDSW workshop presentations on GPUH5, GDSight, and trigger-gated simulation monitoring on Monday, November 16; research posters on I/O explainability, GNN feature streaming, StageOnce, and ToolFuse on Tuesday, November 17; Trigger, Render, Reason on Wednesday, November 18, from 4:30 to 5:00 pm; and the HDF5 birds-of-a-feather session on Thursday, November 19, from 12:15 to 1:15 pm. All times are CST. The community page lists every title, room, and official program entry.",
    "keywords": [
     "sc26",
     "sc",
@@ -1773,13 +1791,14 @@
   {
    "id": "qa-83",
    "question": "How do I install CLIO Agent?",
-   "answer": "On Linux or macOS, run curl -fsSL https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.sh | bash. On Windows, use irm https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.ps1 | iex in PowerShell. The stable installer sets up the backend, matching terminal UI, and clio launcher, and prepares a web UI bundle when it can be unpacked. Use Python 3.12 or Python 3.13 for its tested dependency set. Agent keeps its tested Core dependency family and pinned Kit launcher for marketplace packs.",
+   "answer": "For the Desktop app bundled with its agent, run curl -fsSL https://clio.iowarp.ai/desktop.sh | bash on Apple Silicon macOS or Linux, or irm https://clio.iowarp.ai/desktop.ps1 | iex in PowerShell on Windows, or download an installer at clio.iowarp.ai. For the local service and web interface only, run curl -fsSL https://clio.iowarp.ai/install.sh | bash on Linux or macOS, or irm https://clio.iowarp.ai/install.ps1 | iex in PowerShell on Windows, then open it with clio web or start it headless with clio start. The installer downloads the prebuilt release runtime and keeps Agent’s tested Core and Kit dependencies.",
    "keywords": [
     "install",
     "installation",
     "script",
     "setup",
-    "curl"
+    "curl",
+    "desktop"
    ],
    "sources": [
     {
@@ -1795,8 +1814,8 @@
      "url": "https://clio.iowarp.ai/docs/install/"
     },
     {
-     "title": "Stable Agent installer notes",
-     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/README.md"
+     "title": "Release installation reference",
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.6.1/docs/INSTALL.md"
     }
    ]
   },
@@ -1822,7 +1841,7 @@
     },
     {
      "title": "CLIO Coder stable installation guide",
-     "url": "https://github.com/iowarp/clio-coder/blob/v0.6.2/README.md"
+     "url": "https://github.com/iowarp/clio-coder/blob/v0.7.0/README.md"
     },
     {
      "title": "Coder documentation and installation",
@@ -1858,14 +1877,14 @@
     },
     {
      "title": "Published CLIO Core wheel files",
-     "url": "https://pypi.org/project/iowarp-core/2.3.1/#files"
+     "url": "https://pypi.org/project/iowarp-core/2.4.1/#files"
     }
    ]
   },
   {
    "id": "qa-86",
    "question": "Do I need CLIO Core?",
-   "answer": "CLIO Agent installs Core and uses it for memory by default, with a local file backend available as an alternative. Its stable release keeps Core in a tested compatible release family and uses a pinned Kit launcher. CLIO Coder and standalone Kit do not require Core for their own installation. Standalone releases have separate upgrade paths; follow the product’s compatibility guidance.",
+   "answer": "CLIO Agent installs Core and uses it for memory. Its stable release keeps Core in a tested compatible release family and uses a pinned Kit launcher. CLIO Coder and standalone Kit do not require Core for their own installation. Standalone releases have separate upgrade paths; follow the product’s compatibility guidance.",
    "keywords": [
     "depend",
     "dependency",
@@ -1889,7 +1908,7 @@
     },
     {
      "title": "Agent’s tested dependency declarations",
-     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/pyproject.toml"
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.6.1/pyproject.toml"
     }
    ]
   },
@@ -2004,7 +2023,7 @@
   {
    "id": "qa-91",
    "question": "Should I upgrade the Kit installed by CLIO Agent?",
-   "answer": "Agent keeps Core in its tested compatible release family and pins Kit for its marketplace packs. Keep that combination when installing Agent. Standalone Core and Kit have separate release and upgrade paths; a newer standalone package does not establish Agent compatibility.",
+   "answer": "Agent keeps Core in its tested compatible release family and pins Kit for its marketplace plugins. Keep that combination when installing Agent. Standalone Core and Kit have separate release and upgrade paths; a newer standalone package does not establish Agent compatibility.",
    "keywords": [
     "upgrade",
     "compatibility",
@@ -2021,11 +2040,11 @@
     },
     {
      "title": "Agent installer and its Kit pin",
-     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/install.sh"
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.6.1/install/install.sh"
     },
     {
      "title": "Agent’s tested dependency declarations",
-     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.4.24/pyproject.toml"
+     "url": "https://github.com/iowarp/clio-agent/blob/v0.9.6.1/pyproject.toml"
     }
    ]
   },
@@ -2084,7 +2103,7 @@
     },
     {
      "title": "Published Core wheel files",
-     "url": "https://pypi.org/project/iowarp-core/2.3.1/#files"
+     "url": "https://pypi.org/project/iowarp-core/2.4.1/#files"
     }
    ]
   },
@@ -2114,7 +2133,7 @@
     },
     {
      "title": "Released semantic context guide",
-     "url": "https://github.com/iowarp/clio-coder/blob/v0.6.2/docs/guide/semantic-context.md"
+     "url": "https://github.com/iowarp/clio-coder/blob/v0.7.0/docs/guide/semantic-context.md"
     }
    ]
   },
@@ -2201,6 +2220,71 @@
     {
      "title": "Trigger, Render, Reason at SC26",
      "url": "/community/#sc26-trigger-render-reason"
+    }
+   ]
+  },
+  {
+   "id": "qa-98",
+   "question": "Which CLIO product should I use?",
+   "answer": "Match the product to your role. Choose CLIO Agent (clio.iowarp.ai) if you work with scientific data, analyses, live streams, visualizations, and papers in a desktop app or browser. Choose CLIO Coder (coder.iowarp.ai) if you write or maintain scientific software, simulations, or data pipelines and want inspectable checks, measured research campaigns, or blind model comparisons. Choose CLIO Kit (toolkit.iowarp.ai) to give any MCP client scientific tools and workflow plugins. Choose CLIO Core (core.iowarp.ai) if you need the tiered context runtime and Python or C++ APIs across memory and storage.",
+   "keywords": [
+    "choose",
+    "which",
+    "product",
+    "compare",
+    "difference",
+    "role",
+    "scientist",
+    "developer",
+    "coder",
+    "start",
+    "fit",
+    "portal"
+   ],
+   "sources": [
+    {
+     "title": "Compare the flagships",
+     "url": "/platform/#flagships"
+    },
+    {
+     "title": "Get started",
+     "url": "/docs/#install"
+    },
+    {
+     "title": "CLIO Kit",
+     "url": "/clio-kit/"
+    }
+   ]
+  },
+  {
+   "id": "qa-99",
+   "question": "Can I use CLIO in chemistry, mechanical engineering, or my own scientific domain?",
+   "answer": "Yes. CLIO is designed as a domain-independent agentic framework where the workspace (CLIO Agent), code meta-harness (CLIO Coder), and context runtime (CLIO Core) stay constant while you swap in the format tools, skills, and validation checks your lab uses through CLIO Kit and plugins. That pattern took CLIO from materials science into mechanical engineering simulations, bench analytical chemistry, federated geoscience catalogs, and DOE national laboratory workflows.",
+   "keywords": [
+    "chemistry",
+    "mechanical",
+    "engineering",
+    "biology",
+    "physics",
+    "domain",
+    "discipline",
+    "lab",
+    "bench",
+    "adapt",
+    "custom"
+   ],
+   "sources": [
+    {
+     "title": "How CLIO adapts across disciplines",
+     "url": "/applications/#pattern"
+    },
+    {
+     "title": "CLIO Kit tools and skills",
+     "url": "/clio-kit/"
+    },
+    {
+     "title": "Ways to collaborate",
+     "url": "/community/#collaborate"
     }
    ]
   }

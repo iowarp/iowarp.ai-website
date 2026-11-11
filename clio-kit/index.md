@@ -1,14 +1,14 @@
 ---
 title: "CLIO Kit: scientific tools and workflows | IOWarp"
-description: "CLIO Kit brings scientific MCP servers, skills, agents, hooks, and workflow plugins to your AI client. Select the components your project needs."
+description: "CLIO Kit gives AI agents the scientific tools and workflows a project needs. Part of CLIO, the open stack IOWarp builds for AI-driven science."
 url: https://iowarp.ai/clio-kit/
 ---
 
-> CLIO Kit brings scientific MCP servers, skills, agents, hooks, and workflow plugins to your AI client. Select the components your project needs.
+> CLIO Kit gives AI agents the scientific tools and workflows a project needs. Part of CLIO, the open stack IOWarp builds for AI-driven science.
 
 # Give agents real instruments.
 
-For scientists and developers who want an AI agent to work with real scientific data and systems. CLIO Kit brings together MCP servers, skills, agent definitions, hooks, and workflow plugins. Choose individual components or a bundle for your task. The [released launcher](https://github.com/iowarp/clio-kit/releases/tag/v2.11.0) downloads selected components as needed, with isolated server dependencies installed on first launch.
+CLIO Kit is part of CLIO, the open-source stack that IOWarp, a team at the Gnosis Research Center, builds to connect AI agents to scientific data and systems. It matters because an agent is only as useful as the tools it can reach. CLIO Kit brings together MCP servers, skills, agent definitions, hooks, and workflow plugins, packaged so a team takes what a task needs. The [released launcher](https://github.com/iowarp/clio-kit/releases/tag/v2.12.3) downloads only what you select and installs isolated server dependencies on first launch. IOWarp will launch the full CLIO stack at SC26 in Chicago.
 
 Browse the servers [Components and workflows](https://toolkit.iowarp.ai/catalogue) [Source](https://github.com/iowarp/clio-kit)
 
@@ -16,7 +16,7 @@ Browse the servers [Components and workflows](https://toolkit.iowarp.ai/catalogu
 
 1. Install the launcher
   ```sh
-  uv tool install 'clio-kit>=2.11.0'
+  uv tool install 'clio-kit>=2.12.3'
   ```
 2. Inspect the catalog
   ```sh
@@ -39,16 +39,16 @@ MCP servers provide tools. Skills provide procedures. Workflow plugins bundle th
 
 - 01 · Data
   ### [HDF5](https://toolkit.iowarp.ai/docs/mcps/hdf5)
-  Inspect and work with scientific datasets and attributes.
+  Inspect datasets and attributes and compute per-index statistics.
 - 02 · Data
   ### [Parquet](https://toolkit.iowarp.ai/docs/mcps/parquet)
-  Read columnar data and inspect file structure.
+  Read columns, summarize nulls, and run grouped aggregates.
 - 03 · Data
   ### [Pandas](https://toolkit.iowarp.ai/docs/mcps/pandas)
-  Load, filter, and analyze tabular data.
+  Load, filter, profile, and aggregate tabular data.
 - 04 · Data
   ### [ADIOS](https://toolkit.iowarp.ai/docs/mcps/adios)
-  Read data through ADIOS2 engines.
+  Read slices and per-step statistics through ADIOS2 engines.
 - 05 · HPC
   ### [Slurm](https://toolkit.iowarp.ai/docs/mcps/slurm)
   Submit and manage cluster jobs.
@@ -121,7 +121,7 @@ Installs the scientific I/O workflow’s skills and MCP configuration into the s
   Browse [MCPs, skills, agents, and hooks](https://toolkit.iowarp.ai/catalogue), or select a [workflow plugin](https://toolkit.iowarp.ai/docs/plugins) for scientific I/O, HPC operations, analysis, or research.
 2. 02
   ### Install
-  For one skill, use `clio-kit skill install dataset-explore --target.agents/skills` in a project whose client reads that directory. Configure its required MCP servers separately.
+  For an individual skill, use `clio-kit skill install dataset-explore --target.agents/skills` in a project whose client reads that directory. Configure its required MCP servers separately.
 3. 03
   ### Verify
   Reload the client and inspect its skills and tools. Run `clio-kit doctor --server hdf5 --connect`, then try a tool call on known data. Scientific backends and cluster access have their own prerequisites.

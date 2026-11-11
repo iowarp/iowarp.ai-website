@@ -8,7 +8,7 @@ url: https://iowarp.ai/applications/genesis-spotter/
 
 # Provenance and integrity for AI-driven science.
 
-SPOTTER-AI is a DOE Genesis Mission project at Argonne National Laboratory. Argonne National Laboratory leads SPOTTER-AI, with Oak Ridge National Laboratory, Illinois Tech, and Hewlett Packard Enterprise as partners. It addresses cybersecurity for AI-driven science through data provenance and integrity verification. The project began in August 2026. The IOWarp team builds the agents that investigate what the provenance shows.
+SPOTTER-AI is a DOE Genesis Mission project. Argonne National Laboratory leads it, with Oak Ridge National Laboratory, Illinois Tech, and Hewlett Packard Enterprise as partners. It addresses cybersecurity for AI-driven science through data provenance and integrity verification. The project began in August 2026. The IOWarp team builds the agents that investigate what the provenance shows.
 
 Partners
 
@@ -30,15 +30,11 @@ On the web
 
 [Argonne National Laboratory ↗](https://www.anl.gov/) · [Oak Ridge National Laboratory ↗](https://www.ornl.gov/) · [Illinois Institute of Technology ↗](https://www.iit.edu/) · [Hewlett Packard Enterprise ↗](https://www.hpe.com/) · [U.S. Department of Energy Genesis Mission ↗](https://genesis.energy.gov/) · [SPOTTER-AI on GitHub ↗](https://github.com/spotter-ai-genesis) · [Flowcept ↗](https://flowcept.readthedocs.io/) · [CMF ↗](https://github.com/HewlettPackard/cmf)
 
-Record
-
-What the work has produced · Sources
-
 01 / The scientific question
 
 ## When a scientific AI workflow produces a wrong answer, can we tell whether it was tampered with, and trace the cause to its source?
 
-AI models, datasets, and workflows are increasingly shared across facilities. A poisoned passage in a retrieval corpus or a manipulated tool call can quietly change what a model concludes, compromising the logic of discovery rather than a single result.
+AI models, datasets, and workflows are increasingly shared across facilities. A poisoned passage in a retrieval corpus or a manipulated tool call can quietly change what a model concludes, and every result built on that conclusion inherits the damage.
 
 SPOTTER-AI captures detailed provenance of workflows and of the models inside them, learns how much influence each input should have on an outcome, and treats departures from that expectation as a signal worth investigating.
 
@@ -57,25 +53,15 @@ SPOTTER-AI captures detailed provenance of workflows and of the models inside th
   A read-only provenance server gives an investigating agent tools for correlation, artifact lineage, and timelines across providers.
   Agent marketplace · MCP
 3. **Watch**
-  A standing watcher agent observes a session and raises alerts. While it is armed, destructive tool calls wait for its clearance, and they are refused if no watcher is live.
+  A standing watcher agent observes a session, treats instructions inside files or pages as evidence rather than orders, and quarantines the session on a danger finding while destructive calls wait for clearance.
   CLIO Agent · Spotter mode
 4. **Attribute**
   Agentic forensic analysis works backward from an anomaly to its likely root cause and reports it to the people responsible.
   CLIO Agent
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them.
 
-03 / The record
-
-## What the work has produced.
-
-1. CLIO Agent shipped a Spotter approval mode in August 2026: a watcher agent observes the session, and destructive tool calls fail closed unless the watcher clears them. [1]
-2. A unified, read-only Spotter provenance MCP server was implemented in the CLIO Agent marketplace and qualified live against the Flowcept and CMF provenance providers. [2] [3]
-3. CLIO Agent can stamp its records of model calls with the response identifier that joins them to token-importance signals captured from vLLM inference, so an investigation can join agent activity to evidence from inside the model. [4] [5]
-  CONDITIONS · Off by default; enabled through the kvnorm option with Flowcept
-4. A SPOTTER provenance investigator pack is published in the CLIO Agent marketplace. [6]
-
-04 / Software in the loop
+03 / Software in the loop
 
 ## The instruments involved.
 
@@ -89,7 +75,7 @@ Open source ↗
 
 02 / Component**Agent marketplace**
 
-The SPOTTER provenance investigator pack and its read-only provenance MCP server.
+The SPOTTER provenance investigator plugin and its read-only provenance MCP server.
 
 Open source ↗
 
@@ -103,7 +89,7 @@ Read more →
 
 <https://iowarp.ai/clio-kit/>
 
-05 / What comes next
+04 / What comes next
 
 ## Next steps.
 
@@ -125,17 +111,6 @@ Related
 - [Topic **Evidence-based autonomous research**](https://iowarp.ai/topics/evidence-based-research/)
 - [Research direction **Provenance an agent can question** When a result is wrong, can we find out why?](https://iowarp.ai/research/directions/#provenance)
 - [Demo **DOE Genesis: SPOTTER-AI and PORTUS** Planned for 2026](https://iowarp.ai/research/demos/#demo-doe-genesis-spotter-ai-and-portus)
-
-06 / Sources
-
-## Sources
-
-1. [CLIO Agent changelog, including the Spotter approval mode](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/CHANGELOG.md)
-2. [CLIO Agent design note: unified Spotter provenance MCP server](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/docs/design/unified-spotter-provenance-mcp-2026-08.md)
-3. [Flowcept workflow provenance system (Oak Ridge National Laboratory)](https://github.com/ORNL/flowcept)
-4. [CLIO Agent source repository](https://github.com/iowarp/clio-agent)
-5. [SPOTTER-AI project repositories, including vllm-kvnorm token-importance capture](https://github.com/spotter-ai-genesis)
-6. [SPOTTER provenance investigator pack in the CLIO Agent marketplace](https://github.com/iowarp/clio-agent-marketplace/tree/main/plugins/spotter)
 
 Next application · A4
 

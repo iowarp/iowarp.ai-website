@@ -30,10 +30,6 @@ On the web
 
 [Argonne Leadership Computing Facility ↗](https://www.alcf.anl.gov/) · [National Center for Supercomputing Applications ↗](https://www.ncsa.illinois.edu/) · [The HDF Group ↗](https://www.hdfgroup.org/) · [Illinois Institute of Technology ↗](https://www.iit.edu/) · [DeltaAI ↗](https://www.ncsa.illinois.edu/resources-and-services/compute-resources/deltaai/) · [ACCESS ↗](https://access-ci.org/) · [Gnosis project record ↗](https://grc.iit.edu/research/projects/iowarp/) · [INCITE 2026 GPU hackathon ↗](https://www.nersc.gov/news-and-events/calendar-of-events/alcf-incite-gpu-hackathon-2026) · [NeuroH5 ↗](https://github.com/iraikov/neuroh5) · [MiV-Simulator ↗](https://github.com/GazzolaLab/MiV-Simulator)
 
-Record
-
-What the work has produced · Sources
-
 01 / The scientific question
 
 ## Does the same context runtime build, deploy, and scale across the national machines scientists actually use?
@@ -60,18 +56,9 @@ A runtime that only works on the development cluster is not infrastructure. Port
   Argonne’s exascale system with Intel GPUs. The Gnosis project record reports a CLIO Core port and scientific workload runs at the INCITE GPU hackathon. Public Jarvis recipes describe Aurora deployment configurations.
   CLIO Core · SYCL
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them.
 
-03 / The record
-
-## What the work has produced.
-
-1. The Gnosis project record reports that the team ported CLIO Core to Aurora at the INCITE GPU hackathon and ran scientific workloads on the system. [1] [2] [3]
-  CONDITIONS · Institutional account accompanied by public deployment recipes; independently published scaling data is not linked here.
-2. CLIO Core builds and runs on the Ares cluster at Illinois Tech and on DeltaAI. [3] [4]
-3. NeuroH5 was onboarded through a transfer-engine-backed HDF5 VOL connector and loads without application code changes. [5]
-
-04 / Software in the loop
+03 / Software in the loop
 
 ## The instruments involved.
 
@@ -89,7 +76,7 @@ Per-machine deployment recipes for Aurora, Delta, and other systems.
 
 Open source ↗
 
-<https://github.com/iowarp/clio-core/tree/v2.2.1/jarvis_clio_core/pipelines>
+<https://github.com/iowarp/clio-core/tree/v2.4.1/jarvis_clio_core/pipelines>
 
 03 / Component**CLIO Kit · Slurm, Lmod, Jarvis**
 
@@ -99,7 +86,7 @@ Read more →
 
 <https://iowarp.ai/clio-kit/>
 
-05 / What comes next
+04 / What comes next
 
 ## Next steps.
 
@@ -123,16 +110,6 @@ Related
 - [Topic **Scientific workflows and reproducible deployment**](https://iowarp.ai/topics/scientific-workflows/)
 - [Topic **Evidence-based autonomous research**](https://iowarp.ai/topics/evidence-based-research/)
 - [Demo **CLIO on DeltaAI and Aurora** Planned for 2026](https://iowarp.ai/research/demos/#demo-clio-on-deltaai-and-aurora)
-
-06 / Sources
-
-## Sources
-
-1. [Gnosis Research Center IOWarp project record](https://grc.iit.edu/research/projects/iowarp/)
-2. [NERSC event record: ALCF INCITE GPU Hackathon, April 28–30, 2026](https://www.nersc.gov/news-and-events/calendar-of-events/alcf-incite-gpu-hackathon-2026)
-3. [CLIO Core Jarvis deployment pipelines for Aurora, Delta, and other systems](https://github.com/iowarp/clio-core/tree/v2.2.1/jarvis_clio_core/pipelines)
-4. [DeltaAI system at NCSA](https://www.ncsa.illinois.edu/resources-and-services/compute-resources/deltaai/)
-5. [CLIO Core source repository](https://github.com/iowarp/clio-core)
 
 Next application · A6
 

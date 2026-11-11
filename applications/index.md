@@ -1,30 +1,142 @@
 ---
 title: "Applications in science | IOWarp"
-description: "Where the CLIO stack meets science: materials, the National Data Platform, DOE Genesis projects, national research systems, and GPU data movement."
+description: "How CLIO adapts across materials, mechanical engineering, chemistry, federated catalogs, DOE Genesis projects, and national research systems."
 url: https://iowarp.ai/applications/
 ---
 
-> Where the CLIO stack meets science: materials, the National Data Platform, DOE Genesis projects, national research systems, and GPU data movement.
+> How CLIO adapts across materials, mechanical engineering, chemistry, federated catalogs, DOE Genesis projects, and national research systems.
 
-# Where the stack meets the science.
+# One agentic framework. Every lab’s science.
 
-For scientists and partners asking whether IOWarp fits their work. The stack is built with and for scientific teams: materials scientists, the National Data Platform, DOE laboratories in the Genesis Mission, and the facilities that run the nation’s research computers. Each story covers the science, where context breaks, the parts of the stack involved, and what the work has produced, with sources.
+CLIO is built so a visiting scientist or engineer can adopt an agentic workflow without rebuilding the stack from scratch. The work began in materials science, expanded to mechanical engineering simulations when neighboring labs saw it run, and now adapts to bench analytical chemistry, the National Data Platform, DOE Genesis Mission projects, and national research systems. Swap in the domain tools and skills your workflow needs; keep the workspace, code harness, and context runtime underneath.
 
-Domains
+Disciplines
 
-Materials science · Data platforms · DOE Genesis Mission · National systems · GPUs
+Materials science · Mechanical engineering · Chemistry · Geoscience · DOE Genesis Mission · National systems
 
 Partners
 
-Materials scientists · National Data Platform · Argonne · PNNL · ALCF · NCSA
+Materials & engineering teams · National Data Platform · Argonne · PNNL · ALCF · NCSA
 
-Method
+On this page
 
-Each result cites a paper, repository, release, or program page, and a source without a public page says what it is.
+How CLIO adapts · Stack matrix · Project stories
 
-FIG A.0 / Across the stack
+01 / How CLIO adapts across disciplines
 
-## Six stories across the stack.
+## Keep the backbone. Swap the domain layer.
+
+Every research group runs a version of the same loop: read prior work, plan the study, measure at the bench or simulate on a cluster, inspect the data, build models, and write a paper others can check. CLIO keeps the agent workspace, verified coding harness, and durable memory constant while CLIO Kit and marketplace plugins supply the formats, instruments, and domain skills.
+
+**FIG W.1** · Where CLIO fits in a research group’s workflow CLOSED-LOOP SCIENTIFIC WORKFLOW
+
+CLIO handles the reading, data plumbing, code verification, and study records around an experiment; the scientists and their instruments keep the scientific judgment.
+
+**DOMAIN PROGRESSION** · How one discipline unlocks the next SELECT A FIELD TO INSPECT THE PATTERN
+
+01 · Where CLIO started
+
+### Materials science
+
+Additive manufacturing, X-ray computed tomography, segmentation, and next-experiment planning across instruments and clusters.
+
+THE LAB’S WORKFLOW
+
+Printed specimens move from design to tomography scans and fatigue testing, where process history and volumes have to stay linked.
+
+SWAPPED DOMAIN LAYER · KIT & PLUGINS
+
+wtf-MS and Materio study-planning plugins, HDF5 and Parquet tools, ParaView rendering, and Globus data assimilation.
+
+CONSTANT CLIO BACKBONE
+
+CLIO Agent keeps study questions and observations tied to tool calls; CLIO Core holds the shared part record across stages.
+
+[Read the materials story](https://iowarp.ai/applications/materials-science/)
+
+02 · Adopted for simulation
+
+### Mechanical engineering
+
+Structural and topology-optimization campaigns where engineers saw the materials agents and adapted them to finite-element models.
+
+THE LAB’S WORKFLOW
+
+Engineers configure Abaqus and Tosca input decks, sweep parameters on cluster queues, inspect stress fields, and compare simulation runs.
+
+SWAPPED DOMAIN LAYER · KIT & PLUGINS
+
+Abaqus model-interpretation skills, Slurm and Lmod cluster servers, ParaView field inspection, and numerical check gates.
+
+CONSTANT CLIO BACKBONE
+
+CLIO Coder verifies code and configuration edits against declared checks; CLIO Agent records parameter choices and figures.
+
+[Explore simulation tools in CLIO Kit](https://iowarp.ai/clio-kit/)
+
+03 · Adopted at the bench
+
+### Chemistry & bench labs
+
+Experimental labs working from bench instruments, assay tables, and small-data machine learning without needing a supercomputer.
+
+THE LAB’S WORKFLOW
+
+Measurements stay at the bench while students and researchers organize instrument exports, train and validate predictive models, and preserve continuity when cohorts rotate.
+
+SWAPPED DOMAIN LAYER · KIT & PLUGINS
+
+Pandas and Parquet profiling, scripted matplotlib figures, marimo notebooks, and method-validation checks on held-out samples.
+
+CONSTANT CLIO BACKBONE
+
+CLIO Agent keeps computational steps as auditable as a validated lab method, and CLIO Coder reruns model pipelines from pinned inputs.
+
+[Try CLIO Agent on your workstation](https://clio.iowarp.ai/)
+
+04 · Scaled to facilities
+
+### Earth & DOE facilities
+
+Federated geoscience catalogs, simulation monitoring, workflow provenance security, and cross-facility HPC and cloud orchestration.
+
+THE LAB’S WORKFLOW
+
+Agents discover EarthScope stations through the National Data Platform, trace workflow integrity in SPOTTER-AI, and adapt multi-site runs in PORTUS.
+
+SWAPPED DOMAIN LAYER · KIT & PLUGINS
+
+NDP, Geo, and Seismology tools, the SPOTTER provenance investigator and watcher, and PORTUS surrogate performance models.
+
+CONSTANT CLIO BACKBONE
+
+The same MCP tool contracts, bounded agent permissions, sealed run receipts, and tiered CLIO Core placement underneath.
+
+[See SPOTTER-AI and PORTUS](https://iowarp.ai/applications/genesis-spotter/)
+
+05 · Bring your domain
+
+### Your lab’s workflow
+
+Any scientific group whose day crosses literature, messy data files, analysis scripts, predictive models, and manuscripts.
+
+THE LAB’S WORKFLOW
+
+Keep physical instruments and scientific judgment with your people, and hand the repetitive reading, data plumbing, code verification, and record-keeping to CLIO.
+
+SWAPPED DOMAIN LAYER · KIT & PLUGINS
+
+Pick existing servers from CLIO Kit or add a focused MCP server, a plain-Markdown domain skill, and your project’s own validation checks.
+
+CONSTANT CLIO BACKBONE
+
+CLIO Agent, CLIO Coder, CLIO Kit, and CLIO Core run on the models and machines your organization already approves.
+
+[Bring a workflow to the team](mailto:partnerships@iowarp.ai?subject=%5BIOWarp-website%5D%20Collaboration%3A%20Adapting%20CLIO%20to%20our%20scientific%20workflow)
+
+02 / Project stories across the stack
+
+## Documented stories across the stack.
 
 | Application | 01 Accelerators | 02 Operating system | 03 Storage systems | 04 Context runtime | 05 Agents and tools | 06 Applications | 07 Research tooling |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,7 +149,7 @@ FIG A.0 / Across the stack
 
 Layers follow [the CLIO stack](https://iowarp.ai/platform/): accelerators, operating system, storage systems, context runtime, agents and tools, applications, and research tooling.
 
-Application stories
+03 / Project stories
 
 ## Application stories
 

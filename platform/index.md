@@ -1,14 +1,14 @@
 ---
 title: "The CLIO platform | IOWarp"
-description: "The CLIO platform: CLIO Agent and CLIO Coder, the CLIO Kit tools they share, and the CLIO Core runtime, from GPU kernels to scientific agents."
+description: "CLIO connects AI agents to scientific data and the systems that hold it, with CLIO Agent, CLIO Coder, CLIO Kit, and CLIO Core, built by IOWarp."
 url: https://iowarp.ai/platform/
 ---
 
-> The CLIO platform: CLIO Agent and CLIO Coder, the CLIO Kit tools they share, and the CLIO Core runtime, from GPU kernels to scientific agents.
+> CLIO connects AI agents to scientific data and the systems that hold it, with CLIO Agent, CLIO Coder, CLIO Kit, and CLIO Core, built by IOWarp.
 
-# From GPU kernels to scientific agents.
+# The platform for AI-driven science.
 
-For developers, researchers, and facility staff deciding where to start. The IOWarp team builds CLIO as one platform: two agentic frameworks on top, the tools they share, and a context runtime underneath. Each piece installs on its own and is built to work with the rest.
+IOWarp is the team at the Gnosis Research Center that builds CLIO, the Context Layer for I/O. CLIO is an open platform with agentic frameworks on top, the tools they share, and a context runtime underneath. It matters because an organization can bring AI into its science and add layers as its needs grow, with each piece installing on its own and working with the rest. IOWarp will launch the full stack at SC26 in Chicago.
 
 Built by
 
@@ -24,13 +24,13 @@ Source
 
 01 / Principles
 
-## Context, memory, and scale.
+## What AI needs from your systems.
 
 Context
 
 ### The right data, with its meaning attached.
 
-For decades, scientific I/O research asked how to move bytes faster. AI-driven work asks a harder question: which data, with which provenance, tools, system state, and permissions, does the next step need? Context has a location, a size, a cost, and a lifetime, so IOWarp treats it as a system resource: assimilated with its meaning, placed near the computation, exposed through well-defined tools, and retired when it is no longer needed.
+Scientific I/O research has long asked how to move bytes faster. AI-driven work asks a harder question: which data, with which provenance, tools, system state, and permissions, does the next step need? Context has a location, a size, a cost, and a lifetime, so IOWarp manages it as a system resource, and an organization can govern it the way it governs compute and storage.
 
 Carried by CLIO Core CLIO Kit CLIO Coder CLIO Agent
 
@@ -38,7 +38,7 @@ Memory
 
 ### What an agent learns outlasts the session.
 
-An agent that forgets everything between sessions repeats work and loses the trail. IOWarp keeps memory in the system rather than in a prompt: it persists across sessions, it can be inspected, and it is tied to the evidence that produced it, so people can check what an agent knows and why.
+An agent that forgets everything between sessions repeats work and loses the trail, and the organization pays for both. IOWarp keeps memory in the system, where it persists across sessions and stays tied to the evidence that produced it, so people can check what an agent knows and why.
 
 Carried by CLIO Agent CLIO Coder CLIO Core
 
@@ -46,64 +46,69 @@ Scale
 
 ### From a laptop to a national system.
 
-The same software has to work on one machine and on a facility. Workers take sub-tasks in parallel, fleets run across nodes, tools reach schedulers and storage, and the runtime spans GPU memory, NVMe, parallel file systems, and object stores. Each piece installs on its own, so a team adds scale one component at a time.
+The same software has to serve a workstation and a facility. Workers take sub-tasks in parallel, fleets run across nodes, tools reach schedulers and storage, and the runtime spans GPU memory, NVMe, parallel file systems, and object stores. Each piece installs on its own, so a team adds scale as its needs grow.
 
 Carried by CLIO Coder CLIO Core CLIO Agent CLIO Kit
 
-**EVIDENCE CLOSES THE LOOP** An agent’s step is only useful to science if someone can inspect it later. CLIO records what was given, what was done, and what was measured, and leaves conclusions to people who can check them.
+**EVERY STEP LEAVES A RECORD** An agent’s step pays off only if someone can inspect it later. CLIO keeps a record of each step and leaves conclusions to the people accountable for them.
 
 02 / The flagships
 
-## Two agents, one toolkit.
+## The agents and their toolkit.
 
-CLIO Agent and CLIO Coder are different products for different audiences and different jobs. Choose the one that matches your work. Both can use scientific tools from CLIO Kit. CLIO Agent uses CLIO Core for its context runtime.
+CLIO Agent serves people working with scientific data, and CLIO Coder serves people writing scientific software. Choose the product that matches the work. Both can use scientific tools from CLIO Kit, and CLIO Agent uses CLIO Core for its context runtime.
+
+**FIG P.1** · HOW THE CLIO PRODUCTS CONNECT PEOPLE · AGENTS · TOOLS · RUNTIME · DATA
+
+CLIO Agent serves scientific data and papers; CLIO Coder serves scientific software. Both use the models you choose and call tools in CLIO Kit, while CLIO Core stores durable memory and moves context across memory and storage tiers.
 
 Flagship Scientific data agent Beta
 
 ### CLIO Agent
 
-For scientists, data managers, and facility teams who want an agent to inspect, analyze, and visualize scientific data.
+For scientists, data managers, and facility teams who want an AI agent working on their scientific data.
 
-An autonomous agent for scientific data management. It works directly with workspace tools, and installable packs add an orchestrator, domain experts for data, analysis, and visualization, and short-lived workers for parallel sub-tasks. It runs from a terminal, a desktop app, or a browser.
+An AI workspace for scientific data, in the desktop app or a browser. Scientists work with files, live streams, visualizations, and papers alongside a tabbed workbench, on a local model, a subscription or cloud account, or a model service from their own lab. Each agent combines a flow, an identity, and marketplace plugins that carry its tools, skills, workflows, and subagents.
 
 Context
 
-Packs route each task to the domain expert with the matching capability, and data is read through typed tools.
+Each agent loads tool definitions on demand from the plugins its work needs, and can run Python scripts against its own tools so intermediate data stays out of the conversation.
 
 Memory
 
-ARC, a local-first memory layer that every tier reads and writes, keeps what the agent learned across sessions. It stores its records in CLIO Core by default, with a local file backend as the alternative.
+ARC, the agent’s memory layer, stores what it learned across sessions in CLIO Core, and compacted conversations can recall exact earlier steps.
 
 Scale
 
-Packs can spawn short-lived workers for parallel sub-tasks, and the agent runs on local models, cloud providers, or an institutional inference gateway.
+Background tasks outlive a turn, helpers run in parallel, tools reach local machines, SSH hosts, Globus, Google Drive, and the National Data Platform, and models span local, subscription, cloud, and institutional services.
 
 **What else it does**
 
-- Packs with an orchestrator, domain experts, and capability-based routing
-- A tool gateway that mounts CLIO Kit servers such as HDF5 and Parquet through agent packs
-- Per-turn invocation records kept as a corpus for future optimizer research
-- A runtime doctor that checks the model, gateway, and file-policy health
-- Works with LM Studio, Ollama, OpenAI, Anthropic, Codex, Claude Code, OpenRouter, subscription sign-in, and the Argonne ALCF inference gateway
-- Stable installers for Linux, macOS, and Windows, with tested Core and Kit dependencies
+- Python scripts that call the agent’s own MCP servers and data tools without filling the conversation, plus background tasks that report milestones
+- Live data streams and self-updating dashboards, an HDF5 slice viewer, and a shared browser panel where you and the agent work on the same page
+- Anchored comments on figures, PDFs, charts, maps, documents, and web pages, plus LaTeX paper building with IEEE, ACM, Springer, and Elsevier venue checks
+- A session plan you can edit in the rail, recall across compacted turns, and studies that link questions, experiments, observations, and conclusions to recorded calls
+- Marketplace agents including a National Data Platform agent, marimo notebooks, and a SPOTTER watcher that quarantines a session on a danger finding
+- Works with LM Studio, Ollama, OpenAI, Anthropic, Codex, Claude Code, GitHub Copilot, OpenRouter, Inception Mercury, and the Argonne ALCF inference gateway
+- Signed macOS Desktop app and installers for Linux, macOS, and Windows, with active sandboxing and tested Core and Kit dependencies
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.sh | bash
+curl -fsSL https://clio.iowarp.ai/install.sh | bash
 ```
 
 [CLIO Agent site](https://clio.iowarp.ai/) [Documentation for CLIO Agent](https://clio.iowarp.ai/docs/) [Source for CLIO Agent](https://github.com/iowarp/clio-agent)
 
-Flagship Coding agent Beta
+Flagship Meta-harness for scientific software Beta
 
 ### CLIO Coder
 
 For developers and research software engineers working on simulation kernels, numerical libraries, data pipelines, and mixed-language builds.
 
-A coding agent that connects your own models to repository tools, project context, verification, and worker delegation, and leaves work you can inspect. Understand a codebase, investigate a failing check, implement a change, or coordinate a workflow across local workers, with experimental support for SSH workers.
+The meta-harness for scientific software puts every model you have behind the same way of working and the same inspectable checks. Project guidance, tools, safety rules, sessions, and evidence stay constant whichever model answers, and a change to a simulation or data pipeline is done only when the checks say so.
 
 Context
 
-A project handbook, layered rules, and a code map give the model bounded orientation. The checks you declare decide whether a change holds.
+A project handbook, layered rules, and a code map give whichever model is answering the same bounded orientation. The checks you declare decide whether a change holds.
 
 Memory
 
@@ -111,19 +116,21 @@ The session ledger stays whole while working-set selection keeps the model insid
 
 Scale
 
-Workers and fleets run across worktrees, and experimentally across SSH nodes. Compiled fleet plans are reviewed before anything runs.
+Workers and fleets run across worktrees and SSH nodes that pass a recorded test, each on the model that suits the job. Compiled fleet plans are reviewed before anything runs.
 
 **What else it does**
 
-- Declared tests, builds, numerical comparisons, and performance checks, tied to repository quality policies
-- Tool activity, diffs, traces, cost accounting, and sealed run records you can review
-- MCP servers, including CLIO Kit Slurm workflows, and a headless mode plus an Agent Client Protocol server for editors
-- Skills, agents, prompts, and content plugins, with sandboxed extensions that load after capability approval
+- Declared tests, builds, numerical comparisons, performance budgets, and reruns from pinned inputs, tied to repository quality policies
+- clio-coder research: a budgeted, verified hill climb on a project metric. It measures noise first and keeps a change only when interleaved trials show a real gain and every gate passes
+- clio-coder arena: the same prompt on different models side by side, identities hidden until you vote, with standings built from your votes
+- Tool activity, diffs, traces, cost per verified outcome, a claims ledger, and sealed run records you can review
+- A data tool for HDF5, NetCDF, and Parquet, MCP servers including CLIO Kit Slurm workflows, a headless mode, and an Agent Client Protocol server for editors
+- Skills, agents, prompts, reviewed library packs for HPC, science data, literature, and life science, and sandboxed extensions that load after capability approval
 - Playbooks for reviewable fleet contracts
 - An optional semantic context index for code, approved memory, and evidence. Background indexing is off by default; scanned PDF recognition and raw video embedding are unsupported
-- A desktop app (alpha) with a setup wizard
-- Installs with its own Node.js, or with npm on a supported Node.js release. Native Windows is best effort
-- Your models: local servers such as Ollama, LM Studio, llama.cpp, and vLLM, cloud APIs, and the Argonne ALCF inference service
+- A desktop app (alpha) with a setup wizard and Research and Arena pages
+- Installs without root and with its own Node.js, or with npm on a supported Node.js release. Native Windows is best effort
+- Your models: local servers such as Ollama, LM Studio, llama.cpp, and vLLM, lab gateways, cloud APIs, ChatGPT, Claude, and GitHub Copilot subscriptions, and the Argonne ALCF inference service
 
 ```sh
 curl -fsSL https://coder.iowarp.ai/install.sh | sh
@@ -137,7 +144,7 @@ Flagship Scientific tools and workflows
 
 For anyone who wants an agent, CLIO Agent and CLIO Coder included, to work with real scientific data and systems.
 
-A meta-marketplace for scientific computing: Model Context Protocol servers, workflow skills, agents, hooks, and plugins. Choose a component for a task or install a workflow that brings its tools and guidance together. CLIO Agent’s marketplace packs and CLIO Coder use its scientific servers.
+A meta-marketplace of the scientific tools your agents need: Model Context Protocol servers, workflow skills, agents, hooks, and plugins. Teams choose a component for a task or install a workflow that brings its tools and guidance together. CLIO Agent’s marketplace plugins and CLIO Coder use its scientific servers.
 
 Context
 
@@ -152,7 +159,8 @@ A small launcher downloads only the selected components, with isolated, locked s
 - Servers for data formats, HPC operations, visualization, earth science, discovery, and systems
 - Select individual servers and skills, or install workflow plugins into a supported client’s project
 - Project installers for Codex, Claude Code, OpenCode, Cursor, Antigravity, and VS Code, with client-specific limits for agents and hooks
-- Verified component downloads, separately versioned server contracts, and community marketplace discovery
+- Verified component downloads, self-repairing server environments, separately versioned server contracts, and community marketplace discovery
+- Data and Slurm servers built for agents working on real scientific datasets
 
 ```sh
 uv tool install clio-kit
@@ -166,7 +174,7 @@ Infrastructure Context runtime
 
 For facility teams, HPC developers, and researchers who need data kept with its meaning across every tier.
 
-The runtime underneath. Assimilation brings data in with its metadata, transfer places it across memory and storage tiers, and exploration lets people and agents bundle, query, and retrieve it.
+The runtime that keeps scientific data usable across an organization’s memory and storage. Assimilation brings data in with its metadata, transfer places it across tiers, and exploration lets people and agents bundle, query, and retrieve it.
 
 Context
 
@@ -174,42 +182,40 @@ Data is assimilated with its metadata and stays addressable by name wherever it 
 
 Memory
 
-Tiers reach from GPU memory through NVMe and parallel file systems to object stores, so context outlives any one process.
+Tiers reach from GPU memory through NVMe and parallel file systems to object stores, so context outlives any process.
 
 Scale
 
-GPU runtimes, and ports to ALCF Aurora and DeltaAI, take it from a laptop to national systems.
+GPU runtimes and deployment recipes for systems such as ALCF Aurora and DeltaAI take it from a laptop to national facilities.
 
 **What else it does**
 
 - Python and C++ APIs, with an MCP path for agents
-- Wheels on PyPI and a conda channel
-- Optional GPU, MPI, and format adapters in source builds, and a FUSE mount in Linux and Windows wheels or macOS source builds
+- Wheels on PyPI, with separate CUDA, ROCm, and SYCL wheels, and a conda channel
+- Optional MPI and format adapters in source builds, and a FUSE mount in Linux and Windows wheels or macOS source builds
 
 ```sh
 pip install iowarp-core
 ```
 
-[CLIO Core site](https://core.iowarp.ai/) [Documentation for CLIO Core](https://core.iowarp.ai/docs/index.html) [Source for CLIO Core](https://github.com/iowarp/clio-core) [Deployment record for CLIO Core](https://grc.iit.edu/research/projects/iowarp/) [Releases for CLIO Core](https://github.com/iowarp/clio-core/releases)
+[CLIO Core site](https://core.iowarp.ai/) [Documentation for CLIO Core](https://core.iowarp.ai/docs/index.html) [Source for CLIO Core](https://github.com/iowarp/clio-core) [Project page for CLIO Core](https://grc.iit.edu/research/projects/iowarp/) [Releases for CLIO Core](https://github.com/iowarp/clio-core/releases)
 
 03 / The layers
 
-## Seven layers, one system.
+## Every layer, working together.
 
-At the bottom, **accelerator and operating-system work** lets GPU kernels reach storage: CUDA, ROCm, and SYCL code in CLIO Core, compression on the GPU, and direct I/O adapters. Archived research prototypes explored GPU-owned NVMe queues.
+At the bottom, **accelerator and operating-system work** lets GPU kernels reach storage: CUDA, ROCm, and SYCL code in CLIO Core, compression on the GPU, and direct I/O adapters.
 
 **Storage systems** span GPU memory, DRAM, NVMe, parallel file systems, object stores, and remote collections, with adapters that let existing applications use them unchanged.
 
 **CLIO Core** is the context runtime. It assimilates data with its metadata, places it across tiers, and lets people and agents query and retrieve it.
 
-**Agents and tools** use that context. CLIO Agent and CLIO Coder are the two agentic frameworks. CLIO Kit supplies scientific MCP tools and reusable workflow components, and CLIO Relay and GACT connect CLIO Agent to clusters and to people.
+**Agents and tools** use that context. CLIO Agent and CLIO Coder are the agentic frameworks. CLIO Kit supplies scientific MCP tools and reusable workflow components, and CLIO Relay and GACT connect CLIO Agent to clusters and to people.
 
-**Applications** such as Materio and the materials, geoscience, and DOE Genesis workflows test the whole platform, and **research tooling** for writing, benchmarking, and measured experimentation keeps the results checkable.
+**Applications** such as Materio and the materials, geoscience, and DOE Genesis workflows keep the platform tied to real science, and **research tooling** carries sources and results into papers that can be checked.
 
-1. 07 **Research tooling** Tools for writing, measuring, and testing research claims.
+1. 07 **Research tooling** From sources and results to a paper someone can check.
     - [CLIO Author](https://iowarp.ai/platform/#author)
-    - [CLIO Researcher](https://iowarp.ai/platform/#researcher)
-    - [CLIO Bench](https://iowarp.ai/platform/#bench)
 2. 06 **Applications** Science workflows and domain packages built on the stack.
     - [Materio and wtf-MS](https://iowarp.ai/platform/#materio)
     - [Science workflows](https://iowarp.ai/platform/#workflows)
@@ -277,7 +283,7 @@ Used in [CLIO on national research systems](https://iowarp.ai/applications/natio
 
 Compress on the device, before data moves.
 
-nvCOMP, cuSZ, cuSZp, ndzip, and ZFP for SYCL plug into the CLIO compression layer beside CPU codecs, with learned predictors that choose a codec for the data at hand instead of guessing.
+nvCOMP, cuSZ, cuSZp, ndzip, and ZFP for SYCL plug into the CLIO compression layer beside CPU codecs, with learned predictors that choose a codec for the data at hand.
 
 Used in [GPU direct I/O and compression](https://iowarp.ai/applications/gpu-data-movement/)
 
@@ -285,7 +291,7 @@ Used in [GPU direct I/O and compression](https://iowarp.ai/applications/gpu-data
 
 #### Direct GPU I/O research
 
-Take the CPU out of the GPU’s data path.
+Research toward less CPU in the GPU’s data path.
 
 The cuFile adapter and NIXL transport support are source-build options, alongside published characterization of GPUDirect transfers through NIXL. Earlier BaM-style GPU page-cache work remains in archived prototype sources and is absent from the current release.
 
@@ -317,7 +323,7 @@ Used in [GPU direct I/O and compression](https://iowarp.ai/applications/gpu-data
 
 Asynchronous I/O and user-space file systems.
 
-io_uring, libaio, and POSIX AIO backends drive direct file I/O under the block-device layer, and a FUSE adapter mounts IOWarp as a file system on Linux and Windows, with the Linux adapter tested with xfstests. The layer descends from LabStor (SC 2022), a platform for building customized I/O stacks in user space, which evolved into the CLIO runtime.
+io_uring, libaio, and POSIX AIO backends drive direct file I/O under the block-device layer, and a FUSE adapter mounts IOWarp as a file system on Linux and Windows. The layer descends from LabStor (SC 2022), a platform for building customized I/O stacks in user space, which evolved into the CLIO runtime.
 
 Used in [GPU direct I/O and compression](https://iowarp.ai/applications/gpu-data-movement/)
 
@@ -333,7 +339,7 @@ Science data lives in memory, on NVMe, on parallel file systems, in object store
 
 #### Tiered block devices
 
-One hierarchy from GPU memory to object storage.
+A unified hierarchy from GPU memory to object storage.
 
 RAM, file and NVMe, GPU memory, and pinned host-memory devices, cloud object stores, and a Reed–Solomon erasure-coded array for resilience. The transfer engine places data across them by policy.
 
@@ -402,17 +408,17 @@ MIT license
 
 #### GACT and Agent Workspace
 
-One contract, any agent, one workspace.
+A shared contract for any agent front end.
 
-GACT is an open wire contract for agent front ends. Agent Workspace, a React and Tauri application, renders any agent that speaks it; CLIO Agent is the reference implementation.
+GACT is an open wire contract for agent front ends. Agent Workspace, a React and Tauri application with a notebook conversation view and a tabbed workbench for files, artifacts, terminal, and browser, renders any agent that speaks it; CLIO Agent is the reference implementation.
 
 [Source code for GACT and Agent Workspace](https://github.com/iowarp/gact-tui)
 
 #### Agent marketplace
 
-Installable agent packs for real tasks.
+Installable agents for real tasks.
 
-Packs that give CLIO Agent a ready team for a job: cluster operations, data semantics, deep research, EarthScope analysis, and provenance investigation for the DOE SPOTTER-AI project.
+Agents and capability plugins for CLIO: scientific data inspection and conversion, cited deep research, a National Data Platform agent, manufacturing and materials research, LaTeX venue templates and evidence-first paper writing, marimo notebooks, and provenance investigation and session quarantine for the DOE SPOTTER-AI project.
 
 Used in [Agents on the National Data Platform](https://iowarp.ai/applications/national-data-platform/) [Provenance and integrity for AI-driven science](https://iowarp.ai/applications/genesis-spotter/)
 
@@ -424,7 +430,7 @@ MIT license
 
 Self-hosted search and document understanding.
 
-Web search, document conversion, and scholarly metadata extraction for agents in one container, built on SearXNG, Docling, and GROBID, so every claim can point to its source.
+Web search, document conversion, and scholarly metadata extraction for agents, packaged as a container and built on SearXNG, Docling, and GROBID, so every claim can point to its source.
 
 [Source code for CLIO Web Search](https://github.com/iowarp/clio-web-search)
 
@@ -448,7 +454,7 @@ LAYER 06
 
 Science workflows and domain packages built on the stack.
 
-Every layer below is tested against real science: materials, geoscience, and DOE laboratory workflows.
+Every layer below exists to serve real science, including materials, geoscience, and DOE laboratory workflows.
 
 MIT license
 
@@ -474,11 +480,11 @@ LAYER 07
 
 ### Research tooling
 
-Tools for writing, measuring, and testing research claims.
+From sources and results to a paper someone can check.
 
-Scientific results must be checkable. These tools keep the evidence attached from experiment to paper.
+Scientific results must be checkable. CLIO Author keeps citations and reviews attached to the draft, and CLIO Coder does the measuring with its research and arena commands.
 
-More research tools are on the way, together with a CLIO SDK that packages tested combinations of the components on this page.
+A CLIO SDK that packages tested combinations of the components on this page is in design.
 
 BSD-3-Clause license
 
@@ -486,45 +492,29 @@ BSD-3-Clause license
 
 From source material to a reviewable paper.
 
-A multi-agent harness for the paper lifecycle: ingest sources, check citations, plan, draft, review, and export, driven from MCP clients or CLIO Coder.
+A multi-agent harness for the paper lifecycle: ingest sources, check citations, plan, draft, review, and export. It runs on its own, or a larger agent calls it as a subagent in-process, over the CLI, or through an MCP bridge.
 
-Apache-2.0 license
+05 / Why it matters
 
-#### CLIO Researcher
-
-Let hypotheses compete against measurements.
-
-A local-first research loop for I/O systems: it proposes a change to code or configuration, measures it against a baseline, checks confidence and a holdout, and stages only supported improvements for review.
-
-MIT license
-
-#### CLIO Bench
-
-Make every run inspectable.
-
-A run recorder and live dashboard for benchmarks and model comparisons. Producers send measurements; Bench stores, streams, and compares them without issuing verdicts of its own.
-
-05 / What exists today
-
-## What runs today, what comes next.
+## Why it matters to your organization.
 
 - 01
-  ### Released and installable
-  CLIO Agent in beta, CLIO Coder, CLIO Kit with its scientific tools and workflow plugins, and CLIO Core, plus CLIO Relay and the supporting tools around them, all open source and released on their own schedules.
+  ### For research leadership
+  CLIO gives AI-driven science a foundation an organization can inspect. The software is open source, and each agent step leaves a record people can review.
 - 02
-  ### [Running on national systems](https://iowarp.ai/applications/national-infrastructure/)
-  CLIO Core was ported to ALCF Aurora, where it runs benchmark pipelines, and it builds and runs on DeltaAI and the Ares cluster.
+  ### [For facilities](https://iowarp.ai/applications/national-infrastructure/)
+  CLIO meets a center on the systems it already runs, across GPUs, parallel file systems, object stores, and schedulers. Adapters let existing applications use it without code changes.
 - 03
-  ### [In the science](https://iowarp.ai/applications/)
-  Materials science, agents on the National Data Platform, NeuroH5 through its HDF5 connector, and, since August 2026, the DOE Genesis Mission projects SPOTTER-AI and PORTUS.
+  ### [For science teams](https://iowarp.ai/applications/)
+  Scientists get agents that reach their data and domain tools on the models they choose, including local models and a laboratory’s own inference service.
 - 04
-  ### [Published](https://iowarp.ai/research/)
-  Papers and posters at IEEE eScience, ICS, and HPDC, with new 2026 work accepted at eScience and SC on agent data staging, semantic search for HPC, and agents that monitor simulations.
+  ### [Grounded in research](https://iowarp.ai/research/)
+  CLIO grows from peer-reviewed systems research at the Gnosis Research Center, and the team keeps publishing the ideas behind it.
 - 05
-  ### [Coming next](https://iowarp.ai/progress/)
-  The soft launch at SC26 in Chicago, November 15–20, 2026, the Technical Advisory Board at the end of November, end-to-end runs of the materials workflow, and a stable platform release after that.
+  ### [Launching at SC26](https://iowarp.ai/progress/)
+  IOWarp will launch the full CLIO stack at SC26 in Chicago, November 15–20, 2026, and the Technical Advisory Board will form at the end of November.
 
-[Results and milestones, with sources and conditions →](https://iowarp.ai/progress/)
+[Results and milestones →](https://iowarp.ai/progress/)
 
 Next step
 

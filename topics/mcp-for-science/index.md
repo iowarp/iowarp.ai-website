@@ -24,7 +24,7 @@ General-purpose tools do not understand hierarchical scientific formats, job sch
 
 HDF5 is a standard format for simulation and experimental data across the sciences. CLIO Kit’s HDF5 server lets an agent list groups, inspect datasets and attributes, and read slices without pulling whole files, and CLIO Core’s HDF5 VOL connector lets existing HDF5 applications place data through the runtime without code changes.
 
-The HDF Group works on agentic HDF5 and agent skills with the IOWarp team, and at SC26 a birds-of-a-feather session covers HDF5 in AI-driven science.
+The HDF Group works on agentic HDF5 and agent skills with the IOWarp team, and a birds-of-a-feather session at SC26 will cover HDF5 in AI-driven science.
 
 03
 
@@ -38,7 +38,7 @@ The launcher installs from PyPI as clio-kit and downloads selected components on
 
 ## Design choices
 
-Each server is separately versioned and testable, so a facility can adopt only the servers it trusts. Component downloads are verified, and server dependencies stay isolated and locked. Tools return structured results, which makes an agent’s steps easier to check afterward.
+Each server is separately versioned and testable, so a facility can adopt only the servers it trusts. Component downloads are verified, and server dependencies stay isolated and locked. Tools return structured results, which makes an agent’s steps easier to check afterward. The HDF5, ADIOS, Pandas, Parquet, and Slurm servers gained tool behavior found by running them through CLIO Coder on planted scientific datasets.
 
 How IOWarp approaches it
 
@@ -127,7 +127,7 @@ Related
 
 1. [CLIO Kit source repository](https://github.com/iowarp/clio-kit)
 2. [CLIO Kit NDP MCP server documentation](https://toolkit.iowarp.ai/docs/mcps/ndp)
-3. [ParaView MCP server in CLIO Kit, derived from LLNL paraview_mcp](https://github.com/iowarp/clio-kit/tree/v2.11.0/mcp-servers/paraview)
+3. [ParaView MCP server in CLIO Kit, derived from LLNL paraview_mcp](https://github.com/iowarp/clio-kit/tree/v2.12.3/mcp-servers/paraview)
 4. [Islam, Cernuda, Muradli, Kougkas, Sun. Towards an AI-driven scientific workflow. IEEE eScience 2025 (poster)](https://doi.org/10.1109/eScience65000.2025.00074)
 5. [Model Context Protocol specification and documentation](https://modelcontextprotocol.io/)
 6. [HDF5, The HDF Group](https://www.hdfgroup.org/solutions/hdf5/)

@@ -16,7 +16,7 @@ HPC I/O research studies how applications read and write data on supercomputers:
 
 ## Where IOWarp comes from
 
-IOWarp builds on Hermes, an earlier system for multi-tiered distributed I/O buffering, and on a line of Gnosis Research Center systems for labeled I/O, time-ordered logging, and data-task scheduling. The founding aim was stated directly: bending the I/O fabric for AI-infused scientific workflows.
+IOWarp builds on Hermes, an earlier system for multi-tiered distributed I/O buffering, and on a line of Gnosis Research Center systems for labeled I/O, time-ordered logging, and data-task scheduling. The founding aim: bending the I/O fabric for AI-infused scientific workflows.
 
 02
 

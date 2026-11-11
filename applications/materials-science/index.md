@@ -30,17 +30,13 @@ On the web
 
 [University of Utah ↗](https://www.utah.edu/) · [Illinois Institute of Technology ↗](https://www.iit.edu/) · [The HDF Group ↗](https://www.hdfgroup.org/) · [InfiniteScienceGym ↗](https://infinitesciencegym.github.io/) · [Utah Mechanical Engineering ↗](https://www.mech.utah.edu/) · [Utah Kahlert School of Computing ↗](https://www.cs.utah.edu/)
 
-Record
-
-What the work has produced · Sources
-
 01 / The scientific question
 
 ## Can an AI agent carry a materials study from design to simulation to characterization without losing track of the part, the process, and the data?
 
 A modern materials study crosses many systems. The Utah team’s reference workflow comes from a University of Utah and Purdue University study of fatigue in topology-optimized, additively manufactured metal parts. It joins computational design, manufacturing, characterization, and mechanical analysis into one research pipeline.
 
-Three sub-workflows carry it: topology optimization with Abaqus and Tosca on HPC; X-ray computed tomography of the printed specimens, with image segmentation in Dragonfly; and materials data management that ties design, process, and measurement together. Each runs on different software, machines, and instruments.
+It runs as topology optimization with Abaqus and Tosca on HPC; X-ray computed tomography of the printed specimens, with image segmentation in Dragonfly; and materials data management that ties design, process, and measurement together. Each runs on different software, machines, and instruments.
 
 **WHERE CONTEXT BREAKS** A tomography volume is only useful next to the build parameters and the simulation that predicted where the part would crack, yet those live in different places and often only in people’s notebooks. When the Utah team gave an agent domain skills for Abaqus, it could read the models and reason about them, but it could not yet submit, monitor, and retrieve jobs on a remote HPC system. Closing that gap, and keeping one record of each part across every stage, is the stack’s job.
 
@@ -63,23 +59,13 @@ Three sub-workflows carry it: topology optimization with Abaqus and Tosca on HPC
   A materials question becomes a synthesis of the supplied literature, a map of the laboratory actually available, and an assumption-checked research plan with a reviewed paper handoff.
   wtf-MS · Materio
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them.
 
 **FIG A1.2** · The reference workflow Source: Utah reference workflow
 
 The reference materials workflow and where CLIO fits. A diagram of the target workflow, not a measured run.
 
-03 / The record
-
-## What the work has produced.
-
-1. wtf-MS, a research-planning framework for materials science created by Daisy Quach at the University of Utah, with guardrail and verification scripts from The HDF Group, reached its first stable release and ships in CLIO Coder as Materio. [1] [2]
-2. InfiniteScienceGym, a procedurally generated benchmark for scientific data analysis from the University of Utah team, found that current proprietary and open-weight models still fall well short on its question-answering task. The public leaderboard carries the scores. [3] [4]
-  CONDITIONS · COLM 2026
-3. CLIO Core’s assimilation engine ingests from Globus endpoints or local file systems without application code changes, the path characterization data is meant to take into the runtime. [5]
-  CONDITIONS · Globus ingestion is a source-build option
-
-04 / Software in the loop
+03 / Software in the loop
 
 ## The instruments involved.
 
@@ -115,7 +101,7 @@ Open source ↗
 
 <https://github.com/iowarp/clio-coder/tree/main/library/plugins/materio>
 
-05 / What comes next
+04 / What comes next
 
 ## Next steps.
 
@@ -139,16 +125,6 @@ Related
 - [Topic **Data movement for AI-infused workflows**](https://iowarp.ai/topics/data-movement/)
 - [Research direction **Evidence for agentic science** What would prove an agent made progress?](https://iowarp.ai/research/directions/#evidence)
 - [Demo **Materio for materials research** Planned for 2026](https://iowarp.ai/research/demos/#demo-materio-for-materials-research)
-
-06 / Sources
-
-## Sources
-
-1. [wtf-MS materials research planning system](https://github.com/iowarp/wtf-ms)
-2. [Materio materials research workflow in the CLIO Coder library](https://github.com/iowarp/clio-coder/tree/main/library/plugins/materio)
-3. [Bentham and Srikumar. InfiniteScienceGym: An unbounded, procedurally generated benchmark for scientific analysis. COLM 2026 (arXiv:2604.13201)](https://arxiv.org/abs/2604.13201)
-4. [InfiniteScienceGym public leaderboard](https://infinitesciencegym.github.io/)
-5. [CLIO Core Globus materials-science assimilation test](https://github.com/iowarp/clio-core/tree/v2.3.1/context-assimilation-engine/test/integration/globus_matsci)
 
 Next application · A2
 

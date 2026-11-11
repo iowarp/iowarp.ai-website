@@ -1,24 +1,24 @@
 ---
 title: "CLIO documentation | IOWarp"
-description: "CLIO Agent, Coder, Kit, and Core documentation sites, first commands, tested dependencies, platform requirements, and common questions."
+description: "Install CLIO, the open stack IOWarp builds for AI-driven science. Guides and first commands for CLIO Agent, CLIO Coder, CLIO Kit, and CLIO Core."
 url: https://iowarp.ai/docs/
 ---
 
-> CLIO Agent, Coder, Kit, and Core documentation sites, first commands, tested dependencies, platform requirements, and common questions.
+> Install CLIO, the open stack IOWarp builds for AI-driven science. Guides and first commands for CLIO Agent, CLIO Coder, CLIO Kit, and CLIO Core.
 
 # Documentation lives with the code.
 
-For developers and scientists installing a CLIO product. The Agent, Coder, Kit, and Core sites carry their product guides. This page points to the right place and gives the first command for each, with release-tag sources for compatibility.
+IOWarp is the team at the Gnosis Research Center that builds CLIO, the open-source stack that connects AI agents to scientific data and systems. It matters because a team can start with the product that fits its work and add the rest as it needs them. This page points to the right guide and gives the first command for each product, with release-tag sources for compatibility.
 
 01 Documentation sites 02 Get started 03 CLIO Core guides 04 Concepts 05 Common questions
 
 01 / Documentation sites
 
-## Four places, one platform.
+## A guide for every product.
 
 CLIO Agent**clio.iowarp.ai**
 
-Install the scientific data agent, connect a model, work with files and sessions, and add marketplace blueprints and MCP tools.
+Install the scientific data workspace, connect a model, work with files and conversations, and add marketplace plugins and MCP tools.
 
 Open clio.iowarp.ai ↗
 
@@ -26,7 +26,7 @@ Open clio.iowarp.ai ↗
 
 CLIO Coder**coder.iowarp.ai**
 
-Guides for the coding agent: installation, model connections, repository context, checks, worker fleets, run receipts, and context continuity.
+Guides for the meta-harness: installation, model connections, repository context, checks, worker fleets, research campaigns, and the model arena.
 
 Open coder.iowarp.ai ↗
 
@@ -50,13 +50,13 @@ Open core.iowarp.ai ↗
 
 02 / Get started
 
-## Get started with one command.
+## Get started from the command line.
 
-Choose the product for your task, then follow its guide for platform requirements and model setup. These commands use the public release paths. The [current Kit release](https://github.com/iowarp/clio-kit/releases/tag/v2.11.0) adds selective components and workflow plugins; Agent’s installer keeps its own tested Kit pin.
+Choose the product for your task, then follow its guide for platform requirements and model setup. These commands use the public release paths. The [current Kit release](https://github.com/iowarp/clio-kit/releases/tag/v2.12.3) installs a launcher plus the components you select; Agent’s installer keeps its own tested Kit pin.
 
 - CLIO Agent
   ```sh
-  curl -fsSL https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.sh | bash
+  curl -fsSL https://clio.iowarp.ai/install.sh | bash
   ```
   [Guide for CLIO Agent](https://clio.iowarp.ai/docs/install/)
 - CLIO Coder
@@ -89,13 +89,13 @@ Choose the product for your task, then follow its guide for platform requirement
 
 ## The context runtime, in depth.
 
-The Core portal covers installation, Python APIs, storage composition, and data operators. The [stable release notes](https://github.com/iowarp/clio-core/releases/tag/v2.3.1) and [tagged runtime configuration](https://github.com/iowarp/clio-core/blob/v2.3.1/context-runtime/config/clio_default.yaml) establish released behavior; check the [published files](https://pypi.org/project/iowarp-core/2.3.1/#files) for wheel compatibility. Agent retains its own tested Core dependency. The [platform page](https://iowarp.ai/platform/#core) explains the runtime’s role.
+The Core portal covers installation, Python APIs, storage composition, and data operators. The [stable release notes](https://github.com/iowarp/clio-core/releases/tag/v2.4.1) and [tagged runtime configuration](https://github.com/iowarp/clio-core/blob/v2.4.1/context-runtime/config/clio_default.yaml) establish released behavior; check the [published files](https://pypi.org/project/iowarp-core/2.4.1/#files) for wheel compatibility. Agent retains its own tested Core dependency. The [platform page](https://iowarp.ai/platform/#core) explains the runtime’s role.
 
 - 01
   ### [Install CLIO Core ↗](https://core.iowarp.ai/docs/installation.html)
   Published wheels, the conda channel, native packages, and source-build prerequisites. Check PyPI files for current wheel compatibility.
 - 02
-  ### [Components and modules ↗](https://github.com/iowarp/clio-core/blob/v2.3.1/README.md#components)
+  ### [Components and modules ↗](https://github.com/iowarp/clio-core/blob/v2.4.1/README.md#components)
   Transport primitives, the modular runtime, and the assimilation, transfer, and exploration engines in the stable source.
 - 03
   ### [Python API ↗](https://core.iowarp.ai/docs/python-api.html)
@@ -174,7 +174,7 @@ Questions that cross component boundaries. Version-specific answers live in each
 
 **What is the difference between IOWarp and CLIO?**
 
-IOWarp is the team at the Gnosis Research Center that builds CLIO. CLIO, the Context Layer for I/O, is the open platform it builds: two agentic frameworks, CLIO Agent and CLIO Coder, the CLIO Kit tools they share, the CLIO Core context runtime, and the GPU, storage, application, and research components around them.
+IOWarp is the team at the Gnosis Research Center that builds CLIO. CLIO, the Context Layer for I/O, is the open platform it builds: the agentic frameworks CLIO Agent and CLIO Coder, the CLIO Kit tools they share, the CLIO Core context runtime, and the GPU, storage, application, and research components around them. It matters because organizations can run AI agents against scientific data and keep a record their people can check.
 
 **Which component should I install first?**
 
@@ -182,15 +182,15 @@ Choose the task first. Install CLIO Agent to work with scientific data, or CLIO 
 
 **How do I install CLIO Core?**
 
-Install the standalone runtime with pip install iowarp-core. Check the PyPI files for current CPython versions, operating systems, and architectures. GPU, MPI, and some format adapters need a source build. Linux wheels need libfuse3 to mount, Windows needs WinFsp, and macOS mounting requires a source build with macFUSE. Keep Agent’s tested Core dependency when installing Agent. [Published wheel compatibility on PyPI ↗](https://pypi.org/project/iowarp-core/2.3.1/#files) [Mount on macOS ↗](https://core.iowarp.ai/tutorials/fuse-macos.html)
+Install the standalone runtime with pip install iowarp-core. Check the PyPI files for current CPython versions, operating systems, and architectures. GPU runtimes come as separate CUDA, ROCm, and SYCL wheels or source builds. MPI and some format adapters need a source build. Linux wheels need libfuse3 to mount, Windows needs WinFsp, and macOS mounting requires a source build with macFUSE. Keep Agent’s tested Core dependency when installing Agent. [Published wheel compatibility on PyPI ↗](https://pypi.org/project/iowarp-core/2.4.1/#files) [Mount on macOS ↗](https://core.iowarp.ai/tutorials/fuse-macos.html)
 
 **How do I install CLIO Agent on my system?**
 
-Use the tagged Bash installer shown above on Linux or macOS. On Windows, run irm https://raw.githubusercontent.com/iowarp/clio-agent/v0.9.4.24/install/install.ps1 | iex in PowerShell. The installer sets up the backend, matching terminal UI, and clio launcher, and prepares the web UI when its bundle can be unpacked. Use Python 3.12 or Python 3.13 for the tested dependency set. Agent keeps its tested Core and Kit dependencies. [Stable Agent installer notes ↗](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/README.md) [Agent installation and desktop downloads ↗](https://clio.iowarp.ai/docs/install/) [Connect a model ↗](https://clio.iowarp.ai/docs/connect-a-model/)
+For the Desktop app bundled with its agent, run curl -fsSL https://clio.iowarp.ai/desktop.sh | bash on Apple Silicon macOS or Linux, or irm https://clio.iowarp.ai/desktop.ps1 | iex in PowerShell on Windows, or download a package at clio.iowarp.ai. For the local service and web interface only, run curl -fsSL https://clio.iowarp.ai/install.sh | bash on Linux or macOS, or irm https://clio.iowarp.ai/install.ps1 | iex on Windows, then open it with clio web or start it headless with clio start. The installer downloads the prebuilt release runtime and provisions Agent’s tested Core and Kit dependencies. [Agent installation guide ↗](https://clio.iowarp.ai/docs/install/) [Release installation reference ↗](https://github.com/iowarp/clio-agent/blob/v0.9.6.1/docs/INSTALL.md) [Connect a model ↗](https://clio.iowarp.ai/docs/connect-a-model/)
 
 **How do I install CLIO Coder on my system?**
 
-The shell installer supplies its own Node.js runtime on Linux and macOS. PowerShell and CMD installers are available for Windows, where native interactive use remains best effort. An npm install uses your own supported Node.js runtime. Connect a model that supports tool calling, then run clio-coder doctor to check the installation and connections. [Coder documentation and installation ↗](https://coder.iowarp.ai/docs.html)
+The shell installer needs no root and supplies its own Node.js runtime on Linux and macOS. PowerShell and CMD installers are available for Windows, where native interactive use remains best effort. An npm install uses your own supported Node.js runtime. Connect a model that supports tool calling, then run clio-coder doctor to check the installation and connections. [Coder documentation and installation ↗](https://coder.iowarp.ai/docs.html)
 
 **How do I install the scientific MCP servers?**
 
@@ -198,7 +198,7 @@ Install the standalone CLIO Kit launcher with uv tool install clio-kit. Run clio
 
 **Should I upgrade the Core or Kit installed by CLIO Agent?**
 
-Agent keeps Core in its tested compatible release family and pins Kit for its marketplace packs. Keep that combination when installing Agent. Standalone Core and Kit have separate release and upgrade paths; a newer standalone package does not establish Agent compatibility. [Agent’s tested dependency declarations ↗](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/pyproject.toml) [Agent installer and its Kit pin ↗](https://github.com/iowarp/clio-agent/blob/v0.9.4.24/install/install.sh) [Standalone Kit installation ↗](https://toolkit.iowarp.ai/docs/installation)
+Agent keeps Core in its tested compatible release family and pins Kit for its marketplace plugins. Keep that combination when installing Agent. Standalone Core and Kit have separate release and upgrade paths; a newer standalone package does not establish Agent compatibility. [Agent’s tested dependency declarations ↗](https://github.com/iowarp/clio-agent/blob/v0.9.6.1/pyproject.toml) [Agent installer and its Kit pin ↗](https://github.com/iowarp/clio-agent/blob/v0.9.6.1/install/install.sh) [Standalone Kit installation ↗](https://toolkit.iowarp.ai/docs/installation)
 
 **Which scientific formats are supported?**
 
@@ -210,15 +210,15 @@ Yes. CLIO Core ships clio_cee for bundling, querying, retrieving, and destroying
 
 **What can I add to CLIO Coder?**
 
-Content plugins provide reusable instructions and procedures. Sandboxed extensions load after approval of their declared capabilities, and playbooks describe fleet contracts. A semantic context index is optional; background indexing is off by default, and scanned PDF recognition and raw video embedding are unsupported. The desktop app remains alpha and SSH workers remain experimental. [Current Coder documentation ↗](https://coder.iowarp.ai/docs.html) [Released behavior and limits ↗](https://github.com/iowarp/clio-coder/releases/tag/v0.6.2)
+Library packs and content plugins provide reusable instructions and procedures. Sandboxed extensions load after approval of their declared capabilities, and playbooks describe fleet contracts. A semantic context index is optional; background indexing is off by default, and scanned PDF recognition and raw video embedding are unsupported. The research and arena commands use the checks you declare in the project. The desktop app remains alpha. [Research and arena guide ↗](https://coder.iowarp.ai/docs/guide/research-and-arena.html) [Released behavior and limits ↗](https://github.com/iowarp/clio-coder/releases/tag/v0.7.0)
 
 **Is every CLIO component available now?**
 
-The current flagships, scientific context runtime, and supporting tools are open source. GPU and operating-system backends have build and hardware prerequisites. Archived BaM and GPU–NVMe bridge prototypes remain in older tagged source and are absent from the current Core release. [Current Core release ↗](https://github.com/iowarp/clio-core/releases/tag/v2.3.1) [Archived prototypes ↗](https://github.com/iowarp/clio-core/tree/v2.2.1/external/bam)
+The current flagships, scientific context runtime, and supporting tools are open source, and IOWarp will launch the full stack at SC26 in Chicago. GPU and operating-system backends have build and hardware prerequisites. Archived BaM and GPU–NVMe bridge prototypes remain in older tagged source and are absent from the current Core release. [Current Core release ↗](https://github.com/iowarp/clio-core/releases/tag/v2.4.1) [Archived prototypes ↗](https://github.com/iowarp/clio-core/tree/v2.2.1/external/bam)
 
 **Where should I report a problem or propose an integration?**
 
-Open an issue in the repository of the component you used, with the version, environment, input format, expected and observed results, and a small reproducible example if you can share one. Zulip is open for discussion.
+Open an issue in the repository of the component you used, with the version, environment, input format, expected and observed results, and a small reproducible example if you can. Zulip is open for discussion.
 
 Next step
 

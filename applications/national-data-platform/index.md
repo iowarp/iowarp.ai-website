@@ -42,7 +42,7 @@ Federated catalogs make data findable, but using a dataset still takes a sequenc
 
 Each step depends on context the previous one produced. Without that context an agent either stalls or improvises.
 
-**WHERE CONTEXT BREAKS** The failure mode is not a lack of intelligence. It is missing context: which catalog, which resource, what the columns mean, where the data was staged. CLIO Kit turns each of those into a tool with a defined contract.
+**WHERE CONTEXT BREAKS** The failure mode is missing context: which catalog, which resource, what the columns mean, where the data was staged. CLIO Kit turns each of those into a tool with a defined contract.
 
 02 / Workflow
 
@@ -63,7 +63,7 @@ Each step depends on context the previous one produced. Without that context an 
   Plotting and visualization tools produce figures the researcher can check against the source data.
   CLIO Kit · Plot, ParaView
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them. What each stage has produced so far is listed in the record below.
 
 **FIG A2.2** · Reference figure
 
@@ -75,10 +75,8 @@ Still from the October 2025 recording of the NDP and EarthScope workflow.
 
 ## What the work has produced.
 
-1. With IOWarp context, an agent completed EarthScope data retrieval and visualization through NDP; the comparison agent without that context did not complete the workflow. [1] [2]
+1. With IOWarp context, an agent completed EarthScope data retrieval and visualization through NDP; the comparison agent without that context did not complete the workflow. [1]
   CONDITIONS · Agent runs on Chameleon Cloud, reported in an IEEE eScience 2025 poster that states the models and timings
-2. A public recording shows an agent examining EarthScope seismograph data found through the National Data Platform. [3]
-3. CLIO Kit ships an NDP server with documentation, and callers choose where it stages and writes data. [4] [5]
 
 04 / Software in the loop
 
@@ -100,9 +98,9 @@ Read more →
 
 <https://iowarp.ai/clio-kit/>
 
-03 / Component**CLIO Agent packs**
+03 / Component**CLIO Agent marketplace**
 
-EarthScope agent packs in the CLIO Agent marketplace.
+The National Data Platform and EarthScope agents and plugins in the CLIO Agent marketplace.
 
 Open source ↗
 
@@ -137,10 +135,6 @@ Related
 ## Sources
 
 1. [Islam, Cernuda, Muradli, Kougkas, Sun. Towards an AI-driven scientific workflow. IEEE eScience 2025 (poster)](https://doi.org/10.1109/eScience65000.2025.00074)
-2. [eScience 2025 poster PDF: EarthScope, LAMMPS, ParaView, and IOR agent workflows](http://cs.iit.edu/~scs/assets/files/islam2025aidriven_poster.pdf)
-3. [Agent examining EarthScope data through the National Data Platform (video, October 2025)](https://www.youtube.com/watch?v=9NUf76wnHhA)
-4. [CLIO Kit NDP MCP server documentation](https://toolkit.iowarp.ai/docs/mcps/ndp)
-5. [CLIO Kit source repository](https://github.com/iowarp/clio-kit)
 
 Next application · A3
 

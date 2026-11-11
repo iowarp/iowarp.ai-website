@@ -7,11 +7,67 @@
 <language>en-us</language>
 <atom:link href="https://iowarp.ai/rss.xml" rel="self" type="application/rss+xml" />
 <item>
-<title>IOWarp soft launches at SC26 in Chicago</title>
+<title>IOWarp launches the full CLIO stack at SC26 in Chicago</title>
 <link>https://iowarp.ai/news/#sc26-launch</link>
 <guid isPermaLink="true">https://iowarp.ai/news/#sc26-launch</guid>
 <category>SC26</category>
-<description>&lt;p&gt;IOWarp and the CLIO platform soft launch at SC26 in Chicago. The team presents work on simulation monitoring, GPU I/O, storage observability, compressed training data, and agent fleets through workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session. Workshop presentations take place on November 16, research posters on November 17, Trigger, Render, Reason on November 18, and the HDF5 birds-of-a-feather session on November 19. The community page lists every title, time, room, and program entry.&lt;/p&gt;&lt;p&gt;15–20 NOV 2026 · &lt;a href=&quot;https://sc26.supercomputing.org/&quot;&gt;SC26 conference site&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;IOWarp will launch the full CLIO stack at SC26 in Chicago. The team will present work on simulation monitoring, GPU I/O, storage observability, compressed training data, and agent fleets through workshop presentations, research posters, a conference paper, and an HDF5 birds-of-a-feather session with The HDF Group. Workshop presentations will take place on November 16, research posters on November 17, Trigger, Render, Reason on November 18, and the HDF5 birds-of-a-feather session on November 19. The community page lists every title, time, room, and program entry.&lt;/p&gt;&lt;p&gt;15–20 NOV 2026 · &lt;a href=&quot;https://sc26.supercomputing.org/&quot;&gt;SC26 conference site&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Agent ships a redesigned workbench, tool scripts, live streams, and a signed macOS app</title>
+<link>https://iowarp.ai/news/#agent-workbench-release</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#agent-workbench-release</guid>
+<pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;The pre-SC26 release lets an agent run Python scripts against its own tools without filling the conversation, follow live data streams in self-updating dashboards, share a browser tab, take anchored comments on figures and PDFs, build LaTeX papers against venue checks, and quarantine a session on a SPOTTER danger finding. Companion updates to GACT, CLIO Kit, and CLIO Core ship alongside it, and clio.iowarp.ai now serves the one-line desktop and service installers.&lt;/p&gt;&lt;p&gt;11 NOV 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-agent/releases/tag/v0.9.6.1&quot;&gt;CLIO Agent release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Coder adds verified research campaigns and a blind model arena</title>
+<link>https://iowarp.ai/news/#coder-research-arena</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#coder-research-arena</guid>
+<pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;clio-coder research climbs a project metric on a budget and keeps a change only when repeated measurements show a real gain and every correctness check passes. clio-coder arena runs one prompt on several models side by side and hides which is which until you vote. The release also reads HDF5, NetCDF, and Parquet, reruns computations from pinned inputs against a stated tolerance, and keeps a claims ledger for each project.&lt;/p&gt;&lt;p&gt;9 NOV 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-coder/releases/tag/v0.7.0&quot;&gt;CLIO Coder release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Kit sharpens its tools on planted scientific datasets</title>
+<link>https://iowarp.ai/news/#kit-planted-datasets</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#kit-planted-datasets</guid>
+<pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;The team ran the scientific servers through CLIO Coder on planted datasets and fixed what the runs exposed. The ADIOS, HDF5, pandas, Parquet, and Slurm servers gained per-step statistics, grouped aggregates, outlier reports, and the scheduler’s own reason for a job’s state.&lt;/p&gt;&lt;p&gt;8 NOV 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-kit/releases/tag/v2.12.0&quot;&gt;CLIO Kit release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Coder seals its run records</title>
+<link>https://iowarp.ai/news/#coder-sealed-records</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#coder-sealed-records</guid>
+<pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;Every telemetry record names the acting agent and every journal is hash-chained. A sealed run can be verified on another machine or shared as a redacted archive.&lt;/p&gt;&lt;p&gt;31 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-coder/releases/tag/v0.6.6&quot;&gt;CLIO Coder release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Agent links studies to recorded work</title>
+<link>https://iowarp.ai/news/#agent-linked-studies</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#agent-linked-studies</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;Study questions, experiments, observations, and conclusions now link to recorded calls, with live measurements and data export. Desktop and Web become the supported ways to run CLIO Agent. It pins its own tested pairing of CLIO Kit and CLIO Core, separate from their standalone releases.&lt;/p&gt;&lt;p&gt;29 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-agent/releases/tag/v0.9.5.1&quot;&gt;CLIO Agent release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>The agent marketplace is rebuilt around per-agent plugins</title>
+<link>https://iowarp.ai/news/#marketplace-per-agent</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#marketplace-per-agent</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;Each agent now ships a plugin that says whom it serves and what it does, and programs, formats, and data sources become separate plugins. CLIO Data inspects and converts HDF5, ADIOS, and Parquet files and verifies each conversion by reading it back. The SPOTTER plugin lives at plugins/spotter.&lt;/p&gt;&lt;p&gt;28 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-agent-marketplace/releases/tag/v0.7.0&quot;&gt;Marketplace release notes&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>CLIO Core recovers from a full storage tier</title>
+<link>https://iowarp.ai/news/#core-capacity-recovery</link>
+<guid isPermaLink="true">https://iowarp.ai/news/#core-capacity-recovery</guid>
+<pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+<category>RELEASE RECORD</category>
+<description>&lt;p&gt;Python callers can inspect storage capacity and add a file target while the runtime stays active, so a managed store can recover from a full tier and keep its existing data.&lt;/p&gt;&lt;p&gt;16 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-core/releases/tag/v2.3.2&quot;&gt;CLIO Core release notes&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>CLIO Coder releases approved extensions and playbooks</title>
@@ -27,7 +83,7 @@
 <guid isPermaLink="true">https://iowarp.ai/news/#core-wheel-indexer</guid>
 <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
 <category>RELEASE RECORD</category>
-<description>&lt;p&gt;Published wheels now include the indexer required by the default filesystem chain, fixing the earlier mount and runtime-start failures. The Core documentation site covers installation, Python APIs, storage composition, data operators, and the runtime dashboard. Agent retains its own tested dependencies.&lt;/p&gt;&lt;p&gt;9 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-core/releases/tag/v2.3.1&quot;&gt;CLIO Core release notes&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;Published wheels now include the indexer required by the default filesystem chain, fixing the earlier mount and runtime-start failures. The Core documentation site covers installation, Python APIs, storage composition, data operators, and the runtime dashboard. CLIO Agent keeps its own tested dependencies.&lt;/p&gt;&lt;p&gt;9 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-core/releases/tag/v2.3.1&quot;&gt;CLIO Core release notes&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>CLIO Kit adds selective components and workflow plugins</title>
@@ -35,7 +91,7 @@
 <guid isPermaLink="true">https://iowarp.ai/news/#kit-selective-workflows</guid>
 <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
 <category>RELEASE RECORD</category>
-<description>&lt;p&gt;The published Kit release brings scientific MCP servers, skills, agents, hooks, and workflow plugins into a meta-marketplace. Its small launcher downloads selected components, keeps server dependencies isolated and locked, and installs supported workflows into client projects. The release is available on GitHub and PyPI, with its server contracts published to the MCP Registry.&lt;/p&gt;&lt;p&gt;08 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-kit/releases/tag/v2.11.0&quot;&gt;CLIO Kit release record&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;The published Kit release brings scientific MCP servers, skills, agents, hooks, and workflow plugins into a meta-marketplace. Its small launcher downloads selected components, keeps server dependencies isolated and locked, and installs supported workflows into client projects. The release is available on GitHub and PyPI, with its server contracts published to the MCP Registry.&lt;/p&gt;&lt;p&gt;8 OCT 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-kit/releases/tag/v2.11.0&quot;&gt;CLIO Kit release record&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>CLIO Coder documents context continuity</title>
@@ -65,7 +121,7 @@
 <link>https://iowarp.ai/news/#release-wave</link>
 <guid isPermaLink="true">https://iowarp.ai/news/#release-wave</guid>
 <category>RELEASE RECORD</category>
-<description>&lt;p&gt;Releases across CLIO Core, Kit, Agent, CLIO Coder, and Relay between mid and late August, including the Spotter approval mode in CLIO Agent. Each repository’s release notes carry the details.&lt;/p&gt;&lt;p&gt;AUG 2026 · &lt;a href=&quot;https://github.com/iowarp&quot;&gt;The repositories&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;CLIO Core, CLIO Kit, CLIO Agent, CLIO Coder, and CLIO Relay all shipped between mid and late August, including the Spotter approval mode in CLIO Agent. Each repository’s release notes carry the details.&lt;/p&gt;&lt;p&gt;AUG 2026 · &lt;a href=&quot;https://github.com/iowarp&quot;&gt;The repositories&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>Agents that watch simulations, at SC 2026</title>
@@ -87,7 +143,7 @@
 <guid isPermaLink="true">https://iowarp.ai/news/#core-context-engines</guid>
 <pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate>
 <category>CORE MILESTONE</category>
-<description>&lt;p&gt;A major CLIO Core release renamed the runtime and its engines under the CLIO name, including the Context Transfer Engine and the Context Assimilation Engine. The architecture has continued to evolve in later releases.&lt;/p&gt;&lt;p&gt;27 MAY 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-core/releases&quot;&gt;CLIO Core releases&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;A major CLIO Core release renamed the runtime and its engines under the CLIO name, including the Context Transfer Engine and the Context Assimilation Engine.&lt;/p&gt;&lt;p&gt;27 MAY 2026 · &lt;a href=&quot;https://github.com/iowarp/clio-core/releases&quot;&gt;CLIO Core releases&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>CLIO Core on ALCF Aurora</title>

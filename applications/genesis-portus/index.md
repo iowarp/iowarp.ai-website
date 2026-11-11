@@ -30,10 +30,6 @@ On the web
 
 [Pacific Northwest National Laboratory ↗](https://www.pnnl.gov/) · [Princeton Plasma Physics Laboratory ↗](https://www.pppl.gov/) · [Iowa State University ↗](https://www.iastate.edu/) · [University of Delaware ↗](https://www.udel.edu/) · [Illinois Institute of Technology ↗](https://www.iit.edu/) · [Oak Ridge National Laboratory ↗](https://www.ornl.gov/) · [Hewlett Packard Enterprise ↗](https://www.hpe.com/) · [U.S. Department of Energy Genesis Mission ↗](https://genesis.energy.gov/) · [WfCommons ↗](https://wfcommons.org/)
 
-Record
-
-What the work has produced · Sources
-
 01 / The scientific question
 
 ## When an agent rewrites a scientific workflow as it runs, can it know what the new version will cost, and choose a better one, before it runs?
@@ -66,19 +62,9 @@ PORTUS starts from an observation: agentic workflows are built from a small voca
   CLIO Coder fleets carry the measure, model, and re-plan loop as bounded, reviewable agent tasks. The integration is in progress.
   CLIO Coder
 
-Stages as the project sources describe them. What each stage has produced so far is listed in the record below.
+Stages as the project describes them.
 
-03 / The record
-
-## What the work has produced.
-
-1. PORTUS began in August 2026 as a DOE Genesis Mission project at PNNL, with Princeton Plasma Physics Laboratory, Iowa State University, the University of Delaware, and Illinois Tech as partners, and Oak Ridge National Laboratory and HPE collaborating. [1] [2]
-2. The IOWarp team works on workflow motifs and performance models, extending the AMAT matching methodology from memory and storage to workflow dataflow. [1]
-3. The PORTUS orchestrator is public: an agentic orchestration framework for scientific Slurm workflows that re-plans execution without rewriting task code. [3]
-4. The Dataflow Performance Matcher from Illinois Tech predicts the I/O cost of workflow stages on candidate storage tiers and node counts. It builds on published research by Illinois Tech and PNNL on characterizing dataflow for I/O-aware scheduling. [4] [5]
-5. CLIO Coder dispatches bounded engineering tasks to fleets of workers and returns reviewable run receipts. Connecting fleets to the PORTUS loop is in progress. [6]
-
-04 / Software in the loop
+03 / Software in the loop
 
 ## The instruments involved.
 
@@ -106,7 +92,7 @@ Open source ↗
 
 <https://coder.iowarp.ai/docs/guide/fleet-dispatch.html>
 
-05 / What comes next
+04 / What comes next
 
 ## Next steps.
 
@@ -131,17 +117,6 @@ Related
 - [Research direction **Authority that travels with work** What can a delegated agent actually do?](https://iowarp.ai/research/directions/#authority)
 - [Demo **DOE Genesis: SPOTTER-AI and PORTUS** Planned for 2026](https://iowarp.ai/research/demos/#demo-doe-genesis-spotter-ai-and-portus)
 - [Demo **Fleet dispatch on a cluster** Planned for 2026](https://iowarp.ai/research/demos/#demo-fleet-dispatch-on-a-cluster)
-
-06 / Sources
-
-## Sources
-
-1. PORTUS project description, DOE Genesis Mission, Pacific Northwest National Laboratory (Project description shared by the project team; not publicly posted)
-2. [U.S. Department of Energy Genesis Mission](https://genesis.energy.gov/)
-3. [PORTUS orchestrator: agentic orchestration for scientific Slurm workflows](https://gitlab.com/perflab-exact/portus/portus-orchestrator)
-4. [Dataflow Performance Matcher: I/O cost prediction across storage tiers and node counts](https://gitlab.com/perflab-exact/dpm/dpm)
-5. [Tang, Guo, Kougkas, Sun, Tallent. Characterizing dataflow for I/O-aware scheduling in HPC workflows. IPDPS 2026](https://doi.org/10.1109/IPDPS65963.2026.00076)
-6. [CLIO Coder documentation for workers and fleets](https://coder.iowarp.ai/docs/guide/fleet-dispatch.html)
 
 Next application · A5
 

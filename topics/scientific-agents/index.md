@@ -24,13 +24,13 @@ In the eScience 2025 evaluation, an agent with IOWarp context completed EarthSco
 
 ## What stays with scientists
 
-Choosing the question, judging whether a result is meaningful, and deciding what to publish remain human responsibilities. IOWarp designs agents to stage work for review rather than to declare conclusions.
+Choosing the question, judging whether a result means anything, and deciding what to publish stay with people. IOWarp agents stage work for review and leave the conclusions to scientists.
 
 03
 
 ## Architecture matters
 
-A single agent with every tool attached becomes slow and error-prone. CLIO Agent packs route work through an orchestrator to domain experts and short-lived workers, each with a narrower tool set and context.
+A single agent with every tool attached becomes slow and error-prone. CLIO Agent builds each agent from the marketplace plugins its work needs and delegates sub-tasks to subagents, each with a narrower tool set and context.
 
 How IOWarp approaches it
 
@@ -38,7 +38,7 @@ How IOWarp approaches it
 
 01**CLIO Agent**
 
-Install the scientific data agent, connect a model, and use packs with experts and workers.
+Install the scientific data agent, connect a model, and add agents from the marketplace.
 
 Open ↗
 
@@ -101,7 +101,7 @@ None in particular. The software is designed to work with institutional, local, 
 
 **Are the agents autonomous?**
 
-Operators set how much runs without approval through approval modes and permission gates. CLIO Researcher is designed to stage changes for human review rather than accepting them automatically.
+Operators set how much runs without approval through approval modes and permission gates. A CLIO Coder research campaign keeps each accepted change on its own branch, and a person reviews and merges it.
 
 Related
 

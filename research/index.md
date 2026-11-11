@@ -1,14 +1,14 @@
 ---
 title: "Research and publications | IOWarp"
-description: "IOWarp research on HPC I/O, context infrastructure, and scientific AI agents, with a browsable index of papers and posters since 2022."
+description: "IOWarp builds CLIO, the open stack for AI-driven science, on peer-reviewed systems research. Browse the papers and posters behind it since 2022."
 url: https://iowarp.ai/research/
 ---
 
-> IOWarp research on HPC I/O, context infrastructure, and scientific AI agents, with a browsable index of papers and posters since 2022.
+> IOWarp builds CLIO, the open stack for AI-driven science, on peer-reviewed systems research. Browse the papers and posters behind it since 2022.
 
-# Systems science for scientific AI.
+# The research behind CLIO.
 
-For researchers and reviewers: the systems research behind IOWarp, from memory and HPC I/O to context and scientific AI agents. The record includes papers from the IOWarp team, related research, and earlier Gnosis Research Center work the project builds on.
+IOWarp is the team at the Gnosis Research Center that builds CLIO, the open-source stack connecting AI agents to scientific data and systems. This research matters because it gives the product its foundation, from memory and HPC I/O to context and scientific AI agents. The record includes papers from the IOWarp team, related research, and earlier Gnosis Research Center work the project builds on. IOWarp will launch the full CLIO stack at SC26 in Chicago.
 
 Record
 
@@ -38,11 +38,11 @@ The research question
 
 ## How does scientific data become useful context?
 
-More throughput alone is not enough. Workflows need data placement, provenance, access, and reasoning to survive changes in format, scale, and computational environment. The CLIO platform grows from that systems question.
+Throughput alone does not carry a workflow across a change of format, scale, or machine. Data placement, provenance, access, and reasoning have to survive the move. The CLIO platform grows from that systems question, and every organization bringing AI into its science will face it.
 
 01 / Through lines
 
-## Performance, context, and agency.
+## The ideas that drive CLIO.
 
 - 01 / Performance
   ### Move less. Move well.
@@ -56,7 +56,7 @@ More throughput alone is not enough. Workflows need data placement, provenance, 
 
 02 / Selected papers
 
-## A few starting points.
+## Where to start reading.
 
 - 01 / 2025
   ### WisIO: Automated I/O Bottleneck Detection with Multi-Perspective Views for HPC Workflows
