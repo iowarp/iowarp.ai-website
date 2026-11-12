@@ -128,6 +128,7 @@ From sources and results to a paper someone can check.
 - [CLIO Core installation](https://core.iowarp.ai/docs/installation.html)
 - [CLIO Core Python API](https://core.iowarp.ai/docs/python-api.html)
 - [All source code](https://github.com/iowarp)
+- [Videos: CLIO by IOWarp on YouTube, a playlist for each CLIO product](https://www.youtube.com/@iowarp)
 - [Gnosis Research Center project record](https://grc.iit.edu/research/projects/iowarp/)
 
 ## Optional

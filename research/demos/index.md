@@ -22,6 +22,10 @@ Research
 
 [The questions behind the demos](https://iowarp.ai/research/directions/)
 
+Channel
+
+[CLIO by IOWarp on YouTube ↗](https://www.youtube.com/@iowarp)
+
 01 / Latest · 2026
 
 ## The 2026 series.

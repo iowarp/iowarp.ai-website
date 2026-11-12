@@ -1,6 +1,6 @@
 # IOWarp: full project reference
 # Website: https://iowarp.ai/
-# Generated from site data at build time: 2026-11-11
+# Generated from site data at build time: 2026-11-12
 # Each page is also available as Markdown at <page>/index.md; the short index is https://iowarp.ai/llms.txt
 
 ## Identity
@@ -581,6 +581,7 @@ Each page, then its Markdown twin.
 
 Contact: https://iowarp.ai/community/#contact; info@iowarp.ai for general questions about IOWarp; partnerships@iowarp.ai for collaborations, partner institutions, and industry partnerships.
 Feeds (RSS): https://iowarp.ai/rss.xml for news and releases, https://iowarp.ai/research/rss.xml for publications.
+Videos: https://www.youtube.com/@iowarp (CLIO by IOWarp on YouTube, a playlist for each CLIO product).
 
 Acknowledgment: IOWarp is supported by the U.S. National Science Foundation through collaborative awards OAC-2411318 and OAC-2411319. The DOE Genesis Mission and the American Science Cloud (AmSC) support IOWarp with computing and collaboration. The team is described at https://iowarp.ai/about/#team
 
