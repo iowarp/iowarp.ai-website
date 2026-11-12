@@ -34,6 +34,7 @@ Agent uses a tested Core dependency family and a pinned Kit launcher for its plu
   CLIO Agent site: https://clio.iowarp.ai/
   Documentation: https://clio.iowarp.ai/docs/
   Source: https://github.com/iowarp/clio-agent
+  Videos: https://www.youtube.com/playlist?list=PLCPP3Sik5iiE
 - CLIO Coder: The meta-harness for scientific software puts every model you have behind the same way of working and the same inspectable checks. Project guidance, tools, safety rules, sessions, and evidence stay constant whichever model answers, and a change to a simulation or data pipeline is done only when the checks say so.
   Declared tests, builds, numerical comparisons, performance budgets, and reruns from pinned inputs, tied to repository quality policies.
   clio-coder research: a budgeted, verified hill climb on a project metric. It measures noise first and keeps a change only when interleaved trials show a real gain and every gate passes.
@@ -49,6 +50,7 @@ Agent uses a tested Core dependency family and a pinned Kit launcher for its plu
   CLIO Coder site: https://coder.iowarp.ai/
   Documentation: https://coder.iowarp.ai/docs.html
   Source: https://github.com/iowarp/clio-coder
+  Videos: https://www.youtube.com/playlist?list=PLApp19oMTM-Y
 - CLIO Kit: A meta-marketplace of the scientific tools your agents need: Model Context Protocol servers, workflow skills, agents, hooks, and plugins. Teams choose a component for a task or install a workflow that brings its tools and guidance together. CLIO Agent’s marketplace plugins and CLIO Coder use its scientific servers.
   Servers for data formats, HPC operations, visualization, earth science, discovery, and systems.
   Select individual servers and skills, or install workflow plugins into a supported client’s project.
@@ -58,6 +60,7 @@ Agent uses a tested Core dependency family and a pinned Kit launcher for its plu
   CLIO Kit hub: https://iowarp.ai/clio-kit/
   CLIO Kit guides: https://toolkit.iowarp.ai/docs/intro
   Source: https://github.com/iowarp/clio-kit
+  Videos: https://www.youtube.com/playlist?list=PLXHX2CJLt7Bc
 - CLIO Core: The runtime that keeps scientific data usable across an organization’s memory and storage. Assimilation brings data in with its metadata, transfer places it across tiers, and exploration lets people and agents bundle, query, and retrieve it.
   Python and C++ APIs, with an MCP path for agents.
   Wheels on PyPI, with separate CUDA, ROCm, and SYCL wheels, and a conda channel.
@@ -65,6 +68,7 @@ Agent uses a tested Core dependency family and a pinned Kit launcher for its plu
   CLIO Core site: https://core.iowarp.ai/
   Documentation: https://core.iowarp.ai/docs/index.html
   Source: https://github.com/iowarp/clio-core
+  Videos: https://www.youtube.com/playlist?list=PLAPUKYw0GBNQ
   Project page: https://grc.iit.edu/research/projects/iowarp/
   Releases: https://github.com/iowarp/clio-core/releases
 

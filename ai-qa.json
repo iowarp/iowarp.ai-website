@@ -908,7 +908,7 @@
   {
    "id": "qa-43",
    "question": "Where can I see scientific demos?",
-   "answer": "The demonstrations page has two parts: the 2026 series, planned recordings across the stack from GPU payload offload to the DOE Genesis Mission projects, listed as placeholders until published; and the 2025 archive of recorded videos covering EarthScope data, LAMMPS, ParaView, ADIOS2, Slurm workflow automation, an end-to-end IOWarp workflow, and reproducible deployment. New recordings are published on the CLIO by IOWarp YouTube channel (youtube.com/@iowarp), with a playlist for each CLIO product.",
+   "answer": "The demonstrations page opens with the SC26 launch films: the CLIO story and a short film for CLIO Agent, CLIO Coder, and CLIO Core. Then come the 2026 series, planned recordings across the stack from GPU payload offload to the DOE Genesis Mission projects, listed as placeholders until published; and the 2025 archive of recorded videos covering EarthScope data, LAMMPS, ParaView, ADIOS2, Slurm workflow automation, an end-to-end IOWarp workflow, and reproducible deployment. New recordings and films are published on the CLIO by IOWarp YouTube channel (youtube.com/@iowarp), with a playlist for each CLIO product.",
    "keywords": [
     "demo",
     "demos",

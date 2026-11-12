@@ -289,7 +289,7 @@ Room W185d
 
 - **Birds of a feather** · 12:15–1:15 pm CST**[Trustworthy Data at Scale: HDF5 in the Age of AI-Driven Science](https://iowarp.ai/community/#sc26-hdf5-bof)**
 
-[All SC26 details](https://iowarp.ai/community/#sc26) [The user group](https://iowarp.ai/community/#user-group) [The advisory board](https://iowarp.ai/community/#advisory-board) [Join Zulip](https://iowarp.zulipchat.com/)
+[All SC26 details](https://iowarp.ai/community/#sc26) [Watch the launch film](https://iowarp.ai/research/demos/#launch) [The user group](https://iowarp.ai/community/#user-group) [The advisory board](https://iowarp.ai/community/#advisory-board) [Join Zulip](https://iowarp.zulipchat.com/)
 
 Open source
 

@@ -1,14 +1,18 @@
 ---
 title: "Demonstrations of the CLIO stack | IOWarp"
-description: "IOWarp demonstrations: the 2026 series planned across the CLIO stack and the 2025 archive of agents on scientific data and HPC tools."
+description: "IOWarp demonstrations: the SC26 launch films, the 2026 series planned across the CLIO stack, and the 2025 archive of agents on scientific data and HPC."
 url: https://iowarp.ai/research/demos/
 ---
 
-> IOWarp demonstrations: the 2026 series planned across the CLIO stack and the 2025 archive of agents on scientific data and HPC tools.
+> IOWarp demonstrations: the SC26 launch films, the 2026 series planned across the CLIO stack, and the 2025 archive of agents on scientific data and HPC.
 
 # See the stack at work.
 
 For anyone who wants to see the software run: recordings of CLIO software on real scientific data and systems, made by the IOWarp team. The 2026 series follows the full stack, from CUDA kernels to DOE laboratory workflows; each entry states what its recording will show. The 2025 archive holds the first agent workflows on EarthScope, LAMMPS, ParaView, ADIOS2, and Slurm.
+
+Launch films
+
+The CLIO story for SC26
 
 2026 series
 
@@ -26,7 +30,45 @@ Channel
 
 [CLIO by IOWarp on YouTube ↗](https://www.youtube.com/@iowarp)
 
-01 / Latest · 2026
+01 / Launch · SC26
+
+## The launch films.
+
+Animated films made for the SC26 launch: the CLIO story, then a short film for each flagship. They show what each product is for; the demonstrations below show the software at work. Select a preview to load the video player.
+
+NOV 12, 2026 / LAUNCH FILM
+
+### CLIO by IOWarp: AI for science you can check
+
+The CLIO story for the SC26 launch: the thesis, then CLIO Agent, CLIO Coder, CLIO Core, and CLIO Kit, told in animated graphics.
+
+CLIO by IOWarp · CLIO Agent, CLIO Coder, CLIO Core, CLIO Kit [Open on YouTube: CLIO by IOWarp: AI for science you can check ↗](https://www.youtube.com/watch?v=uBeVeIUNQK4)
+
+NOV 12, 2026 / PRODUCT FILM
+
+### CLIO Agent: a workspace for scientific data
+
+Files, live streams, figures, and papers in one workspace, with a record you can check.
+
+CLIO by IOWarp · CLIO Agent [Open on YouTube: CLIO Agent: a workspace for scientific data ↗](https://www.youtube.com/watch?v=gsKGPLsSY3M)
+
+NOV 12, 2026 / PRODUCT FILM
+
+### CLIO Coder: the meta-harness for scientific software
+
+Every model you have, behind shared project guidance and checks you can inspect.
+
+CLIO by IOWarp · CLIO Coder [Open on YouTube: CLIO Coder: the meta-harness for scientific software ↗](https://www.youtube.com/watch?v=uCEwyfY0fao)
+
+NOV 12, 2026 / PRODUCT FILM
+
+### CLIO Core: the tiered context runtime
+
+Scientific data keeps its meaning from GPU memory to parallel storage.
+
+CLIO by IOWarp · CLIO Core [Open on YouTube: CLIO Core: the tiered context runtime ↗](https://www.youtube.com/watch?v=zwI7D1mbonY)
+
+02 / Latest · 2026
 
 ## The 2026 series.
 
@@ -69,7 +111,7 @@ These entries are placeholders, not previews. Each video appears here when it is
   CLIO Coder spreads bounded engineering tasks across workers on cluster nodes and returns reviewable run receipts.
   [Agentic workflows across HPC and cloud](https://iowarp.ai/applications/genesis-portus/) [CLIO Coder](https://iowarp.ai/platform/#coder)
 
-02 / Archive · 2025
+03 / Archive · 2025
 
 ## The 2025 archive.
 

@@ -96,7 +96,7 @@ Background tasks outlive a turn, helpers run in parallel, tools reach local mach
 curl -fsSL https://clio.iowarp.ai/install.sh | bash
 ```
 
-[CLIO Agent site](https://clio.iowarp.ai/) [Documentation for CLIO Agent](https://clio.iowarp.ai/docs/) [Source for CLIO Agent](https://github.com/iowarp/clio-agent)
+[CLIO Agent site](https://clio.iowarp.ai/) [Documentation for CLIO Agent](https://clio.iowarp.ai/docs/) [Source for CLIO Agent](https://github.com/iowarp/clio-agent) [Videos for CLIO Agent](https://www.youtube.com/playlist?list=PLCPP3Sik5iiE)
 
 Flagship Meta-harness for scientific software Beta
 
@@ -136,7 +136,7 @@ Workers and fleets run across worktrees and SSH nodes that pass a recorded test,
 curl -fsSL https://coder.iowarp.ai/install.sh | sh
 ```
 
-[CLIO Coder site](https://coder.iowarp.ai/) [Documentation for CLIO Coder](https://coder.iowarp.ai/docs.html) [Source for CLIO Coder](https://github.com/iowarp/clio-coder)
+[CLIO Coder site](https://coder.iowarp.ai/) [Documentation for CLIO Coder](https://coder.iowarp.ai/docs.html) [Source for CLIO Coder](https://github.com/iowarp/clio-coder) [Videos for CLIO Coder](https://www.youtube.com/playlist?list=PLApp19oMTM-Y)
 
 Flagship Scientific tools and workflows
 
@@ -166,7 +166,7 @@ A small launcher downloads only the selected components, with isolated, locked s
 uv tool install clio-kit
 ```
 
-[CLIO Kit hub](https://iowarp.ai/clio-kit/) [CLIO Kit guides](https://toolkit.iowarp.ai/docs/intro) [Source for CLIO Kit](https://github.com/iowarp/clio-kit)
+[CLIO Kit hub](https://iowarp.ai/clio-kit/) [CLIO Kit guides](https://toolkit.iowarp.ai/docs/intro) [Source for CLIO Kit](https://github.com/iowarp/clio-kit) [Videos for CLIO Kit](https://www.youtube.com/playlist?list=PLXHX2CJLt7Bc)
 
 Infrastructure Context runtime
 
@@ -198,7 +198,7 @@ GPU runtimes and deployment recipes for systems such as ALCF Aurora and DeltaAI 
 pip install iowarp-core
 ```
 
-[CLIO Core site](https://core.iowarp.ai/) [Documentation for CLIO Core](https://core.iowarp.ai/docs/index.html) [Source for CLIO Core](https://github.com/iowarp/clio-core) [Project page for CLIO Core](https://grc.iit.edu/research/projects/iowarp/) [Releases for CLIO Core](https://github.com/iowarp/clio-core/releases)
+[CLIO Core site](https://core.iowarp.ai/) [Documentation for CLIO Core](https://core.iowarp.ai/docs/index.html) [Source for CLIO Core](https://github.com/iowarp/clio-core) [Videos for CLIO Core](https://www.youtube.com/playlist?list=PLAPUKYw0GBNQ) [Project page for CLIO Core](https://grc.iit.edu/research/projects/iowarp/) [Releases for CLIO Core](https://github.com/iowarp/clio-core/releases)
 
 03 / The layers
 
